@@ -1,11 +1,11 @@
-# psy-5xx-reproducible-research-outline.md
+# psy-511-reproducible-research-outline.md
 
 ## Sources
 
 - [PSY Psychology Transparency Page](../transparency/README.md)
 - Textbook(s)
     + Gandrud, C. (2013). Reproducible Research with R and R Studio. CRC Press.<https://www.crcpress.com/Reproducible-Research-with-R-and-R-Studio/Gandrud/9781466572843>
-    + 
+    +
 
 ## Topics
 
@@ -29,3 +29,47 @@
     + <https://galaxyproject.org>
     + iPython/jupyter project
     + RStudio/RMarkdown
+- The review and publication process
+
+
+## Schedule
+
+### Week 1: January 9
+
+#### Topics
+
+- Introduction to the course
+- Cases of scientific misconduct
+- What should we aspire toward?
+
+#### Readings
+
+### Week 2: January 16
+
+### Week 3: January 23
+
+### Week 4: January 30
+
+### Week 5: February 6
+
+### Week 6: February 13
+
+### Week 7: February 20
+
+### Week 8: February 27
+
+### Spring Break March 6 - 10
+
+### Week 9: March 13
+
+### Week 10: March 20
+
+### Week 11: March 27
+
+### Week 12: April 3
+
+### Week 13: April 10
+
+### Week 14: April 17
+
+### Week 15: April 24
