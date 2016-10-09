@@ -2,7 +2,7 @@
 
 ## Sources
 
-- [PSY Psychology Transparency Page](../transparency/README.md)
+- [PSY Psychology Transparency Page](https://github.com/psu-psychology/transparency/README.md)
 - Textbook(s)
     + Gandrud, C. (2013). Reproducible Research with R and R Studio. CRC Press.<https://www.crcpress.com/Reproducible-Research-with-R-and-R-Studio/Gandrud/9781466572843>
     + 
