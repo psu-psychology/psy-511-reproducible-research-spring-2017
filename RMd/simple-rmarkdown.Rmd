@@ -1,0 +1,69 @@
+---
+title: "simple-rmarkdown"
+author: "Rick O. Gilmore"
+date: "November 12, 2016"
+output:
+  ioslides_presentation:
+    incremental: false
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Make some data
+
+```{r}
+x = rnorm(n = 100, mean = 0, sd = 1)   # N(0,1)
+y = rnorm(n = 100, mean = 2, sd = 0.5) # N(2, 0.5)
+```
+
+## Summary of x, y
+
+```{r}
+summary(x)
+summary(y)
+```
+
+## Histogram of x
+
+```{r}
+hist(x)
+```
+
+## Histogram of y
+
+```{r}
+hist(y)
+```
+
+## Embed figure saved locally
+
+`<img src="img/my-img.jpg" height=500px>`
+
+height parameter is optional, but useful.
+
+## Embed figure from the web 
+
+`<img src="" width=900px>`
+
+## Embed YouTube video
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/9hUy9ePyo6Q" frameborder="0" allowfullscreen></iframe>
+
+- YouTube gives you code to cut and paste.
+
+## Printing computed variables
+
+```{r}
+summ.x = summary(x)
+summ.y = summary(y)
+names(summ.x) # Figure out variable names for indexing
+```
+
+*Index by variable name:* X lies within the range of [`r summ.x["Min."]`, `r summ.x["Max."]`].
+
+*Index by numeric index:* The (y-x) difference in means is `r summ.y[4] - summ.x[4]`.
+
+*Calculate and report:* The correlation between x and y is `r cor(x,y)`.
