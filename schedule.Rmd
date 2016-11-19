@@ -8,10 +8,19 @@ title: "Schedule"
 
 - Introduction to the course
 - Cases of scientific misconduct
+    + [Hauser](http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
+    + [Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
 - What should we aspire toward?
 - What is reproducibility? Are we in a crisis?
 
-### Readings
+### Readings/webinars
+
+- Total R novice? [Free intro to R](https://www.datacamp.com/courses/free-introduction-to-r)
+- Skilled SAS, SPSS, or Stata user? [R for SAS SPSS and Stata users](https://www.datacamp.com/courses/r-for-sas-spss-and-stata-users-r-tutorial)
+- Intermediate R user?
+    + [Cleaning data in R](https://www.datacamp.com/courses/cleaning-data-in-r)
+    + [Data manipulation in R with dplyr](https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial)
+    + [Data visualization with ggplot2](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
 
 ### Activities
 
@@ -28,12 +37,23 @@ title: "Schedule"
 - Spreadsheets are brilliant; spreadsheets are evil
 - Active protocols
 
-## Readings
+## Readings/webinars
+
+- <http://grunwaldlab.github.io/Reproducible-science-in-R/index.html>
+- tidy data
+    + Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10). <http://dx.doi.org/10.18637/jss.v059.i10>.
+- File naming
+    + <http://guides.nyu.edu/data_management/file_org>
+    + <http://kbroman.org/dataorg/>
+- Spreadsheets
+    + <https://github.com/jennybc/sanesheets>
+    + <http://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/excel/ecology-examples/00-intro.html>
+    + <https://github.com/jennybc/scary-excel-stories>
 
 ### Activities
 
 - Capturing workflows
-    + Data sources
+    + Data collection
     + Data cleaning
     + Data analysis
     + Reporting
@@ -49,7 +69,9 @@ title: "Schedule"
     + R
     + Python
 
-### Readings
+### Readings/webinars
+
+- [Authoring R Markdown Reports](https://www.datacamp.com/courses/reporting-with-r-markdown). 3 hrs.
 
 ### Activities
 
@@ -63,6 +85,10 @@ title: "Schedule"
 ### Topics
 
 - Introduction to RStudio
+
+### Readings/webinars
+
+- [Working with the RStudio IDE (Part 1)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1). 3 hrs.
 
 ### Activities
 
@@ -78,6 +104,9 @@ title: "Schedule"
         + HTML
         + MSWord
         + PDF
+    + Project websites
+        + [R Markdown websites](http://rmarkdown.rstudio.com/rmarkdown_websites.html)
+        + [html_document format](http://rmarkdown.rstudio.com/html_document_format.html)
 - RStudio for teaching and talks
     + Talk slides
         + [ioslides](http://rmarkdown.rstudio.com/ioslides_presentation_format.html)
@@ -92,9 +121,23 @@ title: "Schedule"
 ### Topics
 
 - Version control
+- git
 - GitHub
 
+### Readings/webinars
+
+- <http://happygitwithr.com/>
+
+### Activities
+
+- [Hello World](https://guides.github.com/activities/hello-world/)
+
 ## Week 7: February 20
+
+### Topics
+
+- Reproducible data-gathering
+    + E-Prime, Matlab ([Psychophysics Toolbox](http://psychtoolbox.org/)), [PsychoPy](http://www.psychopy.org/).
 
 ## Week 8: February 27
 
@@ -105,7 +148,12 @@ title: "Schedule"
 ### Topics
 
 - Python
-- Intro to Jupyter
+- Intro to [Jupyter](http://jupyter.org/)
+
+#### Readings/webinars
+
+- [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science). 4 hrs.
+- [Jupyter notebook tutorials](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook)
 
 ## Week 10: March 20
 
@@ -124,7 +172,19 @@ title: "Schedule"
 ### Topics
 
 - Where to put it? Data repositories, institutional repos, etc.
+    + [Databrary](http://databrary.org)
+    + [Open Science Framework](http://osf.io)
+    + [Data Dryad](http://datadryad.org/)
+    + [Inter-university Consortium for Political and Social Research (ICPSR)](https://www.icpsr.umich.edu/icpsrweb/)
+    + [PSU's ScholarSphere](https://scholarsphere.psu.edu/)
+    + [National Database for Autism Research (NDAR)](https://ndar.nih.gov/)
+- Publishing data, open access
+    + [Nature Scientific Data](http://www.nature.com/sdata/)
+    + [APA's Archives of Scientific Psychology](http://www.apa.org/pubs/journals/arc/index.aspx)
 - Your open science portfolio
+    + [ORCID](http://orcid.org/)
+    + [ResearchGate](http://researchgate.net)
+    + [Academia.edu](http://academia.edu)
 
 ### Readings
 

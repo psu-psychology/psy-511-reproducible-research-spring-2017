@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -98,34 +98,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 52px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 57px;
+  margin-top: -57px;
 }
 </style>
 
@@ -212,13 +212,27 @@ $(document).ready(function () {
 <h3>Topics</h3>
 <ul>
 <li>Introduction to the course</li>
-<li>Cases of scientific misconduct</li>
+<li>Cases of scientific misconduct
+<ul>
+<li><a href="http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes">Hauser</a></li>
+<li><a href="http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&amp;_r=0">Stapel</a></li>
+</ul></li>
 <li>What should we aspire toward?</li>
 <li>What is reproducibility? Are we in a crisis?</li>
 </ul>
 </div>
-<div id="readings" class="section level3">
-<h3>Readings</h3>
+<div id="readingswebinars" class="section level3">
+<h3>Readings/webinars</h3>
+<ul>
+<li>Total R novice? <a href="https://www.datacamp.com/courses/free-introduction-to-r">Free intro to R</a></li>
+<li>Skilled SAS, SPSS, or Stata user? <a href="https://www.datacamp.com/courses/r-for-sas-spss-and-stata-users-r-tutorial">R for SAS SPSS and Stata users</a></li>
+<li>Intermediate R user?
+<ul>
+<li><a href="https://www.datacamp.com/courses/cleaning-data-in-r">Cleaning data in R</a></li>
+<li><a href="https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial">Data manipulation in R with dplyr</a></li>
+<li><a href="https://www.datacamp.com/courses/data-visualization-with-ggplot2-1">Data visualization with ggplot2</a></li>
+</ul></li>
+</ul>
 </div>
 <div id="activities" class="section level3">
 <h3>Activities</h3>
@@ -241,14 +255,32 @@ $(document).ready(function () {
 </ul>
 </div>
 </div>
-<div id="readings-1" class="section level2">
-<h2>Readings</h2>
+<div id="readingswebinars-1" class="section level2">
+<h2>Readings/webinars</h2>
+<ul>
+<li><a href="http://grunwaldlab.github.io/Reproducible-science-in-R/index.html" class="uri">http://grunwaldlab.github.io/Reproducible-science-in-R/index.html</a></li>
+<li>tidy data
+<ul>
+<li>Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10). <a href="http://dx.doi.org/10.18637/jss.v059.i10" class="uri">http://dx.doi.org/10.18637/jss.v059.i10</a>.</li>
+</ul></li>
+<li>File naming
+<ul>
+<li><a href="http://guides.nyu.edu/data_management/file_org" class="uri">http://guides.nyu.edu/data_management/file_org</a></li>
+<li><a href="http://kbroman.org/dataorg/" class="uri">http://kbroman.org/dataorg/</a></li>
+</ul></li>
+<li>Spreadsheets
+<ul>
+<li><a href="https://github.com/jennybc/sanesheets" class="uri">https://github.com/jennybc/sanesheets</a></li>
+<li><a href="http://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/excel/ecology-examples/00-intro.html" class="uri">http://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/excel/ecology-examples/00-intro.html</a></li>
+<li><a href="https://github.com/jennybc/scary-excel-stories" class="uri">https://github.com/jennybc/scary-excel-stories</a></li>
+</ul></li>
+</ul>
 <div id="activities-1" class="section level3">
 <h3>Activities</h3>
 <ul>
 <li>Capturing workflows
 <ul>
-<li>Data sources</li>
+<li>Data collection</li>
 <li>Data cleaning</li>
 <li>Data analysis</li>
 <li>Reporting</li>
@@ -271,8 +303,11 @@ $(document).ready(function () {
 </ul></li>
 </ul>
 </div>
-<div id="readings-2" class="section level3">
-<h3>Readings</h3>
+<div id="readingswebinars-2" class="section level3">
+<h3>Readings/webinars</h3>
+<ul>
+<li><a href="https://www.datacamp.com/courses/reporting-with-r-markdown">Authoring R Markdown Reports</a>. 3 hrs.</li>
+</ul>
 </div>
 <div id="activities-2" class="section level3">
 <h3>Activities</h3>
@@ -292,6 +327,12 @@ $(document).ready(function () {
 <h3>Topics</h3>
 <ul>
 <li>Introduction to RStudio</li>
+</ul>
+</div>
+<div id="readingswebinars-3" class="section level3">
+<h3>Readings/webinars</h3>
+<ul>
+<li><a href="https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1">Working with the RStudio IDE (Part 1)</a>. 3 hrs.</li>
 </ul>
 </div>
 <div id="activities-3" class="section level3">
@@ -314,6 +355,11 @@ $(document).ready(function () {
 <li>HTML</li>
 <li>MSWord</li>
 <li>PDF</li>
+</ul></li>
+<li>Project websites
+<ul>
+<li><a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html">R Markdown websites</a></li>
+<li><a href="http://rmarkdown.rstudio.com/html_document_format.html">html_document format</a></li>
 </ul></li>
 </ul></li>
 <li>RStudio for teaching and talks
@@ -339,12 +385,34 @@ $(document).ready(function () {
 <h3>Topics</h3>
 <ul>
 <li>Version control</li>
+<li>git</li>
 <li>GitHub</li>
+</ul>
+</div>
+<div id="readingswebinars-4" class="section level3">
+<h3>Readings/webinars</h3>
+<ul>
+<li><a href="http://happygitwithr.com/" class="uri">http://happygitwithr.com/</a></li>
+</ul>
+</div>
+<div id="activities-5" class="section level3">
+<h3>Activities</h3>
+<ul>
+<li><a href="https://guides.github.com/activities/hello-world/">Hello World</a></li>
 </ul>
 </div>
 </div>
 <div id="week-7-february-20" class="section level2">
 <h2>Week 7: February 20</h2>
+<div id="topics-6" class="section level3">
+<h3>Topics</h3>
+<ul>
+<li>Reproducible data-gathering
+<ul>
+<li>E-Prime, Matlab (<a href="http://psychtoolbox.org/">Psychophysics Toolbox</a>), <a href="http://www.psychopy.org/">PsychoPy</a>.</li>
+</ul></li>
+</ul>
+</div>
 </div>
 <div id="week-8-february-27" class="section level2">
 <h2>Week 8: February 27</h2>
@@ -354,17 +422,24 @@ $(document).ready(function () {
 </div>
 <div id="week-9-march-13" class="section level2">
 <h2>Week 9: March 13</h2>
-<div id="topics-6" class="section level3">
+<div id="topics-7" class="section level3">
 <h3>Topics</h3>
 <ul>
 <li>Python</li>
-<li>Intro to Jupyter</li>
+<li>Intro to <a href="http://jupyter.org/">Jupyter</a></li>
 </ul>
+<div id="readingswebinars-5" class="section level4">
+<h4>Readings/webinars</h4>
+<ul>
+<li><a href="https://www.datacamp.com/courses/intro-to-python-for-data-science">Intro to Python for Data Science</a>. 4 hrs.</li>
+<li><a href="https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook">Jupyter notebook tutorials</a></li>
+</ul>
+</div>
 </div>
 </div>
 <div id="week-10-march-20" class="section level2">
 <h2>Week 10: March 20</h2>
-<div id="topics-7" class="section level3">
+<div id="topics-8" class="section level3">
 <h3>Topics</h3>
 <ul>
 <li>Jupyter for research, teaching, talks</li>
@@ -373,7 +448,7 @@ $(document).ready(function () {
 </div>
 <div id="week-11-march-27" class="section level2">
 <h2>Week 11: March 27</h2>
-<div id="topics-8" class="section level3">
+<div id="topics-9" class="section level3">
 <h3>Topics</h3>
 <ul>
 <li>Reproducible practices in SPSS, Matlab, MS Office, etc.</li>
@@ -382,23 +457,41 @@ $(document).ready(function () {
 </div>
 <div id="week-12-april-3" class="section level2">
 <h2>Week 12: April 3</h2>
-<div id="topics-9" class="section level3">
+<div id="topics-10" class="section level3">
 <h3>Topics</h3>
 <ul>
-<li>Where to put it? Data repositories, institutional repos, etc.</li>
-<li>Your open science portfolio</li>
+<li>Where to put it? Data repositories, institutional repos, etc.
+<ul>
+<li><a href="http://databrary.org">Databrary</a></li>
+<li><a href="http://osf.io">Open Science Framework</a></li>
+<li><a href="http://datadryad.org/">Data Dryad</a></li>
+<li><a href="https://www.icpsr.umich.edu/icpsrweb/">Inter-university Consortium for Political and Social Research (ICPSR)</a></li>
+<li><a href="https://scholarsphere.psu.edu/">PSU’s ScholarSphere</a></li>
+<li><a href="https://ndar.nih.gov/">National Database for Autism Research (NDAR)</a></li>
+</ul></li>
+<li>Publishing data, open access
+<ul>
+<li><a href="http://www.nature.com/sdata/">Nature Scientific Data</a></li>
+<li><a href="http://www.apa.org/pubs/journals/arc/index.aspx">APA’s Archives of Scientific Psychology</a></li>
+</ul></li>
+<li>Your open science portfolio
+<ul>
+<li><a href="http://orcid.org/">ORCID</a></li>
+<li><a href="http://researchgate.net">ResearchGate</a></li>
+<li><a href="http://academia.edu">Academia.edu</a></li>
+</ul></li>
 </ul>
 </div>
-<div id="readings-3" class="section level3">
+<div id="readings" class="section level3">
 <h3>Readings</h3>
 </div>
-<div id="activities-5" class="section level3">
+<div id="activities-6" class="section level3">
 <h3>Activities</h3>
 </div>
 </div>
 <div id="week-13-april-10" class="section level2">
 <h2>Week 13: April 10</h2>
-<div id="topics-10" class="section level3">
+<div id="topics-11" class="section level3">
 <h3>Topics</h3>
 <ul>
 <li>The future of open science</li>
@@ -407,7 +500,7 @@ $(document).ready(function () {
 </div>
 <div id="week-14-april-17" class="section level2">
 <h2>Week 14: April 17</h2>
-<div id="topics-11" class="section level3">
+<div id="topics-12" class="section level3">
 <h3>Topics</h3>
 <ul>
 <li>Student project presentations</li>
@@ -416,7 +509,7 @@ $(document).ready(function () {
 </div>
 <div id="week-15-april-24" class="section level2">
 <h2>Week 15: April 24</h2>
-<div id="topics-12" class="section level3">
+<div id="topics-13" class="section level3">
 <h3>Topics</h3>
 <ul>
 <li>Student project presentations</li>

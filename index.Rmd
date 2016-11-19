@@ -1,18 +1,27 @@
 ---
-title: "PSY 511.002 Spring 2017"
+title: ""
 ---
 
-This is the home page for PSY 511.002 Spring 2017, **"Transparent, Open, and Reproducible Research Practices in the Social and Behavioral Sciences"**
+# Transparent, Open, and Reproducible Research Practices in the Social and Behavioral Sciences
+
+## PSY 511.002, Spring 2017
 
 ## Instructor
 
 Rick O. Gilmore, Ph.D.</br>
 Associate Professor of Psychology</br>
-rogilmore@psu.edu</br>
+114 Moore Building</br>
+
++1 (814) 865-3664</br>
+rogilmore AT psu DOT edu</br>
 [Schedule an appointment](http://doodle.com/rickgilmore)</br>
-[http://gilmore-lab.github.io](http://gilmore-lab.github.io)
+
+[http://www.personal.psu.edu/rog1](http://www.personal.psu.edu/rog1)</br>
+[http://gilmore-lab.github.io](http://gilmore-lab.github.io)</br>
+[http://databrary.org](http://databrary.org)
 
 ## Meeting Location and Time
 
 Mon 2:30-5:30 pm, 444 Moore</br>
+January 9 - April 24, 2017</br>
 course 037521
