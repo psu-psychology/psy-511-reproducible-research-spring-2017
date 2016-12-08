@@ -8,12 +8,22 @@ title: "Schedule"
 
 - Introduction to the course
 - Cases of scientific misconduct
-    + [Hauser](http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
-    + [Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
 - What should we aspire toward?
 - What is reproducibility? Are we in a crisis?
 
 ### Readings/webinars
+
+- Cases of scientific misconduct
+    + [Hauser](http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
+    + [Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
+- Scientific Utopia
+    + Nosek, B. A., & Bar-Anan, Y. (2012). Scientific Utopia: I. Opening Scientific Communication. Psychological Inquiry, 23(3), 217–243. https://doi.org/10.1080/1047840X.2012.692215
+    + Adolph, K. E., Gilmore, R. O., Freeman, C., Sanderson, P., & Millman, D. (2012). Toward Open Behavioral Science. Psychological Inquiry, 23(3), 244–247. https://doi.org/10.1080/1047840X.2012.705133
+    + Nosek, B. A., Spies, J. R., & Motyl, M. (2012). Scientific Utopia II. Restructuring Incentives and Practices to Promote Truth Over Publishability. Perspectives on Psychological Science, 7(6), 615–631. https://doi.org/10.1177/1745691612459058
+- Reproducibility
+    + Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716–aac4716. https://doi.org/10.1126/science.aac4716
+    + Gilbert, D. T., King, G., Pettigrew, S., & Wilson, T. D. (2016). Comment on “Estimating the reproducibility of psychological science.” Science, 351(6277), 1037–1037. https://doi.org/10.1126/science.aad7243
+    + Goodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341), 341ps12–341ps12. https://doi.org/10.1126/scitranslmed.aaf5027
 
 - Total R novice? [Free intro to R](https://www.datacamp.com/courses/free-introduction-to-r)
 - Skilled SAS, SPSS, or Stata user? [R for SAS SPSS and Stata users](https://www.datacamp.com/courses/r-for-sas-spss-and-stata-users-r-tutorial)
@@ -39,7 +49,9 @@ title: "Schedule"
 
 ## Readings/webinars
 
-- <http://grunwaldlab.github.io/Reproducible-science-in-R/index.html>
+- Reproducible workflows
+    - <http://datasci.kitzes.com/lessons/python/reproducible_workflow.html>
+    - <http://grunwaldlab.github.io/Reproducible-science-in-R/index.html>
 - tidy data
     + Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10). <http://dx.doi.org/10.18637/jss.v059.i10>.
 - File naming
@@ -70,6 +82,10 @@ title: "Schedule"
     + Python
 
 ### Readings/webinars
+
+- Computational thinking
+    + <https://www.cs.cmu.edu/~CompThink/papers.html>
+    + <http://algorithmstoliveby.com/>
 
 - [Authoring R Markdown Reports](https://www.datacamp.com/courses/reporting-with-r-markdown). 3 hrs.
 
@@ -111,6 +127,8 @@ title: "Schedule"
     + Talk slides
         + [ioslides](http://rmarkdown.rstudio.com/ioslides_presentation_format.html)
         + [Reveal.js](http://rmarkdown.rstudio.com/revealjs_presentation_format.html)
+    + Reproducible computation
+        + [packrat](http://rstudio.github.io/packrat/)
         
 ### Activities
 
@@ -165,7 +183,18 @@ title: "Schedule"
 
 ### Topics
 
+- Reproducible neuroscience
 - Reproducible practices in SPSS, Matlab, MS Office, etc.
+
+### Readings
+
+- Gilmore, Diaz, & Wyble.
+- Ascoli, G. A. (2006). The ups and downs of neuroscience shares. Neuroinformatics, 4(3), 213–215. https://doi.org/10.1385/NI:4:3:213
+- Szucs, D., & Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. https://doi.org/10.1101/071530
+
+### Activities
+
+- Meta-analysis on neurosynth
 
 ## Week 12: April 3
 
@@ -178,13 +207,18 @@ title: "Schedule"
     + [Inter-university Consortium for Political and Social Research (ICPSR)](https://www.icpsr.umich.edu/icpsrweb/)
     + [PSU's ScholarSphere](https://scholarsphere.psu.edu/)
     + [National Database for Autism Research (NDAR)](https://ndar.nih.gov/)
-- Publishing data, open access
+- Publishing data, open access journals
     + [Nature Scientific Data](http://www.nature.com/sdata/)
     + [APA's Archives of Scientific Psychology](http://www.apa.org/pubs/journals/arc/index.aspx)
 - Your open science portfolio
     + [ORCID](http://orcid.org/)
     + [ResearchGate](http://researchgate.net)
     + [Academia.edu](http://academia.edu)
+    + yourname.com
+- Funder policies
+    + NSF
+    + NIMH
+    + Foundations
 
 ### Readings
 
@@ -195,6 +229,14 @@ title: "Schedule"
 ### Topics
 
 - The future of open science
+    + Society for Improving Psychological Science
+    + Center for Reproducible Neuroscience
+- Writing manuscripts in R Markdown
+    + <https://github.com/crsh/papaja>
+    + <https://github.com/rstudio/rticles>
+### Readings
+
+- <http://www.nature.com/news/research-integrity-don-t-let-transparency-damage-science-1.19219>
 
 ## Week 14: April 17
 

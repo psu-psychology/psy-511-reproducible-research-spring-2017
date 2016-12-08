@@ -11,7 +11,7 @@
 
 
 
-<title></title>
+<title>Project Template</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -190,9 +190,6 @@ $(document).ready(function () {
   <a href="assignments.html">Assignments</a>
 </li>
 <li>
-  <a href="evaluation.html">Evaluation</a>
-</li>
-<li>
   <a href="site-info.html">Site info</a>
 </li>
       </ul>
@@ -207,31 +204,52 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Project Template</h1>
 
 </div>
 
 
-<div id="transparent-open-and-reproducible-research-practices-in-the-social-and-behavioral-sciences" class="section level1">
-<h1>Transparent, Open, and Reproducible Research Practices in the Social and Behavioral Sciences</h1>
-<div id="psy-511.002-spring-2017" class="section level2">
-<h2>PSY 511.002, Spring 2017</h2>
-</div>
-<div id="instructor" class="section level2">
-<h2>Instructor</h2>
-<p>Rick O. Gilmore, Ph.D.</br> Associate Professor of Psychology</br> 114 Moore Building</br></p>
-<p>+1 (814) 865-3664</br> rogilmore AT psu DOT edu</br> <a href="http://doodle.com/rickgilmore">Schedule an appointment</a></br></p>
-<p><a href="http://www.personal.psu.edu/rog1" class="uri">http://www.personal.psu.edu/rog1</a></br> <a href="http://gilmore-lab.github.io" class="uri">http://gilmore-lab.github.io</a></br> <a href="http://databrary.org" class="uri">http://databrary.org</a></p>
-</div>
-<div id="meeting-location-and-time" class="section level2">
-<h2>Meeting Location and Time</h2>
-<p>Mon 2:30-5:30 pm, 444 Moore</br> January 9 - April 24, 2017</br> course 037521</p>
-</div>
-<div id="resources" class="section level2">
-<h2>Resources</h2>
+<div id="basic-project-template-components" class="section level2">
+<h2>Basic project template components</h2>
 <ul>
-<li>Awesome, free-to-you, data science tutorials from <a href="https://www.datacamp.com/courses">DataCamp</a>!</li>
+<li>analysis/:
+<ul>
+<li>csv/: data files</li>
+</ul></li>
+<li>docs/: rendered HTML code</li>
+<li><p>img/: images</p></li>
+<li>bib/: bibtex reference files</li>
+<li><p>css/: css files</p></li>
 </ul>
+<pre class="r"><code>ifelse(!dir.exists(&quot;analysis/csv&quot;), dir.create(&quot;analysis/csv&quot;), FALSE)</code></pre>
+<pre><code>## Warning in dir.create(&quot;analysis/csv&quot;): cannot create dir &#39;analysis/csv&#39;,
+## reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code>ifelse(!dir.exists(&quot;css&quot;), dir.create(&quot;docs&quot;), FALSE)</code></pre>
+<pre><code>## Warning in dir.create(&quot;docs&quot;): &#39;docs&#39; already exists</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code>ifelse(!dir.exists(&quot;img&quot;), dir.create(&quot;css&quot;), FALSE)</code></pre>
+<pre><code>## [1] FALSE</code></pre>
 </div>
+<div id="generate-minimal-_site.yml-file" class="section level2">
+<h2>Generate minimal _site.yml file</h2>
+<pre class="r"><code>fileConn &lt;- file(&quot;_site.yml.template.txt&quot;)
+
+cat(readLines(con=fileConn),sep = &quot;\n&quot;)</code></pre>
+<pre><code>## name: &quot;My Site&quot;
+## navbar:
+##   title: &quot;My Site&quot;
+##   left:
+##     - text: &quot;Home&quot;
+##       href: index.html
+## output_dir: &quot;docs&quot;
+## output:
+##   html_document:
+##     theme: spacelab
+##     highlight: textmate</code></pre>
+<pre class="r"><code>close(fileConn)</code></pre>
+<iframe src="./_site.yml.template.txt">
+</iframe>
 </div>
 
 <p>Copyright &copy; Rick O. Gilmore. All rights reserved.</p>
