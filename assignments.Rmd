@@ -1,0 +1,19 @@
+---
+title: "Assignments"
+---
+
+This page describes details about the weekly (in-class + homework) assignments and the final project that are required in PSY 511.
+
+## Weekly assignments
+
+Additional details about each weekly assignment will be provided at a later date.
+
+## Final project
+
+Each student will produce a final project and demo or report upon it during one of the last two class periods in the semester. The specific project topic will be determined in consultation with the instructor. Here are some possible topics for students to consider:
+
+- Reuse/reanalysis of existing published dataset
+- Research project website and workflow
+- Draft of a data paper suitable for submission to a data journal
+- Tutorial on reproducible research practices
+- Develop mTurk/jsPsych/psiTurk study and analysis workflow

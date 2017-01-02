@@ -8,51 +8,49 @@ title: "Schedule"
 
 - Introduction to the course
 - Cases of scientific misconduct
-- What should we aspire toward?
 - What is reproducibility? Are we in a crisis?
+- Lecture notes. [HTML](lecture-notes/2017-01-09-course-intro.html). [Rmd](lecture-notes/2017-01-09-course-intro.Rmd). [PDF](lecture-notes/2017-01-09-course-intro.pdf).
 
 ### Readings/webinars
 
-- Cases of scientific misconduct
+- Cases of scientific misconduct (read 1 of 2)
     + [Hauser](http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
     + [Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
-- Scientific Utopia
+- Scientific Utopia (read 2 of 3)
     + Nosek, B. A., & Bar-Anan, Y. (2012). Scientific Utopia: I. Opening Scientific Communication. Psychological Inquiry, 23(3), 217–243. https://doi.org/10.1080/1047840X.2012.692215
     + Adolph, K. E., Gilmore, R. O., Freeman, C., Sanderson, P., & Millman, D. (2012). Toward Open Behavioral Science. Psychological Inquiry, 23(3), 244–247. https://doi.org/10.1080/1047840X.2012.705133
     + Nosek, B. A., Spies, J. R., & Motyl, M. (2012). Scientific Utopia II. Restructuring Incentives and Practices to Promote Truth Over Publishability. Perspectives on Psychological Science, 7(6), 615–631. https://doi.org/10.1177/1745691612459058
-- Reproducibility
+- Reproducibility (read 2 of 3)
     + Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716–aac4716. https://doi.org/10.1126/science.aac4716
     + Gilbert, D. T., King, G., Pettigrew, S., & Wilson, T. D. (2016). Comment on “Estimating the reproducibility of psychological science.” Science, 351(6277), 1037–1037. https://doi.org/10.1126/science.aad7243
     + Goodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341), 341ps12–341ps12. https://doi.org/10.1126/scitranslmed.aaf5027
 
-- Total R novice? [Free intro to R](https://www.datacamp.com/courses/free-introduction-to-r)
-- Skilled SAS, SPSS, or Stata user? [R for SAS SPSS and Stata users](https://www.datacamp.com/courses/r-for-sas-spss-and-stata-users-r-tutorial)
-- Intermediate R user?
-    + [Cleaning data in R](https://www.datacamp.com/courses/cleaning-data-in-r)
-    + [Data manipulation in R with dplyr](https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial)
-    + [Data visualization with ggplot2](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
-
 ### Activities
 
-- Self assessment of skills
-- Learning goals
+- Self-evaluation?
+    + How well do my research practices conform to the transparency and openness guidelines? Do I endorse them? Why or why not?
+- Getting up to speed with R
+    + Total R novice? [Free intro to R](https://www.datacamp.com/courses/free-introduction-to-r)
+    + Intermediate R user?
+        + [Cleaning data in R](https://www.datacamp.com/courses/cleaning-data-in-r)
+        + [Data manipulation in R with dplyr](https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial)
+        + [Data visualization with ggplot2](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
+    + Skilled SAS, SPSS, or Stata user? [R for SAS SPSS and Stata users](https://www.datacamp.com/courses/r-for-sas-spss-and-stata-users-r-tutorial)
 
 ## Week 2: January 16
 
 ### Topics
 
-- Workflows
 - Reproducible vs. non-reproducible workflows
 - Textual healing: naming conventions, tidy data, open formats
 - Spreadsheets are brilliant; spreadsheets are evil
-- Active protocols
 
-## Readings/webinars
+### Readings/webinars
 
 - Reproducible workflows
     - <http://datasci.kitzes.com/lessons/python/reproducible_workflow.html>
     - <http://grunwaldlab.github.io/Reproducible-science-in-R/index.html>
-- tidy data
+- Tidy data
     + Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10). <http://dx.doi.org/10.18637/jss.v059.i10>.
 - File naming
     + <http://guides.nyu.edu/data_management/file_org>
@@ -69,56 +67,35 @@ title: "Schedule"
     + Data cleaning
     + Data analysis
     + Reporting
+- Edit/create a text-based workflow for an active project you are working on.
+    + Annote the workflow to indicate where it could be made more reproducible, transparent.
+- Installing RStudio
 
 ## Week 3: January 23
 
 ### Topics
 
-- Computational thinking
-- Data, operations, algorithms, repetition, modularization
-- Languages for reproducible workflows in data science
-    + Markdown
-    + R
-    + Python
+- Introduction to RStudio and R Markdown
 
 ### Readings/webinars
 
-- Computational thinking
-    + <https://www.cs.cmu.edu/~CompThink/papers.html>
-    + <http://algorithmstoliveby.com/>
-
 - [Authoring R Markdown Reports](https://www.datacamp.com/courses/reporting-with-r-markdown). 3 hrs.
+- [Working with the RStudio IDE (Part 1)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1). 3 hrs.
 
 ### Activities
 
-- Programming exercises
-    + Intro to Markdown
-    + Intro to R
-    + Intro to Python
+- [R Markdown](http://rmarkdown.rstudio.com/) exercise
+- [Projects in RStudio](https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-change-part-1/)
 
 ## Week 4: January 30
 
 ### Topics
 
-- Introduction to RStudio
-
-### Readings/webinars
-
-- [Working with the RStudio IDE (Part 1)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1). 3 hrs.
-
-### Activities
-
-- RStudio exercise
-
-## Week 5: February 6
-
-### Topics
-
 - RStudio for research
     + Reproducible workflows
-    + Report formats
+    + [Report formats](http://rmarkdown.rstudio.com/articles_report_from_r_script.html)
         + HTML
-        + MSWord
+        + [MS Word](http://rmarkdown.rstudio.com/articles_docx.html)
         + PDF
     + Project websites
         + [R Markdown websites](http://rmarkdown.rstudio.com/rmarkdown_websites.html)
@@ -127,37 +104,100 @@ title: "Schedule"
     + Talk slides
         + [ioslides](http://rmarkdown.rstudio.com/ioslides_presentation_format.html)
         + [Reveal.js](http://rmarkdown.rstudio.com/revealjs_presentation_format.html)
-    + Reproducible computation
-        + [packrat](http://rstudio.github.io/packrat/)
-        
+        + [slidy](http://rmarkdown.rstudio.com/slidy_presentation_format.html)
+
+### Readings/webinars
+
+- [Working with the RStudio IDE (Part II)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2)
+- [One file, many reports](plot-multi.Rmd)
+
 ### Activities
 
-- Reproducible research report
+- Create a reproducible research report
+- Create a draft project website
+- Create talk slides
 
-## Week 6: February 13
+## Week 5: February 6
 
 ### Topics
 
 - Version control
 - git
 - GitHub
-
+    + GitHub pages
+- Reproducible computation
+    + [packrat](http://rstudio.github.io/packrat/)
+        
 ### Readings/webinars
 
+- [GitHub and RStudio](https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/)
 - <http://happygitwithr.com/>
 
 ### Activities
 
-- [Hello World](https://guides.github.com/activities/hello-world/)
+- Create a GitHub account.
+- [Hello World](https://guides.github.com/activities/hello-world/) exercise on GitHub
+- Add version control to an RStudio project
+- Add packrat to an RStudio project
+- Create a website using GitHub pages
+
+## Week 6: February 13
+
+### Topics
+
+- Simulation as a tool for reproducible and transparent science
+- Visualization tools in R
+
+### Readings/webinars
+
+- Required. [Data Visualization with ggplot2 (Part 1)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
+- Desirable. [Data Visualization with ggplot2 (Part 2)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-2)
+- Optional. [Data Visualization in R with ggvis](https://www.datacamp.com/courses/ggvis-data-visualization-r-tutorial)
+
+### Activities
+
+- Develop a simulated dataset for a study you have run, are running, or might want to run.
+- Develop code to visualize the data
 
 ## Week 7: February 20
 
 ### Topics
 
-- Reproducible data-gathering
-    + E-Prime, Matlab ([Psychophysics Toolbox](http://psychtoolbox.org/)), [PsychoPy](http://www.psychopy.org/).
+- Interactive visualizations using [Shiny apps](shiny.html)
+
+### Readings/webinars
+
+- [How to start with Shiny (Part 1)](https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-1/)
+- [How to start with Shiny (Part 2)](https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-2/)
+- [How to start with Shiny (Part 3)](https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-3/)
+
+### Activities
+
+- Build Shiny app to simulate and visualize a regression or ANOVA analysis based on the data you simulated last week.
+    + Suggestion: vary the error
+    + Suggestion: vary the number of participants
 
 ## Week 8: February 27
+
+### Topics
+- Tools for reproducible data-gathering
+    + E-Prime, Matlab ([Psychophysics Toolbox](http://psychtoolbox.org/)), [PsychoPy](http://www.psychopy.org/).
+    + [jsPsych](http://www.jspsych.org/)
+    + MTurk
+        - [psiTurk](https://psiturk.org/)
+
+### Readings/webinars
+
+- de Leeuw, J.R. (2015). jsPsych: A JavaScript library for creating behavioral experiments in a Web browser. Behavior Research Methods, 47(1), 1-12. doi:10.3758/s13428-014-0458-y
+- [Lecture notes](jpsych.html)
+
+### Activities
+
+- Download [jsPsych](https://github.com/jodeleeuw/jsPsych/releases)
+    + ["Hello, World" tutorial](http://docs.jspsych.org/tutorials/hello-world/)
+    + [Simple RT tutorial](http://docs.jspsych.org/tutorials/rts-task/) starting with the experiment [template](jpsych.template.html)
+- Install psiturk 
+    + Download and modify a study from the shared [experiment exchange](https://psiturk.org/ee/).
 
 ## Spring Break March 6 - 10
 
@@ -165,10 +205,10 @@ title: "Schedule"
 
 ### Topics
 
-- Python
+- Python, the other language of data science
 - Intro to [Jupyter](http://jupyter.org/)
 
-#### Readings/webinars
+### Readings/webinars
 
 - [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science). 4 hrs.
 - [Jupyter notebook tutorials](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook)
@@ -177,13 +217,29 @@ title: "Schedule"
 
 ### Topics
 
-- Jupyter for research, teaching, talks 
+- Jupyter for research, teaching, talks
+
+### Readings/webinars
+
+- [Importing data in Python (Part 1)](https://www.datacamp.com/courses/importing-data-in-python-part-1)
+- [Importing data in Python (Part 2)](https://www.datacamp.com/courses/importing-data-in-python-part-2)
+
+### Activities
+
+- Reproduce data analysis or visualization from Week 6 or 7.
 
 ## Week 11: March 27
 
 ### Topics
 
 - Reproducible neuroscience
+    + [Neurosynth.org](http://neurosynth.org)
+    + [Brain Imaging Data Structure (BIDS)](http://bids.neuroimaging.io/)
+    + [OpenfMRI](http://openfmri.org)
+    + [NeuroVault](http://neurovault.org/)
+    + [Center for Reproducible Neuroscience](http://reproducibility.stanford.edu/)
+    + [1000 Functional Connectomes Project](http://fcon_1000.projects.nitrc.org/)
+    + [Human Connectome Project](http://www.humanconnectomeproject.org/)
 - Reproducible practices in SPSS, Matlab, MS Office, etc.
 
 ### Readings
@@ -195,6 +251,7 @@ title: "Schedule"
 ### Activities
 
 - Meta-analysis on neurosynth
+- Create a jupyter notebook with your images and comments
 
 ## Week 12: April 3
 
@@ -210,6 +267,7 @@ title: "Schedule"
 - Publishing data, open access journals
     + [Nature Scientific Data](http://www.nature.com/sdata/)
     + [APA's Archives of Scientific Psychology](http://www.apa.org/pubs/journals/arc/index.aspx)
+    + [Transparency and Openness Promotion (TOP) guidelines](https://cos.io/top/)
 - Your open science portfolio
     + [ORCID](http://orcid.org/)
     + [ResearchGate](http://researchgate.net)
@@ -224,6 +282,10 @@ title: "Schedule"
 
 ### Activities
 
+- Create an ORCID profile
+- Create an account on OSF.
+- Buy your own domain.
+
 ## Week 13: April 10
 
 ### Topics
@@ -234,6 +296,7 @@ title: "Schedule"
 - Writing manuscripts in R Markdown
     + <https://github.com/crsh/papaja>
     + <https://github.com/rstudio/rticles>
+    
 ### Readings
 
 - <http://www.nature.com/news/research-integrity-don-t-let-transparency-damage-science-1.19219>
