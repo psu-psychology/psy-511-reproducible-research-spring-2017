@@ -1,0 +1,17 @@
+---
+title: "Students"
+---
+
+The following students are taking PSY 511.
+
+## Berenice Anaya
+
+## Yushuang Liu
+
+## Natalie Motta-Mena
+
+## Kingsley Schroeder
+
+## Alicia Vallorani
+
+## Sara Winter

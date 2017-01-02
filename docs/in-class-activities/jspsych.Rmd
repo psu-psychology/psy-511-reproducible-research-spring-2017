@@ -1,0 +1,189 @@
+---
+title: "jsPsych"
+---
+
+## Installation
+
+- Download jsPsych, a JavaScript library from the [GitHub Repo](https://github.com/jodeleeuw/jsPsych)
+
+```{r}
+require("curl")
+
+# Create tmp/ if needed for downloading
+tmp.dir <- "./tmp"
+ifelse(!dir.exists(tmp.dir), dir.create(tmp.dir), FALSE)
+
+tmp <- tempfile(pattern = "jspsych.", tmpdir = "./tmp", fileext = ".zip")
+curl_download("https://github.com/jodeleeuw/jsPsych/releases/download/v5.0.3/jspsych-5.0.3.zip", destfile = tmp)
+```
+
+----
+
+- Did it work?
+
+```{r}
+l <- list.files(pattern = "jspsych", path = download.dir, full.names = TRUE)
+l
+```
+
+- Then unzip into local (js/) directory and clean tmp files
+
+```{r}
+
+# Create js/ for JavaScript libraries if it doesn't already exist
+js.dir <- "./js"
+ifelse(!dir.exists(js.dir), dir.create(js.dir), FALSE)
+
+# Pick first one to unzip
+if (length(l) > 0){
+  unzip(l[1], exdir = js.dir) # Pick first one  
+}
+
+# Remove files in tmp/
+file.remove(list.files(tmp.dir, full.names = TRUE))
+```
+
+## Work through simple jsPsych "Hello, World" demo
+
+- [jsPsych documentation](http://docs.jspsych.org/)
+- ["Hello, World" demo](http://docs.jspsych.org/tutorials/hello-world/)
+
+## A basic web page
+
+~~~~
+<!doctype html>
+<html>
+    <head>
+        <title>My experiment</title>
+    </head>
+    <body>
+    </body>
+</html>
+~~~~
+
+- Nested tags: `<html></html>`, `<head></head>`, `<body></body>`
+- Resources: links (`<a></a>`), imgs (`<img></img>`), video (`<video></video`), etc.
+- Tag + src + parameter syntax: `<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" width = 200px></img>`
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" width = 200px></img>
+
+## More on web page anatomy and physiology
+
+- [HTML](http://www.w3schools.com/html/default.asp)
+    + Structure of web pages
+- [Cascading Style Sheets (CSS)](http://www.w3schools.com/css/default.asp)
+    + Style of web page elements
+- [JavaScript](http://www.w3schools.com/js/)
+    + Programming language for web pages
+    + Frameworks/libraries are collections of useful commands
+- [Web application framework](https://en.wikipedia.org/wiki/Web_framework)
+    + Integration with other resources and services (e.g., databases)
+
+## Hello, World!
+
+~~~~
+<!doctype html>
+<html>
+    <head>
+        <title>My experiment</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/jspsych-5.0.3/jspsych.js"></script>
+        <script src="js/jspsych-5.0.3/plugins/jspsych-text.js"></script>
+        <link href="js/jspsych-5.0.3/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+    </head>
+    
+    <body>
+    </body>
+    
+    <script>
+
+    var hello_trial = {
+        type: 'text',
+        text: 'Hello world!'
+    }
+
+    jsPsych.init({
+        timeline: [ hello_trial ]
+    })
+
+    </script>
+</html>
+~~~~
+
+## Loading JavaScript libraries
+
+~~~~
+<!--- From the web --->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--- From local directories --->
+<script src="js/jspsych-5.0.3/jspsych.js"></script>
+<script src="js/jspsych-5.0.3/plugins/jspsych-text.js"></script>
+~~~~
+
+- JQuery a widely used library to access/manipulate/style HTML tags with consistent syntax.
+
+## Loading jsPsych CSS
+
+~~~~
+<link href="js/jspsych-5.0.3/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+~~~~
+
+## jsPsych code to show message
+
+~~~~
+<script>
+  var hello_trial = {
+      type: 'text',
+      text: 'Hello world!'
+  }
+
+  jsPsych.init({
+      timeline: [ hello_trial ]
+  })
+</script>
+~~~~
+
+## Run finished "Hello World" example
+
+<hello.world.html>
+
+## Run finished RT demo example
+
+<jpsych-rt-demo.html>
+
+## Looking at the data
+
+Here's what the data look like in JavaScript Object Notation (JSON)
+
+~~~~
+ {
+  "rt": 1219,
+  "stimulus": "img/orange.png",
+  "key_press": 70,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 2,
+  "time_elapsed": 13924,
+  "internal_node_id": "0.0-2.0-0.0",
+  "correct": false
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/orange.png",
+  "key_press": -1,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 3,
+  "time_elapsed": 16305,
+  "internal_node_id": "0.0-2.0-1.0",
+  "correct": true
+ },
+~~~~
+
+To analyze the data in R, copy the data from the web browser into a local file -- [example](jpsych-rt-demo-data.json) -- and save it. Then open it using an R library that reads JSON files.
+
+```{r}
+library(jsonlite)
+rt.demo.data <- fromJSON("jspsych-rt-demo-data.json")
+```

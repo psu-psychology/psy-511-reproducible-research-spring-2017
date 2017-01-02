@@ -1,0 +1,170 @@
+---
+title: "2017-01-09-course-intro"
+author: "Rick O. Gilmore"
+date: "`r Sys.time()`"
+bibliography: ../bib/reproducibility.bib
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    widescreen: true
+    incremental: false
+    transition: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Today's Topics
+
+- Introduction to the course
+- Scientific misconduct
+- Is there a crisis of reproducibility?
+
+## Introduction to the course
+
+## Goals
+
+- What are transparent, open, and reproducible science practices?
+- Why are they important?
+- How can one implement them?
+
+## Topics
+
+- Tour of course website: <http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017/>
+
+## Course structure
+
+- 40 min lecture
+- 10 min break
+- ~ 2 hrs discussion/hands-on activities
+
+## [Evaluation](http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017/evaluation.html)
+
+| Component           | Points                      | % of Grade |
+|---------------------|-----------------------------|-------|
+| Class participation | 2 pts/class * 15 weeks = 30 | 25    |
+| Assignments         | 5 pts * 12 assignments = 60 | 50    |
+| Final projects      | 30                          | 25    |
+| **TOTAL**           | **150**                     | **100** |
+
+## Tools we'll use
+
+- R via RStudio
+- The web
+- git via GitHub
+- Jupyter
+- Slack, <http://psy511.slack.com> for communication, sharing, Q&A
+
+## Scientific misconduct
+
+- [Hauser](http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
+- [Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
+
+## Is there a crisis of reproducibility?
+
+>- Fraud != failures to replicate or reproduce
+>- Incentives/disincentives related to fraud?
+>- What is the relationship between fraud and reproducibility?
+
+## The Reproducibility Project
+
+- [Reproducibility Project: Psychology](https://osf.io/ezcuj/)
+- [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
+- [Center for Open Science (COS)](http://cos.io), produces [Open Science Framework (OSF)](http://osf.io)
+
+## [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
+
+- 39/98 (39.7%) replication attempts were successful
+- 97% of original studies reported statistically significant results vs. 36% of replications
+
+## So, did the studies replicate?
+
+- [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
+    + Sampling error differences predicts < 100% reproducibility
+    + Samples !=
+    + Only 69% of original PIs "endorsed" replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.
+    + CI of *expected* effect sizes given sample/methodological variability? [Many Labs project](https://osf.io/wx7ck/wiki/home/)
+- [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) *"...seriously underestimated reproducibility of psychological science."*
+    
+## Issues
+
+- Kudos to [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) and [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243) for addressing these issues openly
+    + [Data](https://osf.io/ezcuj/) from [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
+    + [Data](http://dx.doi.org/10.7910/DVN/5LKVH2) from [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
+
+## Issues
+
+- Reproducibility of "psychological science" vs. a specific finding
+- What is the *true* effect size of a particular manipulation?
+- Domain-specific differences in/challenges to reproducibility
+- Possible confusion about types of reproducibility
+
+## Examples of differences that affect the approach to reproducibility in distinct scientific domains [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+
+- Degree of determinism
+- Signal to measurement-error ratio
+- Complexity of designs and measurement tools
+- Closeness of fit between hypothesis and experimental design or data
+- Statistical or analytic methods to test hypotheses
+
+## Examples of differences that affect the approach to reproducibility in distinct scientific domains [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+
+- Typical heterogeneity of experimental results
+- Culture of replication, transparency, and cumulating knowledge
+- Statistical criteria for truth claims
+- Purposes to which findings will be put and consequences of false conclusions
+
+## What does research reproducibility mean?  [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+
+- Methods
+- Results
+- Inferential
+
+## What does research reproducibility mean?  [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+
+- Methods reproducibility
+    + *"...the ability to implement, as exactly as possible, the experimental and computational procedures, with the same data and tools, to obtain the same results."*
+
+## What does research reproducibility mean?  [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+
+- Results reproducibility
+    + *"(previously described as replicability) refers to obtaining the same results from the conduct of an independent study whose procedures are as closely matched to the original experiment as possible."*
+
+## What does research reproducibility mean?  [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+
+- Inferential reproducibility
+    + *"...refers to the drawing of qualitatively similar conclusions from either an independent replication of a study or a reanalysis of the original study"*
+
+## Steps toward improving transparency and openness
+
+- [Transparency and opennness promotion (TOP) guidelines](https://osf.io/9f6gx/) in publishing
+    + [[@nosek_promoting_2015]](http://doi.org/10.1126/science.aab2374)
+
+## [TOP guidelines](https://osf.io/ud578/)
+
+- Citation
+- Data transparency
+- Analytic methods (code) transparency
+- Design and analysis transparency
+- Preregistration of studies
+- Preregistration of analysis plans
+- Replication
+
+## Who's signed on and who hasn't?
+
+- [List of signatories](https://cos.io/top/#list)
+- Declines
+    + [[@lash2015declining]](http://journals.lww.com/epidem/Fulltext/2015/11000/Declining_the_Transparency_and_Openness_Promotion.1.aspx)
+    + Implementation would run counter to efforts to *"...maintain an editorial policy that encourages creativity and novelty, resists regimentation of research practices to the extent practicable, and invites challenges to current scientific habits and conventions through innovation in epidemiologic theory and practice."*
+
+## Barriers to greater openness and transparency
+
+- Technical
+- Cultural
+    + Old habits
+    + Fear of embarrassment, retaliation, effects on career
+- Economic
+    + Intellectual property
+    
+## References {.smaller}
