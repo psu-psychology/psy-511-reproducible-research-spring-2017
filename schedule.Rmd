@@ -27,9 +27,9 @@ title: "Schedule"
 
 ### Activities
 
-- Self-evaluation?
+- Self-evaluation (in-class)
     + How well do my research practices conform to the transparency and openness guidelines? Do I endorse them? Why or why not?
-- Getting up to speed with R
+- Getting up to speed with R (in-class and at home)
     + Total R novice? [Free intro to R](https://www.datacamp.com/courses/free-introduction-to-r)
     + Intermediate R user?
         + [Cleaning data in R](https://www.datacamp.com/courses/cleaning-data-in-r)

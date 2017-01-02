@@ -29,5 +29,5 @@ course 037521</br>
 ## Resources
 
 - Awesome, free-to-you, data science tutorials from [DataCamp](https://www.datacamp.com/courses)!
-- Slack communications channel: <http://psy511.slack.com>
-
+- Slack communications channel, <http://psy511.slack.com>
+- Additional readings/references about open science, <https://github.com/psu-psychology/transparency>. Not recently updated.

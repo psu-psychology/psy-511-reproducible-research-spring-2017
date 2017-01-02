@@ -167,4 +167,18 @@ knitr::opts_chunk$set(echo = FALSE)
 - Economic
     + Intellectual property
     
+## Other concerns to consider
+
+- File drawer effect
+- Pro-novelty/anti-replication bias in publication
+- Pro-effects bias in publication
+- Pro-counterintuitive effects bias in publication in high profile/impact journals
+
+## Other concerns to consider
+
+- Is psychological/neural science sufficiently powered?
+    + Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. PLOS Medicine, 2(8), e124. https://doi.org/10.1371/journal.pmed.0020124
+    + Szucs, D., & Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. https://doi.org/10.1101/071530
+    + Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., & Munafò, M. R. (2013). Power failure: why small sample size undermines the reliability of neuroscience. Nature Reviews Neuroscience, 14(5), 365–376. https://doi.org/10.1038/nrn3475
+    
 ## References {.smaller}
