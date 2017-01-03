@@ -1,15 +1,14 @@
+# This is a Shiny web application that shows how the correlation
+# between two variables x, y varies based on the sample size,
+# the slope of the linear relationship between the variables,
+# and the measurement error or noise.
 #
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+# To run, enter runApp('shiny/correlation-demo') from this project's root directory
+# or runApp() from this file's directory.
 
 library(shiny)
 
-# Define UI for application that draws a histogram
+# Define UI for application that draws a scatterplot of two variables x and y
 ui <- fluidPage(
    
    # Application title
@@ -30,7 +29,7 @@ ui <- fluidPage(
                      value = 1),
          sliderInput(inputId = "error",
                      label = "Error:",
-                     min = .0001,
+                     min = .001,
                      max = 5,
                      value = 0.5)
       ),
@@ -38,21 +37,22 @@ ui <- fluidPage(
       # Show a plot of the generated distribution
       mainPanel(
          plotOutput(outputId = "scatterPlot")
-      )
+         )
    )
 )
 
 # Define server logic
 server <- function(input, output) {
-   
-   output$scatterPlot <- renderPlot({
-     
+
+  output$scatterPlot <- renderPlot({
     # Calculate x, y, with slope and error
-     x = runif(input$points)
-     y = rep(input$slope, input$points) * as.vector(x) + rnorm(input$points, sd = input$error)
+    x = runif(input$points)
+    y = rep(input$slope, input$points) * as.vector(x) + rnorm(input$points, sd = input$error)
       
-    # draw the plot
-    scatter.smooth(x = x, y = y, xlab = "x", ylab = "y")
+    # draw the plot and write correlation value as x axis label (xlab)
+    scatter.smooth(x = x, y = y, 
+                   xlab = paste("Corr= ", as.character(cor(x,y)), sep=""), 
+                   ylab = "y")
    })
 }
 

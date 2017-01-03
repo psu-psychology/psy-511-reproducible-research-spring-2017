@@ -30,7 +30,7 @@ ui <- fluidPage(
                      value = 1),
          sliderInput(inputId = "error",
                      label = "Error:",
-                     min = .0001,
+                     min = .001,
                      max = 5,
                      value = 0.5)
       ),
@@ -38,21 +38,22 @@ ui <- fluidPage(
       # Show a plot of the generated distribution
       mainPanel(
          plotOutput(outputId = "scatterPlot")
-      )
+         )
    )
 )
 
 # Define server logic
 server <- function(input, output) {
-   
-   output$scatterPlot <- renderPlot({
-     
+
+  output$scatterPlot <- renderPlot({
     # Calculate x, y, with slope and error
-     x = runif(input$points)
-     y = rep(input$slope, input$points) * as.vector(x) + rnorm(input$points, sd = input$error)
+    x = runif(input$points)
+    y = rep(input$slope, input$points) * as.vector(x) + rnorm(input$points, sd = input$error)
       
-    # draw the plot
-    scatter.smooth(x = x, y = y, xlab = "x", ylab = "y")
+    # draw the plot and write correlation value as x axis label (xlab)
+    scatter.smooth(x = x, y = y, 
+                   xlab = paste("Corr= ", as.character(cor(x,y)), sep=""), 
+                   ylab = "y")
    })
 }
 

@@ -1,0 +1,55 @@
+---
+title: "2017-01-09-in-class"
+author: "Rick O. Gilmore"
+date: "`r Sys.time()`"
+bibliography: ../bib/reproducibility.bib
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    widescreen: true
+    incremental: false
+    transition: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Your turn
+
+- Discussion of Hauser, Stapel (~30 min)
+- Review of TOP guidelines (~15 min)
+- Getting started with R (~1 hr)
+
+## Discussing Hauser, Stapel
+
+- Is busy-ness or carelessness a valid excuse or explanation?
+- Is subsequent replication a valid excuse or explanation?
+- How could other resesearchers avoid similar problems?
+- Should every researcher collect video?
+
+## Verification bias examples from [Flawed science: The fraudulent research practices of social psychologist Diederik Stapel](http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf)
+
+## Review of [TOP guidelines](https://osf.io/9f6gx/)
+
+- Look for journals you have/want to publish in among [list of signatories](https://cos.io/top/#list)
+- For each guideline
+    + What level of adherence do you currently practice?
+    + What level do you aspire to practice?
+
+## Getting started with R
+
+- Total R novice? [Free intro to R](https://www.datacamp.com/courses/free-introduction-to-r)
+- Intermediate R user?
+    + [Cleaning data in R](https://www.datacamp.com/courses/cleaning-data-in-r)
+    + [Data manipulation in R with dplyr](https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial)
+    + [Data visualization with ggplot2](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
+- Skilled SAS, SPSS, or Stata user? [R for SAS SPSS and Stata users](https://www.datacamp.com/courses/r-for-sas-spss-and-stata-users-r-tutorial)
+
+## Write-up (due start of next class)
+
+1. Choose one of the verification bias examples from *Flawed Science*. In a paragraph or two, propose ways you might avoid this sort of bias in your own research.
+2. Choose one of the TOP guideline categories where either your own research practices have room to improve or you are doing rather well. In a paragraph or two, explain your reasoning.
+3. In a paragraph or two, describe your current knowlege of R and at least three learning goals you have for building upon it.
+
+- Use sensible file name: psy511-anaya-2016-01-09-write-up.pdf

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>2017-01-09-course-intro</title>
+  <title>2017-01-30-reproducible-workflows</title>
 
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -25,7 +25,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: '2017-01-09-course-intro',
+                title: '2017-01-30-reproducible-workflows',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -88,387 +88,272 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2017-01-03 14:52:15</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2017-01-03 14:52:26</p>
           </hgroup>
   </slide>
 
-<slide class=''><hgroup><h2>Today&#39;s Topics</h2></hgroup><article  id="todays-topics">
+<slide class=''><hgroup><h2>Objectives</h2></hgroup><article  id="objectives">
 
 <ul>
-<li>Introduction to the course</li>
-<li>Scientific misconduct</li>
-<li>Is there a crisis of reproducibility?</li>
+<li>Learn how to render multiple output formats from a single R Markdown file</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Introduction to the course</h2></hgroup><article  id="introduction-to-the-course">
-
-</article></slide><slide class=''><hgroup><h2>Goals</h2></hgroup><article  id="goals">
+</article></slide><slide class=''><hgroup><h2>Use cases</h2></hgroup><article  id="use-cases">
 
 <ul>
-<li>What are transparent, open, and reproducible science practices?</li>
-<li>Why are they important?</li>
-<li>How can one implement them?</li>
+<li>You want to give a talk based on your analysis</li>
+<li>You want to give a collaborator a report on your analysis in a format they prefer</li>
+<li>You don&#39;t want to duplicate effort</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Topics</h2></hgroup><article  id="topics">
+</article></slide><slide class=''><hgroup><h2>Output options</h2></hgroup><article  id="output-options">
 
 <ul>
-<li>Tour of course website: <a href='http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017/' title=''>http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017/</a></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Course structure</h2></hgroup><article  id="course-structure">
+<li>Document
 
 <ul>
-<li>40 min lecture</li>
-<li>10 min break</li>
-<li>~ 2 hrs discussion/hands-on activities</li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2><a href='http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017/evaluation.html' title=''>Evaluation</a></h2></hgroup><article  id="evaluation">
-
-<table class = 'rmdtable'>
-<tr class="header">
-<th align="left">Component</th>
-<th align="left">Points</th>
-<th align="left">% of Grade</th>
-</tr>
-<tr class="odd">
-<td align="left">Class participation</td>
-<td align="left">2 pts/class * 15 weeks = 30</td>
-<td align="left">25</td>
-</tr>
-<tr class="even">
-<td align="left">Assignments</td>
-<td align="left">5 pts * 12 assignments = 60</td>
-<td align="left">50</td>
-</tr>
-<tr class="odd">
-<td align="left">Final projects</td>
-<td align="left">30</td>
-<td align="left">25</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>TOTAL</strong></td>
-<td align="left"><strong>150</strong></td>
-<td align="left"><strong>100</strong></td>
-</tr>
-</table>
-
-</article></slide><slide class=''><hgroup><h2>Tools we&#39;ll use</h2></hgroup><article  id="tools-well-use">
+<li>HTML
 
 <ul>
-<li>R via RStudio</li>
-<li>The web</li>
-<li>git via GitHub</li>
-<li>Jupyter</li>
-<li>Slack, <a href='http://psy511.slack.com' title=''>http://psy511.slack.com</a> for communication, sharing, Q&amp;A</li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Scientific misconduct</h2></hgroup><article  id="scientific-misconduct">
-
-<ul>
-<li><a href='http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes' title=''>Marc Hauser</a>
-
-<ul>
-<li><a href='http://www.sciencemag.org/news/2014/05/harvard-misconduct-investigation-psychologist-released' title=''>http://www.sciencemag.org/news/2014/05/harvard-misconduct-investigation-psychologist-released</a></li>
+<li>Embedded or non-embedded figures</li>
 </ul></li>
-<li></article></slide><slide class=''><hgroup><h2><a href='http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&amp;_r=0' title=''>Diederik Stapel</a></h2></hgroup><article  id="diederik-stapel">
-
-<ul>
-<li><a href='http://root.bryancavemedia.com/marketing/downloads/schooled_in_fraud_compliance_lessons_from_lying_dutchman_killingsworth.pdf' title=''>Commentary</a></li>
+<li>MS Word</li>
+<li>PDF</li>
 </ul></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Marc Hauser</h2></hgroup><article  id="marc-hauser">
+</article></slide><slide class=''><hgroup><h2>Output options</h2></hgroup><article  id="output-options-1">
 
 <ul>
-<li>Evolutionary/Comparative Psychologist, Professor at Harvard</li>
-<li>Resigned 2011 after internal investigation found him responsible for research misconduct</li>
+<li>Presentation
+
+<ul>
+<li>HTML (ioslides)</li>
+<li>HTML (Slidy)</li>
+<li>PDF (Beamer)</li>
+</ul></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2><a href='https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html' title=''>2012 report by NIH Office of Research Integrity (ORI)</a></h2></hgroup><article  id="report-by-nih-office-of-research-integrity-ori">
+</article></slide><slide class=''><hgroup><h2>Output options</h2></hgroup><article  id="output-options-2">
 
 <ul>
-<li>Fabricated data in Figure 2 of <a href='http://doi.org/10.1016/S0010-0277(02)00139-7' title=''><span class="cite">(M. D. Hauser, Weiss, and Marcus 2002)</span></a>; paper retracted.</li>
-<li>Falsified coding in unpublished data.</li>
-<li>Falsely described methodology in manuscript submitted to Cognition, Science, and Nature. Corrected manuscript prior to publication as <a href='http://doi.org/10.1016/j.cognition.2007.10.010' title=''><span class="cite">(Saffran et al. 2008)</span></a></li>
-<li>Falsely reported results and methodology for one study in <a href='http://doi.org/10.1098/rspb.2007.0586' title=''><span class="cite">(M. D. Hauser, Glynn, and Wood 2007)</span></a></li>
+<li>Shiny (interactive document)
+
+<ul>
+<li>Document</li>
+<li>Presentation (ioslides)</li>
+</ul></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2><a href='https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html' title=''>2012 report by NIH Office of Research Integrity (ORI)</a></h2></hgroup><article  id="report-by-nih-office-of-research-integrity-ori-1">
+</article></slide><slide class=''><hgroup><h2>All in your head(er)</h2></hgroup><article  id="all-in-your-header">
 
 <ul>
-<li>Made false statement in Methdology section of <a href='http://doi.org/10.1126/science.1144663' title=''><span class="cite">(J. N. Wood et al. 2007)</span></a></li>
-<li>Engaged in research misconduct by providing inconsistent coding of unpublished data</li>
+<li>RMarkdown documents have header text written in YAML</li>
+<li>YAML = YAML Ain&#39;t Markup Language</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2></h2></hgroup><article >
 
-<p><em>&quot;Respondent neither admits nor denies committing research misconduct but accepts ORI has found evidence of research misconduct as set forth above and has entered into a Voluntary Settlement Agreement to resolve this matter. The settlement is not an admission of liability on the part of the Respondent.&quot;</em> <a href='https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html' title=''>https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html</a></p>
+<p><code>---</code></br> <code>title: &quot;One Code to Rule Them All&quot;</code></br> <code>author: &quot;Rick O. Gilmore&quot;</code></br> <code>date: &quot;July 4, 1776&quot;</code></br> <code>output: html_document</code></br> <code>---</code></br></br></p>
 
-</article></slide><slide class=''><hgroup><h2><a href='http://archive.boston.com/whitecoatnotes/2012/09/05/marc-hauser-responds-federal-finding-scientific-misconduct/spzRWEVIPKA4BUu8wi8t8J/story.html' title=''>Hauser&#39;s response</a></h2></hgroup><article  id="hausers-response">
+</article></slide><slide class=''><hgroup><h2>Default output is <code>html_document</code></h2></hgroup><article  id="default-output-is-html_document">
 
-<p><em>&quot;&#8230;Although I have fundamental differences with some of the findings in the ORI report, I acknowledge that I made mistakes. I tried to do too much, teaching courses, running a large lab of students, sitting on several editorial boards, directing the Mind, Brain &amp; Behavior Program at Harvard, conducting multiple research collaborations, and writing for the general public. I let important details get away from my control, and as head of the lab, I take responsibility for all errors made within the lab, whether or not I was directly involved&#8230;&quot;</em></p>
+<ul>
+<li><code>rmarkdown::render(input = &quot;my-report.Rmd&quot;)</code> creates a single HTML file</li>
+<li>The <code>output: html_document</code> line specifies the default format for the file</li>
+<li>Omitting the <code>output:</code> or <code>author:</code> or <code>date:</code> commands still yields an HTML file</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Getting fancier</h2></hgroup><article  id="getting-fancier">
+
+<ul>
+<li><code>rmarkdown::render()</code> can take an <code>output_format</code> parameter</li>
+<li><code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = &quot;html_document&quot;)</code> renders an HTML file as before</li>
+<li><code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = &quot;word_document&quot;)</code> renders an MS Word document</li>
+<li><code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = &quot;pdf_document&quot;)</code> renders a PDF document</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2></h2></hgroup><article >
 
-<p><em>&quot;I am saddened that this investigation has caused some to question all of my work, rather than the few papers and unpublished studies in question. Before, during and after the investigation, many of my lab’s research findings were replicated by independent researchers&#8230;&quot;</em></p>
+<p><code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = &quot;html_document&quot;)</code></br> <code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = &quot;word_document&quot;)</code></br> <code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = &quot;pdf_document&quot;)</code></p>
 
-</article></slide><slide class=''><hgroup><h2>Diederik Stapel</h2></hgroup><article  id="diederik-stapel-1">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article >
 
-<ul>
-<li>Dean of the School of Social and Behavioral Sciences at Tilburg University</li>
-<li>teacher of Scientific Ethics course</li>
-<li>Fraud investigation launched when 3 grad students noticed anomalies &#8211; duplicate entries in data tables</li>
-<li>Stapel confessed, lost position, gave up Ph.D., wrote a book</li>
-</ul>
+<p>Or, just</p>
 
-</article></slide><slide class=''><hgroup><h2><a href='http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf' title=''>Flawed science: The fraudulent research practices of social psychologist Diederik Stapel</a></h2></hgroup><article  id="flawed-science-the-fraudulent-research-practices-of-social-psychologist-diederik-stapel">
+<p><code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = c(&quot;html_document&quot;, &quot;word_document&quot;, &quot;pdf_document&quot;)</code></p>
 
-<ul>
-<li><em>&quot;&#8230;found to have committed a serious infringement of scientific integrity by using fictitious data in his publications, while presenting the data as the output of empirical research.&quot;</em></li>
-<li>Previous suspicions/concerns about data &quot;too good to be true&quot; were ignored.</li>
-<li>Fraud established in 55 publications.</li>
-<li><em>&quot;admitted to having committed fraud in much of his research. He has also conceded that he has been sloppy, kept inadequate records and presented data in the best light possible&quot;</em></li>
-</ul>
+<p>makes all three with <strong>one</strong> command.</p>
 
-</article></slide><slide class=''><hgroup><h2>How did it happen?</h2></hgroup><article  id="how-did-it-happen">
+</article></slide><slide class=''><hgroup><h2>Y&#39;all can customize your YAML</h2></hgroup><article  id="yall-can-customize-your-yaml">
 
 <ul>
-<li><em>&quot;&#8230;No explicit attention was paid to the combating or prevention of scientific misconduct within the scientific research environment in the Netherlands, and there was certainly no formal Code for research integrity&#8230;&quot;</em></li>
-<li><em>&quot;&#8230;Whatever measures existed were more implicit, and any action was at the discretion of individual researchers&#8230;.&quot;</em></li>
-<li><em>&quot;&#8230;no culture of transparency, information sharing, peer review and joint responsibility in this Faculty. It was easy for researchers to go their own way&#8230;&quot;</em></li>
-</ul>
-
-<p><a href='http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf' title=''>Flawed science: The fraudulent research practices of social psychologist Diederik Stapel</a></p>
-
-</article></slide><slide class=''><hgroup><h2>How did it happen?</h2></hgroup><article  id="how-did-it-happen-1">
+<li>Default <code>html_document</code> output creates a single HTML file with all figures embedded via
 
 <ul>
-<li><em>&quot;&#8230;[researchers] did not share their data with other members of the various research groups, and there was no peer review&#8230;&quot;</em></li>
-<li><em>&quot;People trusted each other’s scientific integrity: no feedback, no warnings, no correction.&quot;</em></li>
-</ul>
-
-<p><a href='http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf' title=''>Flawed science: The fraudulent research practices of social psychologist Diederik Stapel</a></p>
-
-</article></slide><slide class=''><hgroup><h2>Recommendations</h2></hgroup><article  id="recommendations">
-
-<ul>
-<li>Avoid verification biases (pp. 48-50)</li>
-<li>Provide complete information about methodology, sufficient to permit replication</li>
-<li>Avoid statistical errors</li>
-<li>If it&#39;s &quot;too good to be true&quot;, it probably isn&#39;t.</li>
-<li>Journals should avoid bias toward <em>&quot;elegant, concise, attractive findings&quot;</em></li>
-<li><em>&quot;The data on which an experimental psychology doctoral dissertation is based must as a rule be collected and analysed by the PhD students themselves.&quot;</em></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>The Reproducibility Project</h2></hgroup><article  id="the-reproducibility-project">
-
-<ul>
-<li><a href='https://osf.io/ezcuj/' title=''>Reproducibility Project: Psychology</a></li>
-<li><a href='http://doi.org/10.1126/science.aac4716' title=''><span class="cite">(Collaboration 2015)</span></a></li>
-<li><a href='http://cos.io' title=''>Center for Open Science (COS)</a>, produces <a href='http://osf.io' title=''>Open Science Framework (OSF)</a></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2><a href='http://doi.org/10.1126/science.aac4716' title=''><span class="cite">(Collaboration 2015)</span></a></h2></hgroup><article  id="collaboration_estimating_2015">
-
-<ul>
-<li>39/98 (39.7%) replication attempts were successful</li>
-<li>97% of original studies reported statistically significant results vs. 36% of replications</li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>So, did the studies replicate?</h2></hgroup><article  id="so-did-the-studies-replicate">
-
-<ul>
-<li><a href='http://doi.org/10.1126/science.aad7243' title=''><span class="cite">(Gilbert et al. 2016)</span></a>
-
-<ul>
-<li>Sampling error differences predicts &lt; 100% reproducibility</li>
-<li>Samples !=</li>
-<li>Only 69% of original PIs &quot;endorsed&quot; replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.</li>
-<li>CI of <em>expected</em> effect sizes given sample/methodological variability? <a href='https://osf.io/wx7ck/wiki/home/' title=''>Many Labs project</a></li>
+<li><code>self_contained: true</code></li>
 </ul></li>
-<li><a href='http://doi.org/10.1126/science.aac4716' title=''><span class="cite">(Collaboration 2015)</span></a> <em>&quot;&#8230;seriously underestimated reproducibility of psychological science.&quot;</em></li>
+<li>Nice for sharing a single file with collaborators</li>
+<li>Not so if you want to save the figures for other uses</li>
+<li>If <code>self_contained: false</code>, then figures are written to separate directory</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Issues</h2></hgroup><article  id="issues">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article >
+
+<p><code>---</code></br> <code>title: &quot;One Code to Rule Them All&quot;</code></br> <code>author: &quot;Rick O. Gilmore&quot;</code></br> <code>date: &quot;July 4, 1776&quot;</code></br> <code>output:</code></br> <code>html_document:</code></br> <code>self_contained: false</code></br> <code>---</code></br></br></p>
+
+</article></slide><slide class=''><hgroup><h2>Exploring report parameters</h2></hgroup><article  id="exploring-report-parameters">
+
+</article></slide><slide class=''><hgroup><h2>Presentations</h2></hgroup><article  id="presentations">
 
 <ul>
-<li>Kudos to <a href='http://doi.org/10.1126/science.aac4716' title=''><span class="cite">(Collaboration 2015)</span></a> and <a href='http://doi.org/10.1126/science.aad7243' title=''><span class="cite">(Gilbert et al. 2016)</span></a> for addressing these issues openly
+<li><strong>HTML (ioslides)</strong></li>
+<li>HTML (Slidy)</li>
+<li>PDF (Beamer)</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>ioslides basics</h2></hgroup><article  id="ioslides-basics">
 
 <ul>
-<li><a href='https://osf.io/ezcuj/' title=''>Data</a> from <a href='http://doi.org/10.1126/science.aac4716' title=''><span class="cite">(Collaboration 2015)</span></a></li>
-<li><a href='http://dx.doi.org/10.7910/DVN/5LKVH2' title=''>Data</a> from <a href='http://doi.org/10.1126/science.aad7243' title=''><span class="cite">(Gilbert et al. 2016)</span></a></li>
+<li>New slides with titles start with double-hashes</li>
+</ul>
+
+<p><code>## New Slide Title</code></p>
+
+<ul>
+<li>New slides without titles start with four dashes</li>
+</ul>
+
+<p><code>----</code></p>
+
+</article></slide><slide class=''><hgroup><h2>ioslides basics</h2></hgroup><article  id="ioslides-basics-1">
+
+<ul>
+<li>Bullet points start with single dashes</li>
+</ul>
+
+<p><code>- Bulleted item 1</code></br> <code>- Bulleted item 2</code></p>
+
+<ul>
+<li>if <code>incremental: FALSE</code> in YAML header (the default), then</li>
+</ul>
+
+<p><code>&gt;- Incremental bullet</code></p>
+
+<p>allows you to show one bullet at a time for that slide</p>
+
+</article></slide><slide class=''><hgroup><h2>ioslides basics</h2></hgroup><article  id="ioslides-basics-2">
+
+<ul>
+<li>Embedding figures requires some HTML</li>
+</ul>
+
+<p><code>&lt;img src=&quot;fig.jpg&quot;&gt;</code> embeds</p>
+
+<ul>
+<li>Embedding videos depends on source
+
+<ul>
+<li>YouTube provides code</li>
+<li>Embedding other (even local) videos requires HTML</li>
 </ul></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Issues</h2></hgroup><article  id="issues-1">
+</article></slide><slide class=''><hgroup><h2>ioslides formatting</h2></hgroup><article  id="ioslides-formatting">
+
+<pre >&lt;div class=&quot;centered&quot;&gt;
+...
+&lt;/div&gt;</pre>
+
+<p>Centers items between the <code>&lt;div&gt;</code> and <code>&lt;\div&gt;</code> tags vertically.</p>
+
+</article></slide><slide class=''><hgroup><h2>Rendering ioslides</h2></hgroup><article  id="rendering-ioslides">
+
+<p><code>---</code></br> <code>title: &quot;One Code to Rule Them All&quot;</code></br> <code>author: &quot;Rick O. Gilmore&quot;</code></br> <code>date: &quot;July 4, 1776&quot;</code></br> <strong><code>output: ioslides_presentation</code></strong></br> <code>---</code></br></p>
+
+<p>in your file header, or</p>
+
+<p><code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = &quot;ioslides_presentation&quot;)</code></p>
+
+<p>on the fly.</p>
+
+</article></slide><slide class=''><hgroup><h2>Parameters for ioslides</h2></hgroup><article  id="parameters-for-ioslides">
+
+<p><code>incremental: false</code></br></p>
+
+<p>Turns off incremental reveal of bullets.</p>
+
+<p><code>widescreen: true</code></br></p>
+
+<p>Makes slides work well with 16:9 aspect ratio screens.</p>
+
+</article></slide><slide class=''><hgroup><h2>Documents</h2></hgroup><article  id="documents">
 
 <ul>
-<li>Reproducibility of &quot;psychological science&quot; vs. a specific finding</li>
-<li>What is the <em>true</em> effect size of a particular manipulation?</li>
-<li>Domain-specific differences in/challenges to reproducibility</li>
-<li>Possible confusion about types of reproducibility</li>
+<li>HTML documents, <code>output_format=&quot;html_document&quot;</code></li>
+<li><strong>MS Word documents,<code>output_format=&quot;word_document&quot;</code></strong></li>
+<li>PDF documents, <code>output_format=&quot;pdf_document&quot;</code></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Examples of differences that affect the approach to reproducibility in distinct scientific domains <a href='http://doi.org/10.1126/scitranslmed.aaf5027' title=''><span class="cite">(Goodman, Fanelli, and Ioannidis 2016)</span></a></h2></hgroup><article  id="examples-of-differences-that-affect-the-approach-to-reproducibility-in-distinct-scientific-domains-goodman_what_2016">
+</article></slide><slide class=''><hgroup><h2>MS Word document basics</h2></hgroup><article  id="ms-word-document-basics">
+
+<p>See <a href='http://rmarkdown.rstudio.com/word_document_format.html' title=''>http://rmarkdown.rstudio.com/word_document_format.html</a></p>
+
+<pre >---
+...
+output:
+  word_document:
+    fig_width: 5
+    fig_height: 5
+    fig_caption: false
+    df_print: kable
+    reference_docx: mystyles.docx
+...
+---</pre>
+
+</article></slide><slide class=''><hgroup><h2>Rendering MS Word documents</h2></hgroup><article  id="rendering-ms-word-documents">
+
+<p><code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = &quot;word_document&quot;)</code></p>
+
+<p>if your document header <em>does not</em> have parameters for word_document, or</p>
+
+<p><code>rmarkdown::render(input = &quot;my-report.Rmd&quot;)</code></p>
+
+<p>if your document header has the parameters and <code>word_document</code> is first in the list.</p>
+
+</article></slide><slide class=''><hgroup><h2>PDF documents</h2></hgroup><article  id="pdf-documents">
+
+<p>See <a href='http://rmarkdown.rstudio.com/pdf_document_format.html' title=''>http://rmarkdown.rstudio.com/pdf_document_format.html</a></p>
 
 <ul>
-<li>Degree of determinism</li>
-<li>Signal to measurement-error ratio</li>
-<li>Complexity of designs and measurement tools</li>
-<li>Closeness of fit between hypothesis and experimental design or data</li>
-<li>Statistical or analytic methods to test hypotheses</li>
+<li>Put in 1st position in header, then <code>rmarkdown::render(input = &quot;my-report.Rmd&quot;)</code></li>
+<li>Or, <code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = &quot;pdf_document&quot;)</code></li>
+<li>Must install LaTeX for this to work</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Examples of differences that affect the approach to reproducibility in distinct scientific domains <a href='http://doi.org/10.1126/scitranslmed.aaf5027' title=''><span class="cite">(Goodman, Fanelli, and Ioannidis 2016)</span></a></h2></hgroup><article  id="examples-of-differences-that-affect-the-approach-to-reproducibility-in-distinct-scientific-domains-goodman_what_2016-1">
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article >
+
+<pre >---
+...
+  pdf_document:
+    toc: true
+    toc_depth: 2
+...
+---</pre>
+
+</article></slide><slide class=''><hgroup><h2>Some useful parameters for the <code>rmarkdown::render()</code> command</h2></hgroup><article  id="some-useful-parameters-for-the-rmarkdownrender-command">
 
 <ul>
-<li>Typical heterogeneity of experimental results</li>
-<li>Culture of replication, transparency, and cumulating knowledge</li>
-<li>Statistical criteria for truth claims</li>
-<li>Purposes to which findings will be put and consequences of false conclusions</li>
+<li><code>output_file = myslides.ioslides.html</code> or <code>output_file = myslides.slidy.html</code> to specify different output file targets.</li>
+<li><code>output_dir = reports</code> or <code>output_dir = docx</code> to direct output to a specific directory.</li>
+<li><code>params = list(name = &quot;Joe&quot;, quest = &quot;Find the grail&quot;, favorite.color = &quot;blue&quot;)</code> to pass parameters that R can use via <code>params$name</code></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>What does research reproducibility mean? <a href='http://doi.org/10.1126/scitranslmed.aaf5027' title=''><span class="cite">(Goodman, Fanelli, and Ioannidis 2016)</span></a></h2></hgroup><article  id="what-does-research-reproducibility-mean-goodman_what_2016">
+</article></slide><slide class=''><hgroup><h2>How I used this</h2></hgroup><article  id="how-i-used-this">
 
-<ul>
-<li>Methods</li>
-<li>Results</li>
-<li>Inferential</li>
-</ul>
+<p><a href='https://github.com/gilmore-lab/gilmore-thomas-fesi-2015/blob/master/render_all.R' title=''>https://github.com/gilmore-lab/gilmore-thomas-fesi-2015/blob/master/render_all.R</a></p>
 
-</article></slide><slide class=''><hgroup><h2>What does research reproducibility mean? <a href='http://doi.org/10.1126/scitranslmed.aaf5027' title=''><span class="cite">(Goodman, Fanelli, and Ioannidis 2016)</span></a></h2></hgroup><article  id="what-does-research-reproducibility-mean-goodman_what_2016-1">
-
-<ul>
-<li>Methods reproducibility
-
-<ul>
-<li><em>&quot;&#8230;the ability to implement, as exactly as possible, the experimental and computational procedures, with the same data and tools, to obtain the same results.&quot;</em></li>
-</ul></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>What does research reproducibility mean? <a href='http://doi.org/10.1126/scitranslmed.aaf5027' title=''><span class="cite">(Goodman, Fanelli, and Ioannidis 2016)</span></a></h2></hgroup><article  id="what-does-research-reproducibility-mean-goodman_what_2016-2">
-
-<ul>
-<li>Results reproducibility
-
-<ul>
-<li><em>&quot;(previously described as replicability) refers to obtaining the same results from the conduct of an independent study whose procedures are as closely matched to the original experiment as possible.&quot;</em></li>
-</ul></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>What does research reproducibility mean? <a href='http://doi.org/10.1126/scitranslmed.aaf5027' title=''><span class="cite">(Goodman, Fanelli, and Ioannidis 2016)</span></a></h2></hgroup><article  id="what-does-research-reproducibility-mean-goodman_what_2016-3">
-
-<ul>
-<li>Inferential reproducibility
-
-<ul>
-<li><em>&quot;&#8230;refers to the drawing of qualitatively similar conclusions from either an independent replication of a study or a reanalysis of the original study&quot;</em></li>
-</ul></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Steps toward improving transparency and openness</h2></hgroup><article  id="steps-toward-improving-transparency-and-openness">
-
-<ul>
-<li><a href='https://osf.io/9f6gx/' title=''>Transparency and opennness promotion (TOP) guidelines</a> in publishing
-
-<ul>
-<li><a href='http://doi.org/10.1126/science.aab2374' title=''><span class="cite">(Nosek et al. 2015)</span></a></li>
-</ul></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2><a href='https://osf.io/ud578/' title=''>TOP guidelines</a></h2></hgroup><article  id="top-guidelines">
-
-<ul>
-<li>Citation</li>
-<li>Data transparency</li>
-<li>Analytic methods (code) transparency</li>
-<li>Design and analysis transparency</li>
-<li>Preregistration of studies</li>
-<li>Preregistration of analysis plans</li>
-<li>Replication</li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Who&#39;s signed on and who hasn&#39;t?</h2></hgroup><article  id="whos-signed-on-and-who-hasnt">
-
-<ul>
-<li><a href='https://cos.io/top/#list' title=''>List of signatories</a></li>
-<li>Declines
-
-<ul>
-<li><a href='http://journals.lww.com/epidem/Fulltext/2015/11000/Declining_the_Transparency_and_Openness_Promotion.1.aspx' title=''><span class="cite">(Lash 2015)</span></a></li>
-<li>Implementation would run counter to efforts to <em>&quot;&#8230;maintain an editorial policy that encourages creativity and novelty, resists regimentation of research practices to the extent practicable, and invites challenges to current scientific habits and conventions through innovation in epidemiologic theory and practice.&quot;</em></li>
-</ul></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Barriers to greater openness and transparency</h2></hgroup><article  id="barriers-to-greater-openness-and-transparency">
-
-<ul>
-<li>Technical</li>
-<li>Cultural
-
-<ul>
-<li>Old habits</li>
-<li>Fear of embarrassment, retaliation, effects on career</li>
-</ul></li>
-<li>Economic
-
-<ul>
-<li>Intellectual property</li>
-</ul></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Other concerns to consider</h2></hgroup><article  id="other-concerns-to-consider">
-
-<ul>
-<li>File drawer effect</li>
-<li>Pro-novelty/anti-replication bias in publication</li>
-<li>Pro-effects bias in publication</li>
-<li>Pro-counterintuitive effects bias in publication in high profile/impact journals</li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Other concerns to consider</h2></hgroup><article  id="other-concerns-to-consider-1">
-
-<ul>
-<li>Is psychological/neural science sufficiently powered?
-
-<ul>
-<li>Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. PLOS Medicine, 2(8), e124. <a href='https://doi.org/10.1371/journal.pmed.0020124' title=''>https://doi.org/10.1371/journal.pmed.0020124</a></li>
-<li>Szucs, D., &amp; Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. <a href='https://doi.org/10.1101/071530' title=''>https://doi.org/10.1101/071530</a></li>
-<li>Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., &amp; Munafò, M. R. (2013). Power failure: why small sample size undermines the reliability of neuroscience. Nature Reviews Neuroscience, 14(5), 365–376. <a href='https://doi.org/10.1038/nrn3475' title=''>https://doi.org/10.1038/nrn3475</a></li>
-</ul></li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>References</h2></hgroup><article  id="references" class="unnumbered smaller">
-
-<div id="refs" class="references">
-<div id="ref-collaboration_estimating_2015">
-<p>Collaboration, Open Science. 2015. “Estimating the Reproducibility of Psychological.” <em>Science</em> 349 (6251): aac4716. doi:<a href='https://doi.org/10.1126/science.aac4716' title=''>10.1126/science.aac4716</a>.</p></div>
-
-<div id="ref-gilbert_comment_2016">
-<p>Gilbert, Daniel T., Gary King, Stephen Pettigrew, and Timothy D. Wilson. 2016. “Comment on ‘Estimating the Reproducibility of Psychological Science’.” <em>Science</em> 351 (6277): 1037–7. doi:<a href='https://doi.org/10.1126/science.aad7243' title=''>10.1126/science.aad7243</a>.</p></div>
-
-<div id="ref-goodman_what_2016">
-<p>Goodman, Steven N., Daniele Fanelli, and John P. A. Ioannidis. 2016. “What Does Research Reproducibility Mean?” <em>Science Translational Medicine</em> 8 (341): 341ps12–341ps12. doi:<a href='https://doi.org/10.1126/scitranslmed.aaf5027' title=''>10.1126/scitranslmed.aaf5027</a>.</p></div>
-
-<div id="ref-hauser_rhesus_2007">
-<p>Hauser, Marc D., David Glynn, and Justin Wood. 2007. “Rhesus Monkeys Correctly Read the Goal-Relevant Gestures of a Human Agent.” <em>Proceedings of the Royal Society of London B: Biological Sciences</em> 274 (1620): 1913–8. doi:<a href='https://doi.org/10.1098/rspb.2007.0586' title=''>10.1098/rspb.2007.0586</a>.</p></div>
-
-<div id="ref-hauser_retracted:_2002">
-<p>Hauser, Marc D., Daniel Weiss, and Gary Marcus. 2002. “RETRACTED: Rule Learning by Cotton-Top Tamarins.” <em>Cognition</em> 86 (1): B15–B22. doi:<a href='https://doi.org/10.1016/S0010-0277(02)00139-7' title=''>10.1016/S0010-0277(02)00139-7</a>.</p></div>
-
-<div id="ref-lash2015declining">
-<p>Lash, Timothy L. 2015. “Declining the Transparency and Openness Promotion Guidelines.” <em>Epidemiology</em> 26 (6). LWW: 779–80. <a href='http://journals.lww.com/epidem/Fulltext/2015/11000/Declining_the_Transparency_and_Openness_Promotion.1.aspx' title=''>http://journals.lww.com/epidem/Fulltext/2015/11000/Declining_the_Transparency_and_Openness_Promotion.1.aspx</a>.</p></div>
-
-<div id="ref-nosek_promoting_2015">
-<p>Nosek, B. A., G. Alter, G. C. Banks, D. Borsboom, S. D. Bowman, S. J. Breckler, S. Buck, et al. 2015. “Promoting an Open Research Culture.” <em>Science</em> 348 (6242): 1422–5. doi:<a href='https://doi.org/10.1126/science.aab2374' title=''>10.1126/science.aab2374</a>.</p></div>
-
-<div id="ref-saffran_grammatical_2008">
-<p>Saffran, Jenny, Marc Hauser, Rebecca Seibel, Joshua Kapfhamer, Fritz Tsao, and Fiery Cushman. 2008. “Grammatical Pattern Learning by Human Infants and Cotton-Top Tamarin Monkeys.” <em>Cognition</em> 107 (2): 479–500. doi:<a href='https://doi.org/10.1016/j.cognition.2007.10.010' title=''>10.1016/j.cognition.2007.10.010</a>.</p></div>
-
-<div id="ref-wood_perception_2007">
-<p>Wood, Justin N., David D. Glynn, Brenda C. Phillips, and Marc D. Hauser. 2007. “The Perception of Rational, Goal-Directed Action in Nonhuman Primates.” <em>Science</em> 317 (5843): 1402–5. doi:<a href='https://doi.org/10.1126/science.1144663' title=''>10.1126/science.1144663</a>.</p></div></div></article></slide>
+<p><a href='https://raw.githubusercontent.com/gilmore-lab/gilmore-thomas-fesi-2015/master/gilmore-thomas-fesi.Rmd' title=''>https://raw.githubusercontent.com/gilmore-lab/gilmore-thomas-fesi-2015/master/gilmore-thomas-fesi.Rmd</a></p></article></slide>
 
 
   <slide class="backdrop"></slide>

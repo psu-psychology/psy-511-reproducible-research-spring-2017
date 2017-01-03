@@ -58,14 +58,79 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Scientific misconduct
 
-- [Hauser](http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
-- [Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
+- [Marc Hauser](http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
+    - <http://www.sciencemag.org/news/2014/05/harvard-misconduct-investigation-psychologist-released>
+- [Diederik Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
+    - 
+    - [Commentary](http://root.bryancavemedia.com/marketing/downloads/schooled_in_fraud_compliance_lessons_from_lying_dutchman_killingsworth.pdf)
+     
+## Marc Hauser
 
-## Is there a crisis of reproducibility?
+- Evolutionary/Comparative Psychologist, Professor at Harvard
+- Resigned 2011 after internal investigation found him responsible for research misconduct
 
->- Fraud != failures to replicate or reproduce
->- Incentives/disincentives related to fraud?
->- What is the relationship between fraud and reproducibility?
+## [2012 report by NIH Office of Research Integrity (ORI)](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html)
+
+- Fabricated data in Figure 2 of [[@hauser_retracted:_2002]](http://doi.org/10.1016/S0010-0277(02)00139-7); paper retracted.
+- Falsified coding in unpublished data.
+- Falsely described methodology in manuscript submitted to Cognition, Science, and Nature. Corrected manuscript prior to publication as [[@saffran_grammatical_2008]](http://doi.org/10.1016/j.cognition.2007.10.010)
+- Falsely reported results and methodology for one study in [[@hauser_rhesus_2007]](http://doi.org/10.1098/rspb.2007.0586)
+
+## [2012 report by NIH Office of Research Integrity (ORI)](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html)
+
+- Made false statement in Methdology section of [[@wood_perception_2007]](http://doi.org/10.1126/science.1144663)
+- Engaged in research misconduct by providing inconsistent coding of unpublished data 
+
+----
+
+*"Respondent neither admits nor denies committing research misconduct but accepts ORI has found evidence of research misconduct as set forth above and has entered into a Voluntary Settlement Agreement to resolve this matter. The settlement is not an admission of liability on the part of the Respondent."* <https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html>
+
+## [Hauser's response](http://archive.boston.com/whitecoatnotes/2012/09/05/marc-hauser-responds-federal-finding-scientific-misconduct/spzRWEVIPKA4BUu8wi8t8J/story.html)
+
+*"...Although I have fundamental differences with some of the findings in the ORI report, I acknowledge that I made mistakes. I tried to do too much, teaching courses, running a large lab of students, sitting on several editorial boards, directing the Mind, Brain & Behavior Program at Harvard, conducting multiple research collaborations, and writing for the general public. I let important details get away from my control, and as head of the lab, I take responsibility for all errors made within the lab, whether or not I was directly involved..."*
+
+----
+
+*"I am saddened that this investigation has caused some to question all of my work, rather than the few papers and unpublished studies in question. Before, during and after the investigation, many of my lab’s research findings were replicated by independent researchers..."*
+
+## Diederik Stapel
+
+- Dean of the School of Social and Behavioral Sciences at Tilburg University
+- teacher of Scientific Ethics course
+- Fraud investigation launched when 3 grad students noticed anomalies -- duplicate entries in data tables
+- Stapel confessed, lost position, gave up Ph.D., wrote a book
+
+## [Flawed science: The fraudulent research practices of social psychologist Diederik Stapel](http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf)
+
+- *"...found to have committed a serious infringement of scientific integrity by using fictitious data in his publications, while presenting the data as the output of empirical research."*
+- Previous suspicions/concerns about data "too good to be true" were ignored.
+- Fraud established in 55 publications.
+- *"admitted to having committed fraud in much of his research. He has also conceded
+that he has been sloppy, kept inadequate records and presented data in the best light possible"*
+
+## How did it happen?
+
+- *"...No explicit attention was paid to the combating or prevention of scientific misconduct within the scientific research environment in the Netherlands, and there was certainly no formal Code for research integrity..."*
+- *"...Whatever measures existed were more implicit, and any action was at the discretion of individual researchers...."*
+- *"...no culture of transparency, information sharing, peer review and joint responsibility in this Faculty. It was easy for researchers to go their own way..."*
+
+[Flawed science: The fraudulent research practices of social psychologist Diederik Stapel](http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf)
+
+## How did it happen?
+
+- *"...[researchers] did not share their data with other members of the various research groups, and there was no peer review..."* 
+- *"People trusted each other’s scientific integrity: no feedback, no warnings, no correction."*
+
+[Flawed science: The fraudulent research practices of social psychologist Diederik Stapel](http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf)
+
+## Recommendations
+
+- Avoid verification biases (pp. 48-50)
+- Provide complete information about methodology, sufficient to permit replication
+- Avoid statistical errors
+- If it's "too good to be true", it probably isn't.
+- Journals should avoid bias toward *"elegant, concise, attractive findings"*
+- *"The data on which an experimental psychology doctoral dissertation is based must as a rule be collected and analysed by the PhD students themselves."*
 
 ## The Reproducibility Project
 
