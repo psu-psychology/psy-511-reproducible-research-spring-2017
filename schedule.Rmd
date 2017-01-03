@@ -10,32 +10,17 @@ title: "Schedule"
 - Cases of scientific misconduct
 - What is reproducibility? Are we in a crisis?
 - Lecture notes. [HTML](lecture-notes/2017-01-09-course-intro.html). [Rmd](lecture-notes/2017-01-09-course-intro.Rmd). [PDF](lecture-notes/2017-01-09-course-intro.pdf).
+- Activity notes. [HTML](in-class-activities/2017-10-09.html). [Rmd](in-class-activities/2017-10-09.Rmd). [PDF](in-class-activities/2017-10-09.pdf).
 
 ### Readings/webinars
 
 - Cases of scientific misconduct (read 1 of 2)
     + [Hauser](http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
     + [Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
-- Scientific Utopia (read 2 of 3)
-    + Nosek, B. A., & Bar-Anan, Y. (2012). Scientific Utopia: I. Opening Scientific Communication. Psychological Inquiry, 23(3), 217–243. https://doi.org/10.1080/1047840X.2012.692215
-    + Adolph, K. E., Gilmore, R. O., Freeman, C., Sanderson, P., & Millman, D. (2012). Toward Open Behavioral Science. Psychological Inquiry, 23(3), 244–247. https://doi.org/10.1080/1047840X.2012.705133
-    + Nosek, B. A., Spies, J. R., & Motyl, M. (2012). Scientific Utopia II. Restructuring Incentives and Practices to Promote Truth Over Publishability. Perspectives on Psychological Science, 7(6), 615–631. https://doi.org/10.1177/1745691612459058
 - Reproducibility (read 2 of 3)
     + Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716–aac4716. https://doi.org/10.1126/science.aac4716
     + Gilbert, D. T., King, G., Pettigrew, S., & Wilson, T. D. (2016). Comment on “Estimating the reproducibility of psychological science.” Science, 351(6277), 1037–1037. https://doi.org/10.1126/science.aad7243
     + Goodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341), 341ps12–341ps12. https://doi.org/10.1126/scitranslmed.aaf5027
-
-### Activities
-
-- Self-evaluation (in-class)
-    + How well do my research practices conform to the transparency and openness guidelines? Do I endorse them? Why or why not?
-- Getting up to speed with R (in-class and at home)
-    + Total R novice? [Free intro to R](https://www.datacamp.com/courses/free-introduction-to-r)
-    + Intermediate R user?
-        + [Cleaning data in R](https://www.datacamp.com/courses/cleaning-data-in-r)
-        + [Data manipulation in R with dplyr](https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial)
-        + [Data visualization with ggplot2](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
-    + Skilled SAS, SPSS, or Stata user? [R for SAS SPSS and Stata users](https://www.datacamp.com/courses/r-for-sas-spss-and-stata-users-r-tutorial)
 
 ## Week 2: January 16
 
@@ -69,16 +54,18 @@ title: "Schedule"
     + Reporting
 - Edit/create a text-based workflow for an active project you are working on.
     + Annote the workflow to indicate where it could be made more reproducible, transparent.
-- Installing RStudio
+- Installing RStudio (if needed)
 
 ## Week 3: January 23
 
 ### Topics
 
 - Introduction to RStudio and R Markdown
+- Lecture notes. [HTML](lecture-notes/2017-01-23-intro-rstudio-rmarkdown.html). [Rmd](lecture-notes/2017-01-23-intro-rstudio-rmarkdown.Rmd). [PDF](lecture-notes/2017-01-23-intro-rstudio-rmarkdown.pdf).
 
 ### Readings/webinars
 
+- [Getting started with R Markdown](https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/)
 - [Authoring R Markdown Reports](https://www.datacamp.com/courses/reporting-with-r-markdown). 3 hrs.
 - [Working with the RStudio IDE (Part 1)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1). 3 hrs.
 
@@ -105,15 +92,15 @@ title: "Schedule"
         + [ioslides](http://rmarkdown.rstudio.com/ioslides_presentation_format.html)
         + [Reveal.js](http://rmarkdown.rstudio.com/revealjs_presentation_format.html)
         + [slidy](http://rmarkdown.rstudio.com/slidy_presentation_format.html)
+- Lecture notes. [HTML](lecture-notes/2017-01-30-reproducible-workflows.html). [Rmd](lecture-notes/2017-01-30-reproducible-workflows.Rmd). [PDF](lecture-notes/2017-01-30-reproducible-workflows.pdf).
 
 ### Readings/webinars
 
 - [Working with the RStudio IDE (Part II)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2)
-- [One file, many reports](plot-multi.Rmd)
 
 ### Activities
 
-- Create a reproducible research report
+- Create a template for a reproducible research report
 - Create a draft project website
 - Create talk slides
 
@@ -147,6 +134,7 @@ title: "Schedule"
 
 - Simulation as a tool for reproducible and transparent science
 - Visualization tools in R
+- **Lecture notes**. [HTML](lecture-notes/2017-02-13-simulation.html). [Rmd](lecture-notes/2017-02-13-simulation.Rmd). [PDF](lecture-notes/2017-02-13-simulation.pdf).
 
 ### Readings/webinars
 
@@ -165,7 +153,7 @@ title: "Schedule"
 
 - Interactive visualizations using [Shiny apps](shiny.html)
 
-### Readings/webinars
+### Readings/webinars (recommended)
 
 - [How to start with Shiny (Part 1)](https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-1/)
 - [How to start with Shiny (Part 2)](https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-2/)
@@ -178,6 +166,14 @@ title: "Schedule"
     + Suggestion: vary the number of participants
 
 ## Week 8: February 27
+
+**NO CLASS*
+
+## Spring Break March 6 - 10
+
+**NO CLASS*
+
+## Week 9: March 13
 
 ### Topics
 - Tools for reproducible data-gathering
@@ -199,24 +195,12 @@ title: "Schedule"
 - Install psiturk 
     + Download and modify a study from the shared [experiment exchange](https://psiturk.org/ee/).
 
-## Spring Break March 6 - 10
-
-## Week 9: March 13
+## Week 10: March 20
 
 ### Topics
 
 - Python, the other language of data science
 - Intro to [Jupyter](http://jupyter.org/)
-
-### Readings/webinars
-
-- [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science). 4 hrs.
-- [Jupyter notebook tutorials](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook)
-
-## Week 10: March 20
-
-### Topics
-
 - Jupyter for research, teaching, talks
 
 ### Readings/webinars
@@ -244,7 +228,7 @@ title: "Schedule"
 
 ### Readings
 
-- Gilmore, Diaz, & Wyble.
+- Gilmore, Diaz, Wyble & Yarkoni (in prep).
 - Ascoli, G. A. (2006). The ups and downs of neuroscience shares. Neuroinformatics, 4(3), 213–215. https://doi.org/10.1385/NI:4:3:213
 - Szucs, D., & Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. https://doi.org/10.1101/071530
 
