@@ -10,7 +10,7 @@ title: "Schedule"
 - Cases of scientific misconduct
 - What is reproducibility? Are we in a crisis?
 - Lecture notes. [HTML](lecture-notes/2017-01-09-course-intro.html). [Rmd](lecture-notes/2017-01-09-course-intro.Rmd). [PDF](lecture-notes/2017-01-09-course-intro.pdf).
-- Activity notes. [HTML](in-class-activities/2017-10-09.html). [Rmd](in-class-activities/2017-10-09.Rmd). [PDF](in-class-activities/2017-10-09.pdf).
+- Activity notes. [HTML](in-class-activities/2017-01-09.html). [Rmd](in-class-activities/2017-01-09.Rmd). [PDF](in-class-activities/2017-01-09.pdf).
 
 ### Readings/webinars
 
