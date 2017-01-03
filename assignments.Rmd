@@ -6,7 +6,13 @@ This page describes details about the weekly (in-class + homework) assignments a
 
 ## Weekly assignments
 
-Additional details about each weekly assignment will be provided at a later date.
+#### Week 1 (due 2017-01-16 at start of class)
+
+1. Choose one of the verification bias examples from *Flawed Science*. In a paragraph or two, propose ways you might avoid this sort of bias in your own research.
+2. Choose one of the TOP guideline categories where either your own research practices have room to improve or you are doing rather well. In a paragraph or two, explain your reasoning.
+3. In a paragraph or two, describe your current knowlege of R and at least three learning goals you have for building upon it.
+
+- Use a sensible file name: psy511-anaya-2016-01-09-write-up.pdf
 
 ## Final project
 
