@@ -3,3 +3,8 @@
 .RData
 .Ruserdata
 packrat/lib*/
+./*.pdf
+lecture-notes/*.pdf
+lecture-notes/*.html
+in-class-activities/*.pdf
+in-class-activities/*.html

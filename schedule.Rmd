@@ -26,9 +26,8 @@ title: "Schedule"
 
 ### Topics
 
-- Reproducible vs. non-reproducible workflows
-- Textual healing: naming conventions, tidy data, open formats
-- Spreadsheets are brilliant; spreadsheets are evil
+- Workflows and **methods** reproducibility
+- Lecture notes. [HTML](lecture-notes/2017-01-16-workflows.html). [Rmd](lecture-notes/2017-01-16-workflows.Rmd). [PDF](lecture-notes/2017-01-16-workflows.pdf).
 
 ### Readings/webinars
 
