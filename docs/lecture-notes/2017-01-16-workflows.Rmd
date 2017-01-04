@@ -344,9 +344,9 @@ if (!exists(agg.dir)) {
 
 ## Easy to merge data sets if they contain a linking variable (like subID)
 
-- study-1-demo-agg.csv contains
+- [study-1-demo-agg.csv](study-1-demo-agg.csv) contains
     + subID, sex, ageYrs, favColor
-- study-1-rt-agg.csv contains
+- [study-1-rt-agg.csv](study-1-rt-agg.csv) contains
     + subID, condition, rt
     
 ----
@@ -358,6 +358,9 @@ subID,sex,ageYrs,favColor
 003,f,23,red
 004,m,25,aqua
 ```
+
+Don't put spaces between variables in comma-separated value (.csv) files.
+Also, make sure to add a final line feed/enter character.
 
 ----
 
