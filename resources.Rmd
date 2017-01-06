@@ -1,0 +1,15 @@
+---
+title: "Resources"
+---
+
+## Books
+
+- Gandrud, C. (2015). Reproducible Research with R and R Studio, Second Edition. CRC Press. <https://www.crcpress.com/Reproducible-Research-with-R-and-R-Studio-Second-Edition/Gandrud/p/book/9781498715379>
+
+## Websites
+
+- R bloggers <https://www.r-bloggers.com/>
+
+## Articles
+
+- Poldrack, R. A., Baker, C. I., Durnez, J., Gorgolewski, K. J., Matthews, P. M., Munafò, M. R., … Yarkoni, T. (2017). Scanning the horizon: towards transparent and reproducible neuroimaging research. Nature Reviews Neuroscience, advance online publication. <https://doi.org/10.1038/nrn.2016.167>.

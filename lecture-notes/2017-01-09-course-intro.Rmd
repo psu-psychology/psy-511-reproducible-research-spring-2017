@@ -15,6 +15,12 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Prelude
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FpCrY7x5nEE" frameborder="0" allowfullscreen></iframe>
+
+<http://ed.ted.com/lessons/is-there-a-reproducibility-crisis-in-science-matt-anticole>
+
 ## Today's Topics
 
 - Introduction to the course

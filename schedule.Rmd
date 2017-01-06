@@ -21,6 +21,8 @@ title: "Schedule"
     + Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716–aac4716. https://doi.org/10.1126/science.aac4716
     + Gilbert, D. T., King, G., Pettigrew, S., & Wilson, T. D. (2016). Comment on “Estimating the reproducibility of psychological science.” Science, 351(6277), 1037–1037. https://doi.org/10.1126/science.aad7243
     + Goodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341), 341ps12–341ps12. https://doi.org/10.1126/scitranslmed.aaf5027
+- Supplemental (not required) references.
+    + <http://www.stats.org/what-do-we-mean-by-reproducibility/>
 
 ## Week 2: January 16
 
