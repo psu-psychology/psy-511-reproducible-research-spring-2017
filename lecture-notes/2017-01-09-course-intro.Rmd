@@ -9,6 +9,8 @@ output:
     widescreen: true
     incremental: false
     transition: default
+  pdf_document:
+    latex_engine: xelatex
 ---
 
 ```{r setup, include=FALSE}
@@ -112,19 +114,18 @@ knitr::opts_chunk$set(echo = FALSE)
 - *"...found to have committed a serious infringement of scientific integrity by using fictitious data in his publications, while presenting the data as the output of empirical research."*
 - Previous suspicions/concerns about data "too good to be true" were ignored.
 - Fraud established in 55 publications.
-- *"admitted to having committed fraud in much of his research. He has also conceded
-that he has been sloppy, kept inadequate records and presented data in the best light possible"*
 
 ## How did it happen?
 
+- *"admitted to having committed fraud in much of his research. He has also conceded that he has been sloppy, kept inadequate records and presented data in the best light possible"*
 - *"...No explicit attention was paid to the combating or prevention of scientific misconduct within the scientific research environment in the Netherlands, and there was certainly no formal Code for research integrity..."*
 - *"...Whatever measures existed were more implicit, and any action was at the discretion of individual researchers...."*
-- *"...no culture of transparency, information sharing, peer review and joint responsibility in this Faculty. It was easy for researchers to go their own way..."*
 
 [Flawed science: The fraudulent research practices of social psychologist Diederik Stapel](http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf)
 
 ## How did it happen?
 
+- *"...no culture of transparency, information sharing, peer review and joint responsibility in this Faculty. It was easy for researchers to go their own way..."*
 - *"...[researchers] did not share their data with other members of the various research groups, and there was no peer review..."* 
 - *"People trusted each other’s scientific integrity: no feedback, no warnings, no correction."*
 
@@ -159,6 +160,9 @@ that he has been sloppy, kept inadequate records and presented data in the best 
     + Samples !=
     + Only 69% of original PIs "endorsed" replication protocol. Replication rate 4x higher (59.7% vs. 15.4%) in studies with endorsed protocol.
     + CI of *expected* effect sizes given sample/methodological variability? [Many Labs project](https://osf.io/wx7ck/wiki/home/)
+
+----
+
 - [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716) *"...seriously underestimated reproducibility of psychological science."*
     
 ## Issues
@@ -174,41 +178,48 @@ that he has been sloppy, kept inadequate records and presented data in the best 
 - Domain-specific differences in/challenges to reproducibility
 - Possible confusion about types of reproducibility
 
-## Examples of differences that affect the approach to reproducibility in distinct scientific domains [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+## Examples of differences that affect the approach to reproducibility in distinct scientific domains 
 
+- [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
 - Degree of determinism
 - Signal to measurement-error ratio
 - Complexity of designs and measurement tools
 - Closeness of fit between hypothesis and experimental design or data
 - Statistical or analytic methods to test hypotheses
 
-## Examples of differences that affect the approach to reproducibility in distinct scientific domains [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+## Examples of differences that affect the approach to reproducibility in distinct scientific domains 
 
 - Typical heterogeneity of experimental results
 - Culture of replication, transparency, and cumulating knowledge
 - Statistical criteria for truth claims
 - Purposes to which findings will be put and consequences of false conclusions
+- [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
 
-## What does research reproducibility mean?  [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
-
+## What does research reproducibility mean?  
 - Methods
 - Results
 - Inferential
 
-## What does research reproducibility mean?  [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+[[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+
+## What does research reproducibility mean? 
 
 - Methods reproducibility
     + *"...the ability to implement, as exactly as possible, the experimental and computational procedures, with the same data and tools, to obtain the same results."*
 
-## What does research reproducibility mean?  [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+[[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
 
+## What does research reproducibility mean?  
 - Results reproducibility
     + *"(previously described as replicability) refers to obtaining the same results from the conduct of an independent study whose procedures are as closely matched to the original experiment as possible."*
 
-## What does research reproducibility mean?  [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
+[[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
 
+## What does research reproducibility mean?  
 - Inferential reproducibility
     + *"...refers to the drawing of qualitatively similar conclusions from either an independent replication of a study or a reanalysis of the original study"*
+
+[[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
 
 ## Steps toward improving transparency and openness
 
@@ -232,6 +243,11 @@ that he has been sloppy, kept inadequate records and presented data in the best 
     + [[@lash2015declining]](http://journals.lww.com/epidem/Fulltext/2015/11000/Declining_the_Transparency_and_Openness_Promotion.1.aspx)
     + Implementation would run counter to efforts to *"...maintain an editorial policy that encourages creativity and novelty, resists regimentation of research practices to the extent practicable, and invites challenges to current scientific habits and conventions through innovation in epidemiologic theory and practice."*
 
+## On the other hand...
+
+- New editorial from European Journal of Personality
+    + <https://twitter.com/i/web/status/818460818102697985>
+
 ## Barriers to greater openness and transparency
 
 - Technical
@@ -243,17 +259,15 @@ that he has been sloppy, kept inadequate records and presented data in the best 
     
 ## Other concerns to consider
 
-- File drawer effect
+- [File drawer effect](http://www.psychfiledrawer.org/TheFiledrawerProblem.php)
 - Pro-novelty/anti-replication bias in publication
 - Pro-effects bias in publication
 - Pro-counterintuitive effects bias in publication in high profile/impact journals
 
-## Other concerns to consider
-
-- Is psychological/neural science sufficiently powered?
-    + Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. PLOS Medicine, 2(8), e124. https://doi.org/10.1371/journal.pmed.0020124
-    + Szucs, D., & Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. https://doi.org/10.1101/071530
-    + Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., & Munafò, M. R. (2013). Power failure: why small sample size undermines the reliability of neuroscience. Nature Reviews Neuroscience, 14(5), 365–376. https://doi.org/10.1038/nrn3475
+## Is psychological/neural science sufficiently powered? {.smaller}
++ Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. PLOS Medicine, 2(8), e124. https://doi.org/10.1371/journal.pmed.0020124
++ Szucs, D., & Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. https://doi.org/10.1101/071530
++ Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., & Munafò, M. R. (2013). Power failure: why small sample size undermines the reliability of neuroscience. Nature Reviews Neuroscience, 14(5), 365–376. https://doi.org/10.1038/nrn3475
 
 <!-- Scrolling final reference page -->
 <!-- http://stackoverflow.com/q/38260799 -->
@@ -268,4 +282,9 @@ slides > slide:not(.nobackground):after {
   }
 }
 </style>   
+
+## [[@szucs_empirical_2016]](http://doi.org/10.1101/071530)
+
+"We have empirically assessed the distribution of published effect sizes and estimated power by extracting more than 100,000 statistical records from about 10,000 cognitive neuroscience and psychology papers published during the past 5 years. The reported median effect size was d=0.93 (inter-quartile range: 0.64-1.46) for nominally statistically significant results and d=0.24 (0.11-0.42) for non-significant results. <span class="red">Median power to detect small, medium and large effects was 0.12, 0.44 and 0.73</span>, reflecting no improvement through the past half-century. Power was lowest for cognitive neuroscience journals. 14% of papers reported some statistically significant results, although the respective F statistic and degrees of freedom proved that these were non-significant; <span class="red">p value errors positively correlated with journal impact factors. False report probability is likely to exceed 50\% for the whole literature</span>. In light of our findings the recently reported low replication success in psychology is realistic and worse performance may be expected for cognitive neuroscience."
+
 ## References {.smaller}

@@ -36,6 +36,13 @@ knitr::opts_chunk$set(echo = FALSE)
 - For each guideline
     + What level of adherence do you currently practice?
     + What level do you aspire to practice?
+    
+## Other initiatives
+
+- Peer Reviewers Openness Initiative, <https://opennessinitiative.org/>
+- Commitment to Research Transparency, <http://www.researchtransparency.org/>
+- Public Domain Manifesto, <http://www.publicdomainmanifesto.org/>
+- HT for these to <http://www.simoncolumbus.com/publications-2/open-science-and-free-culture/>
 
 ## Getting started with R
 
