@@ -1,0 +1,27 @@
+---
+title: "Project Template"
+---
+
+## Basic project template components
+
+- analysis/:
+    + csv/: data files
+- docs/: rendered HTML code
+- img/: images
+
+- bib/: bibtex reference files
+- css/: css files
+
+```{r}
+ifelse(!dir.exists("analysis/csv"), dir.create("analysis/csv", recursive = TRUE), FALSE)
+ifelse(!dir.exists("css"), dir.create("docs"), FALSE)
+ifelse(!dir.exists("img"), dir.create("css"), FALSE)
+```
+
+## Generate minimal _site.yml file
+
+```{r}
+fileConn <- file("_site.yml.template.txt")
+cat(readLines(con=fileConn),sep = "\n")
+close(fileConn)
+```

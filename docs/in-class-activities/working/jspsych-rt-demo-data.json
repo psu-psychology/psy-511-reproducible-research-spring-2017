@@ -1,0 +1,246 @@
+[
+ {
+  "rt": 1599,
+  "key_press": 32,
+  "trial_type": "text",
+  "trial_index": 0,
+  "time_elapsed": 1602,
+  "internal_node_id": "0.0-0.0"
+ },
+ {
+  "rt": 8091,
+  "key_press": 32,
+  "trial_type": "text",
+  "trial_index": 1,
+  "time_elapsed": 10699,
+  "internal_node_id": "0.0-1.0"
+ },
+ {
+  "rt": 1219,
+  "stimulus": "img/orange.png",
+  "key_press": 70,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 2,
+  "time_elapsed": 13924,
+  "internal_node_id": "0.0-2.0-0.0",
+  "correct": false
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/orange.png",
+  "key_press": -1,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 3,
+  "time_elapsed": 16305,
+  "internal_node_id": "0.0-2.0-1.0",
+  "correct": true
+ },
+ {
+  "rt": 466,
+  "stimulus": "img/blue.png",
+  "key_press": 70,
+  "response": "go",
+  "trial_type": "single-stim",
+  "trial_index": 4,
+  "time_elapsed": 18519,
+  "internal_node_id": "0.0-2.0-2.0",
+  "correct": true
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/orange.png",
+  "key_press": -1,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 5,
+  "time_elapsed": 21810,
+  "internal_node_id": "0.0-2.0-3.0",
+  "correct": true
+ },
+ {
+  "rt": 446,
+  "stimulus": "img/blue.png",
+  "key_press": 70,
+  "response": "go",
+  "trial_type": "single-stim",
+  "trial_index": 6,
+  "time_elapsed": 23742,
+  "internal_node_id": "0.0-2.0-4.0",
+  "correct": true
+ },
+ {
+  "rt": 556,
+  "stimulus": "img/blue.png",
+  "key_press": 70,
+  "response": "go",
+  "trial_type": "single-stim",
+  "trial_index": 7,
+  "time_elapsed": 25195,
+  "internal_node_id": "0.0-2.0-5.0",
+  "correct": true
+ },
+ {
+  "rt": 423,
+  "stimulus": "img/blue.png",
+  "key_press": 70,
+  "response": "go",
+  "trial_type": "single-stim",
+  "trial_index": 8,
+  "time_elapsed": 27356,
+  "internal_node_id": "0.0-2.0-6.0",
+  "correct": true
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/blue.png",
+  "key_press": -1,
+  "response": "go",
+  "trial_type": "single-stim",
+  "trial_index": 9,
+  "time_elapsed": 30675,
+  "internal_node_id": "0.0-2.0-7.0",
+  "correct": false
+ },
+ {
+  "rt": 1005,
+  "stimulus": "img/orange.png",
+  "key_press": 70,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 10,
+  "time_elapsed": 32597,
+  "internal_node_id": "0.0-2.0-8.0",
+  "correct": false
+ },
+ {
+  "rt": 934,
+  "stimulus": "img/blue.png",
+  "key_press": 70,
+  "response": "go",
+  "trial_type": "single-stim",
+  "trial_index": 11,
+  "time_elapsed": 35590,
+  "internal_node_id": "0.0-2.0-9.0",
+  "correct": true
+ },
+ {
+  "rt": 1346,
+  "stimulus": "img/blue.png",
+  "key_press": 70,
+  "response": "go",
+  "trial_type": "single-stim",
+  "trial_index": 12,
+  "time_elapsed": 38255,
+  "internal_node_id": "0.0-2.0-10.0",
+  "correct": true
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/blue.png",
+  "key_press": -1,
+  "response": "go",
+  "trial_type": "single-stim",
+  "trial_index": 13,
+  "time_elapsed": 40806,
+  "internal_node_id": "0.0-2.0-11.0",
+  "correct": false
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/orange.png",
+  "key_press": -1,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 14,
+  "time_elapsed": 44128,
+  "internal_node_id": "0.0-2.0-12.0",
+  "correct": true
+ },
+ {
+  "rt": 889,
+  "stimulus": "img/orange.png",
+  "key_press": 70,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 15,
+  "time_elapsed": 45780,
+  "internal_node_id": "0.0-2.0-13.0",
+  "correct": false
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/blue.png",
+  "key_press": -1,
+  "response": "go",
+  "trial_type": "single-stim",
+  "trial_index": 16,
+  "time_elapsed": 49421,
+  "internal_node_id": "0.0-2.0-14.0",
+  "correct": false
+ },
+ {
+  "rt": 1167,
+  "stimulus": "img/orange.png",
+  "key_press": 70,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 17,
+  "time_elapsed": 51923,
+  "internal_node_id": "0.0-2.0-15.0",
+  "correct": false
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/orange.png",
+  "key_press": -1,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 18,
+  "time_elapsed": 54225,
+  "internal_node_id": "0.0-2.0-16.0",
+  "correct": true
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/orange.png",
+  "key_press": -1,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 19,
+  "time_elapsed": 56890,
+  "internal_node_id": "0.0-2.0-17.0",
+  "correct": true
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/blue.png",
+  "key_press": -1,
+  "response": "go",
+  "trial_type": "single-stim",
+  "trial_index": 20,
+  "time_elapsed": 59827,
+  "internal_node_id": "0.0-2.0-18.0",
+  "correct": false
+ },
+ {
+  "rt": 469,
+  "stimulus": "img/orange.png",
+  "key_press": 70,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 21,
+  "time_elapsed": 62373,
+  "internal_node_id": "0.0-2.0-19.0",
+  "correct": false
+ },
+ {
+  "rt": 3207,
+  "key_press": 32,
+  "trial_type": "text",
+  "trial_index": 22,
+  "time_elapsed": 67325,
+  "internal_node_id": "0.0-3.0"
+ }
+]

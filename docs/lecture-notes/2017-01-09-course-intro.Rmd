@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - Scientific misconduct
 - Is there a crisis of reproducibility?
 
-## Introduction to the course
+# Introduction to the course
 
 ## Goals
 
@@ -62,12 +62,13 @@ knitr::opts_chunk$set(echo = FALSE)
 - Jupyter
 - Slack, <http://psy511.slack.com> for communication, sharing, Q&A
 
-## Scientific misconduct
+# Scientific misconduct
+
+## The Hauser and Stapel cases
 
 - [Marc Hauser](http://www.sciencemag.org/news/2012/09/harvard-psychology-researcher-committed-fraud-us-investigation-concludes)
     - <http://www.sciencemag.org/news/2014/05/harvard-misconduct-investigation-psychologist-released>
 - [Diederik Stapel](http://www.nytimes.com/2013/04/28/magazine/diederik-stapels-audacious-academic-fraud.html?pagewanted=all&_r=0)
-    - 
     - [Commentary](http://root.bryancavemedia.com/marketing/downloads/schooled_in_fraud_compliance_lessons_from_lying_dutchman_killingsworth.pdf)
      
 ## Marc Hauser
@@ -137,6 +138,8 @@ that he has been sloppy, kept inadequate records and presented data in the best 
 - If it's "too good to be true", it probably isn't.
 - Journals should avoid bias toward *"elegant, concise, attractive findings"*
 - *"The data on which an experimental psychology doctoral dissertation is based must as a rule be collected and analysed by the PhD students themselves."*
+
+# Is there a crisis of reproducibility?
 
 ## The Reproducibility Project
 
@@ -251,5 +254,18 @@ that he has been sloppy, kept inadequate records and presented data in the best 
     + Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. PLOS Medicine, 2(8), e124. https://doi.org/10.1371/journal.pmed.0020124
     + Szucs, D., & Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. https://doi.org/10.1101/071530
     + Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., & Munafò, M. R. (2013). Power failure: why small sample size undermines the reliability of neuroscience. Nature Reviews Neuroscience, 14(5), 365–376. https://doi.org/10.1038/nrn3475
-    
+
+<!-- Scrolling final reference page -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>   
 ## References {.smaller}

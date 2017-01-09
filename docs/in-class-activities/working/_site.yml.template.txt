@@ -1,0 +1,11 @@
+name: "My Site"
+navbar:
+  title: "My Site"
+  left:
+    - text: "Home"
+      href: index.html
+output_dir: "docs"
+output:
+  html_document:
+    theme: spacelab
+    highlight: textmate
