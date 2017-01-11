@@ -7,7 +7,7 @@ title: "Resources"
 - Gandrud, C. (2015). Reproducible Research with R and R Studio, Second Edition. CRC Press. <https://www.crcpress.com/Reproducible-Research-with-R-and-R-Studio-Second-Edition/Gandrud/p/book/9781498715379>
 - Wickham, H. & Grolemund, G. (2016). R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. O'Reilly Media. <http://shop.oreilly.com/product/0636920034407.do>
 
-## Blogs
+## Blogs/Projects
 
 - R bloggers <https://www.r-bloggers.com/>
 - Open science in practice. <https://inattentionalcoffee.wordpress.com/2017/01/03/open-science-in-practice/>
@@ -15,6 +15,7 @@ title: "Resources"
 - [Open Stats Lab](https://sites.trinity.edu/osl). Use data published with psychology papers to teach statistics.
 - Jupyter, Zeppelin, Beaker: The Rise of the Notebooks. <https://opendatascience.com/blog/jupyter-zeppelin-beaker-the-rise-of-the-notebooks/>
 - Open science and free culture. <http://www.simoncolumbus.com/publications-2/open-science-and-free-culture/>
+- [Collaborative Replications and Education Project (CREP)](https://osf.io/wfc6u/).
 
 ## Software tools
 
