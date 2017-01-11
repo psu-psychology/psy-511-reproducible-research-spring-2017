@@ -16,6 +16,12 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Prelude
+
+----
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N2zK3sAtr-4" frameborder="0" allowfullscreen></iframe>
+
 ## Today's Topics
 
 - Workflows and **methods** reproducibility [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)

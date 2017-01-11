@@ -56,7 +56,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Write-up (due start of next class)
 
 1. Choose one of the verification bias examples from [*Flawed Science*](http://pubman.mpdl.mpg.de/pubman/item/escidoc:1569964:8/component/escidoc:1569966/Stapel_Investigation_Final_report.pdf). In a paragraph or two, propose ways you might avoid this sort of bias in your own research.
-2. Choose one of the [TOP guideline categories](https://osf.io/9f6gx/) where either your own research practices have room to improve or you are doing rather well. In a paragraph or two, explain your reasoning.
+2. Choose one of the [TOP guideline categories](https://osf.io/9f6gx/) where either your own research practices have room to improve or you are doing rather well. In a paragraph or two, explain your reasoning. Please also list 2 or 3 journals you have or want to publish in that **have signed** the guidelines and 2 or 3 journals that **have not signed**.
 3. In a paragraph or two, describe your current knowlege of R and at least three learning goals you have for building upon it.
 
 - Use sensible file name: psy511-anaya-2016-01-09-write-up.pdf

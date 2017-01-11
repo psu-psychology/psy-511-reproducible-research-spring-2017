@@ -87,7 +87,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## [2012 report by NIH Office of Research Integrity (ORI)](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-12-149.html)
 
-- Made false statement in Methdology section of [[@wood_perception_2007]](http://doi.org/10.1126/science.1144663)
+- Made false statement in Methodology section of [[@wood_perception_2007]](http://doi.org/10.1126/science.1144663)
 - Engaged in research misconduct by providing inconsistent coding of unpublished data 
 
 ----
@@ -265,9 +265,12 @@ knitr::opts_chunk$set(echo = FALSE)
 - Pro-counterintuitive effects bias in publication in high profile/impact journals
 
 ## Is psychological/neural science sufficiently powered? {.smaller}
-+ Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. PLOS Medicine, 2(8), e124. https://doi.org/10.1371/journal.pmed.0020124
-+ Szucs, D., & Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. https://doi.org/10.1101/071530
-+ Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., & Munafò, M. R. (2013). Power failure: why small sample size undermines the reliability of neuroscience. Nature Reviews Neuroscience, 14(5), 365–376. https://doi.org/10.1038/nrn3475
+
+- Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. PLOS Medicine, 2(8), e124. https://doi.org/10.1371/journal.pmed.0020124
+
+- Szucs, D., & Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. https://doi.org/10.1101/071530
+
+- Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., & Munafò, M. R. (2013). Power failure: why small sample size undermines the reliability of neuroscience. Nature Reviews Neuroscience, 14(5), 365–376. https://doi.org/10.1038/nrn3475
 
 <!-- Scrolling final reference page -->
 <!-- http://stackoverflow.com/q/38260799 -->
