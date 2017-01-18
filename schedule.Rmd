@@ -33,34 +33,25 @@ title: "Schedule"
 ### Topics
 
 - Evaluating Munafò et al.'s (2017) "Manifesto for reproducible science", <https://doi.org/10.1038/s41562-016-0021>
-- Workflows and **methods** reproducibility
+- Workflows and *methods* reproducibility
+- **Lecture notes**. [HTML](lecture-notes/2017-01-23.html). [Rmd](lecture-notes/2017-01-23.Rmd). [PDF](lecture-notes/2017-01-23.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-01-23.html). [Rmd](in-class-activities/2017-01-23.Rmd). [PDF](in-class-activities/2017-01-23.pdf).
 
 ### Readings/webinars
 
-- Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. Nature Human Behaviour, 1, 0021. <https://doi.org/10.1038/s41562-016-0021>.
-- Reproducible workflows
+- Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. Nature Human Behaviour, 1, 0021.  <https://doi.org/10.1038/s41562-016-0021>. (**Required**)
+- Reproducible workflows (**Optional**)
     - <http://datasci.kitzes.com/lessons/python/reproducible_workflow.html>
     - <http://grunwaldlab.github.io/Reproducible-science-in-R/index.html>
-- Tidy data
-    + Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10). <http://dx.doi.org/10.18637/jss.v059.i10>.
-- File naming
+- Tidy data (**Optional**)
+    + Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10). <http://dx.doi.org/10.18637/jss.v059.i10>. 
+- File naming (**Optional**)
     + <http://guides.nyu.edu/data_management/file_org>
     + <http://kbroman.org/dataorg/>
-- Spreadsheets
+- Spreadsheets (**Optional**)
     + <https://github.com/jennybc/sanesheets>
     + <http://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/excel/ecology-examples/00-intro.html>
     + <https://github.com/jennybc/scary-excel-stories>
-
-### Activities
-
-- Capturing workflows
-    + Data collection
-    + Data cleaning
-    + Data analysis
-    + Reporting
-- Edit/create a text-based workflow for an active project you are working on.
-    + Annote the workflow to indicate where it could be made more reproducible, transparent.
-- Installing RStudio (if needed)
 
 ## Week 4: January 30
 

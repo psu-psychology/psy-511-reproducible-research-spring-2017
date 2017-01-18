@@ -1,5 +1,5 @@
 ---
-title: "2017-01-16-workflows"
+title: "2017-01-23-workflows"
 author: "Rick O. Gilmore"
 date: "`r Sys.time()`"
 bibliography: ../bib/reproducibility.bib
@@ -24,6 +24,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Today's Topics
 
+- Review Munafo et al. 2017 on 
 - Workflows and **methods** reproducibility [[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)
 
 ## [Workflows](https://en.wikipedia.org/wiki/Workflow)

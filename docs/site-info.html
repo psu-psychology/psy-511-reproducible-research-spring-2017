@@ -19,12 +19,11 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/textmate.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -151,7 +150,6 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -218,9 +216,9 @@ $(document).ready(function () {
 <p>This site is generated in <a href="http://rmarkdown.rstudio.com/">R Markdown</a> using <a href="http://rstudio.com">RStudio</a>.</p>
 <p>Information about this R session:</p>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 3.3.1 (2016-06-21)
+<pre><code>## R version 3.3.2 (2016-10-31)
 ## Platform: x86_64-apple-darwin13.4.0 (64-bit)
-## Running under: OS X 10.11.6 (El Capitan)
+## Running under: OS X El Capitan 10.11.6
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
@@ -229,16 +227,22 @@ $(document).ready(function () {
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] DiagrammeR_0.8.4
+## [1] DiagrammeR_0.9.0
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.8      visNetwork_1.0.2 digest_0.6.10    assertthat_0.1  
-##  [5] bitops_1.0-6     plyr_1.8.4       jsonlite_1.1     magrittr_1.5    
-##  [9] evaluate_0.10    scales_0.4.0     stringi_1.1.2    rstudioapi_0.6  
-## [13] rmarkdown_1.1    tools_3.3.1      stringr_1.1.0    htmlwidgets_0.8 
-## [17] igraph_1.0.1     munsell_0.4.3    influenceR_0.1.0 yaml_2.1.14     
-## [21] colorspace_1.2-6 caTools_1.17.1   htmltools_0.3.5  knitr_1.15      
-## [25] tibble_1.1</code></pre>
+##  [1] igraph_1.0.1       Rcpp_0.12.8        rstudioapi_0.6    
+##  [4] knitr_1.15.1       magrittr_1.5       munsell_0.4.3     
+##  [7] colorspace_1.3-2   R6_2.2.0           brew_1.0-6        
+## [10] dplyr_0.5.0        stringr_1.1.0      plyr_1.8.4        
+## [13] visNetwork_1.0.3   Rook_1.1-1         tools_3.3.2       
+## [16] grid_3.3.2         gtable_0.2.0       DBI_0.5-1         
+## [19] influenceR_0.1.0   htmltools_0.3.5    yaml_2.1.14       
+## [22] lazyeval_0.2.0     rprojroot_1.1      digest_0.6.11     
+## [25] assertthat_0.1     tibble_1.2         gridExtra_2.2.1   
+## [28] RColorBrewer_1.1-2 ggplot2_2.2.1      htmlwidgets_0.8   
+## [31] viridis_0.3.4      evaluate_0.10      rgexf_0.15.3      
+## [34] rmarkdown_1.3      stringi_1.1.2      scales_0.4.1      
+## [37] backports_1.0.4    XML_3.98-1.5       jsonlite_1.2</code></pre>
 
 <p>Copyright &copy; Rick O. Gilmore. All rights reserved.</p>
 
@@ -249,8 +253,11 @@ $(document).ready(function () {
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 

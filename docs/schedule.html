@@ -19,12 +19,11 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/textmate.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -151,7 +150,6 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -258,50 +256,35 @@ $(document).ready(function () {
 <h3>Topics</h3>
 <ul>
 <li>Evaluating Munafò et al.’s (2017) “Manifesto for reproducible science”, <a href="https://doi.org/10.1038/s41562-016-0021" class="uri">https://doi.org/10.1038/s41562-016-0021</a></li>
-<li>Workflows and <strong>methods</strong> reproducibility</li>
+<li>Workflows and <em>methods</em> reproducibility</li>
+<li><strong>Lecture notes</strong>. <a href="lecture-notes/2017-01-23.html">HTML</a>. <a href="lecture-notes/2017-01-23.Rmd">Rmd</a>. <a href="lecture-notes/2017-01-23.pdf">PDF</a>.</li>
+<li><strong>Activity notes</strong>. <a href="in-class-activities/2017-01-23.html">HTML</a>. <a href="in-class-activities/2017-01-23.Rmd">Rmd</a>. <a href="in-class-activities/2017-01-23.pdf">PDF</a>.</li>
 </ul>
 </div>
 <div id="readingswebinars-1" class="section level3">
 <h3>Readings/webinars</h3>
 <ul>
-<li>Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. Nature Human Behaviour, 1, 0021. <a href="https://doi.org/10.1038/s41562-016-0021" class="uri">https://doi.org/10.1038/s41562-016-0021</a>.</li>
-<li>Reproducible workflows
+<li>Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P. du, … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. Nature Human Behaviour, 1, 0021. <a href="https://doi.org/10.1038/s41562-016-0021" class="uri">https://doi.org/10.1038/s41562-016-0021</a>. (<strong>Required</strong>)</li>
+<li>Reproducible workflows (<strong>Optional</strong>)
 <ul>
 <li><a href="http://datasci.kitzes.com/lessons/python/reproducible_workflow.html" class="uri">http://datasci.kitzes.com/lessons/python/reproducible_workflow.html</a></li>
 <li><a href="http://grunwaldlab.github.io/Reproducible-science-in-R/index.html" class="uri">http://grunwaldlab.github.io/Reproducible-science-in-R/index.html</a></li>
 </ul></li>
-<li>Tidy data
+<li>Tidy data (<strong>Optional</strong>)
 <ul>
 <li>Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10). <a href="http://dx.doi.org/10.18637/jss.v059.i10" class="uri">http://dx.doi.org/10.18637/jss.v059.i10</a>.</li>
 </ul></li>
-<li>File naming
+<li>File naming (<strong>Optional</strong>)
 <ul>
 <li><a href="http://guides.nyu.edu/data_management/file_org" class="uri">http://guides.nyu.edu/data_management/file_org</a></li>
 <li><a href="http://kbroman.org/dataorg/" class="uri">http://kbroman.org/dataorg/</a></li>
 </ul></li>
-<li>Spreadsheets
+<li>Spreadsheets (<strong>Optional</strong>)
 <ul>
 <li><a href="https://github.com/jennybc/sanesheets" class="uri">https://github.com/jennybc/sanesheets</a></li>
 <li><a href="http://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/excel/ecology-examples/00-intro.html" class="uri">http://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/excel/ecology-examples/00-intro.html</a></li>
 <li><a href="https://github.com/jennybc/scary-excel-stories" class="uri">https://github.com/jennybc/scary-excel-stories</a></li>
 </ul></li>
-</ul>
-</div>
-<div id="activities" class="section level3">
-<h3>Activities</h3>
-<ul>
-<li>Capturing workflows
-<ul>
-<li>Data collection</li>
-<li>Data cleaning</li>
-<li>Data analysis</li>
-<li>Reporting</li>
-</ul></li>
-<li>Edit/create a text-based workflow for an active project you are working on.
-<ul>
-<li>Annote the workflow to indicate where it could be made more reproducible, transparent.</li>
-</ul></li>
-<li>Installing RStudio (if needed)</li>
 </ul>
 </div>
 </div>
@@ -346,7 +329,7 @@ $(document).ready(function () {
 </ul></li>
 </ul>
 </div>
-<div id="activities-1" class="section level3">
+<div id="activities" class="section level3">
 <h3>Activities</h3>
 <ul>
 <li>Create a template for a reproducible research report</li>
@@ -379,7 +362,7 @@ $(document).ready(function () {
 <li><a href="http://happygitwithr.com/" class="uri">http://happygitwithr.com/</a></li>
 </ul>
 </div>
-<div id="activities-2" class="section level3">
+<div id="activities-1" class="section level3">
 <h3>Activities</h3>
 <ul>
 <li>Create a GitHub account.</li>
@@ -408,7 +391,7 @@ $(document).ready(function () {
 <li>Optional. <a href="https://www.datacamp.com/courses/ggvis-data-visualization-r-tutorial">Data Visualization in R with ggvis</a></li>
 </ul>
 </div>
-<div id="activities-3" class="section level3">
+<div id="activities-2" class="section level3">
 <h3>Activities</h3>
 <ul>
 <li>Develop a simulated dataset for a study you have run, are running, or might want to run.</li>
@@ -432,7 +415,7 @@ $(document).ready(function () {
 <li><a href="https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-3/">How to start with Shiny (Part 3)</a></li>
 </ul>
 </div>
-<div id="activities-4" class="section level3">
+<div id="activities-3" class="section level3">
 <h3>Activities</h3>
 <ul>
 <li>Build Shiny app to simulate and visualize a regression or ANOVA analysis based on the data you simulated last week.
@@ -474,7 +457,7 @@ $(document).ready(function () {
 <li><a href="jpsych.html">Lecture notes</a></li>
 </ul>
 </div>
-<div id="activities-5" class="section level3">
+<div id="activities-4" class="section level3">
 <h3>Activities</h3>
 <ul>
 <li>Download <a href="https://github.com/jodeleeuw/jsPsych/releases">jsPsych</a>
@@ -506,7 +489,7 @@ $(document).ready(function () {
 <li><a href="https://www.datacamp.com/courses/importing-data-in-python-part-2">Importing data in Python (Part 2)</a></li>
 </ul>
 </div>
-<div id="activities-6" class="section level3">
+<div id="activities-5" class="section level3">
 <h3>Activities</h3>
 <ul>
 <li>Reproduce data analysis or visualization from Week 6 or 7.</li>
@@ -539,7 +522,7 @@ $(document).ready(function () {
 <li>Szucs, D., &amp; Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. <a href="https://doi.org/10.1101/071530" class="uri">https://doi.org/10.1101/071530</a></li>
 </ul>
 </div>
-<div id="activities-7" class="section level3">
+<div id="activities-6" class="section level3">
 <h3>Activities</h3>
 <ul>
 <li>Meta-analysis on neurosynth</li>
@@ -585,7 +568,7 @@ $(document).ready(function () {
 <div id="readings-1" class="section level3">
 <h3>Readings</h3>
 </div>
-<div id="activities-8" class="section level3">
+<div id="activities-7" class="section level3">
 <h3>Activities</h3>
 <ul>
 <li>Create an ORCID profile</li>
@@ -646,8 +629,11 @@ $(document).ready(function () {
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 
