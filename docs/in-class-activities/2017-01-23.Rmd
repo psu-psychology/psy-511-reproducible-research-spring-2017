@@ -315,9 +315,9 @@ if (!exists(agg.dir)) {
 ## Words to the wise
 
 - Use consistent file/directory names
-    + lowerCamelCaseIsGood.txt so is UpperCamelCase.txt
-    + underscores_between_words.txt works; so do dashes-between.txt
-    + avoid spaces in your file names.txt; these are not always reliably readable by all computers.
+    + `lowerCamelCaseIsGood.txt` so is `UpperCamelCase.txt`
+    + `underscores_between_words.txt` works; so do `dashes-between`.txt
+    + avoid `spaces in your file names.txt`; these are not always reliably readable by all computers.
 - Choose good, [descriptive names](http://kbroman.org/dataorg/pages/names.html)
 
 ## Consider seriously [Karl Broman's guides](http://kbroman.org/dataorg/)
@@ -344,9 +344,9 @@ if (!exists(agg.dir)) {
 
 ## Easy to merge data sets if they contain a linking variable (like subID)
 
-- [study-1-demo-agg.csv](study-1-demo-agg.csv) contains
+- [study-1-demo-agg.csv](csv/study-1-demo-agg.csv) contains
     + subID, sex, ageYrs, favColor
-- [study-1-rt-agg.csv](study-1-rt-agg.csv) contains
+- [study-1-rt-agg.csv](csv/study-1-rt-agg.csv) contains
     + subID, condition, rt
     
 ----
