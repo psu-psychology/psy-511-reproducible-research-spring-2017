@@ -103,6 +103,7 @@ Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., 
 ## Reporting on research
 
 - Publish replications
+- Frank, M. C., & Saxe, R. (2012). Teaching Replication. Perspectives on Psychological Science, 7(6), 600–604. <https://doi.org/10.1177/1745691612460686>.
 
 ## Verifying research
 
@@ -113,7 +114,7 @@ Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., 
 
 - Higginson, A. D., & Munafò, M. R. (2016). Current Incentives for Scientists Lead to Underpowered Studies with Erroneous Conclusions. PLOS Biology, 14(11), e2000995. https://doi.org/10.1371/journal.pbio.2000995
   - Claim that current publication incentive structure reinforces current practices
-- OSF badge system
+- [OSF badge system](https://osf.io/tvyxz/)
 - Other incentives/disincentives
 
 ## Status report/recommendations by stakeholder group
