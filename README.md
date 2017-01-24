@@ -10,6 +10,6 @@ Contents include:
 `bib/ css/ img/` directories with bib.tex css and image files.</br>
 `working/` directory with draft R Markdown files.</br>
 `lecture-notes/` directory with R Markdown (and supporting) files for course slides.</br>
-`in-class-activities' directory with R Markdown (and supporting) files for in-class activity slides.</br>
+`in-class-activities` directory with R Markdown (and supporting) files for in-class activity slides.</br>
 
 To render the entire site, `source("R/Build.all.R")`.
