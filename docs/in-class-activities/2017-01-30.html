@@ -94,7 +94,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2017-01-24 12:14:03</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2017-01-24 17:49:45</p>
           </hgroup>
   </slide>
 
@@ -124,7 +124,7 @@
 <li>Embedded or non-embedded figures</li>
 </ul></li>
 <li>MS Word</li>
-<li>PDF</li>
+<li>&lt;PDF</li>
 </ul></li>
 </ul>
 
@@ -149,6 +149,12 @@
 <li>Document</li>
 <li>Presentation (ioslides)</li>
 </ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Output options</h2></hgroup><article  id="output-options-3">
+
+<ul>
+<li>A website!</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>All in your head(er)</h2></hgroup><article  id="all-in-your-header">
@@ -334,7 +340,7 @@ output:
 <ul>
 <li>Put in 1st position in header, then <code>rmarkdown::render(input = &quot;my-report.Rmd&quot;)</code></li>
 <li>Or, <code>rmarkdown::render(input = &quot;my-report.Rmd&quot;, output_format = &quot;pdf_document&quot;)</code></li>
-<li>Must install LaTeX for this to work</li>
+<li>Must <a href='https://www.latex-project.org/get/' title=''>install LaTeX</a> for this to work</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2></h2></hgroup><article >
@@ -355,11 +361,81 @@ output:
 <li><code>params = list(name = &quot;Joe&quot;, quest = &quot;Find the grail&quot;, favorite.color = &quot;blue&quot;)</code> to pass parameters that R can use via <code>params$name</code></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>How I used this</h2></hgroup><article  id="how-i-used-this">
+</article></slide><slide class=''><hgroup><h2>How I used parameter passing like this</h2></hgroup><article  id="how-i-used-parameter-passing-like-this">
 
 <p><a href='https://github.com/gilmore-lab/gilmore-thomas-fesi-2015/blob/master/render_all.R' title=''>https://github.com/gilmore-lab/gilmore-thomas-fesi-2015/blob/master/render_all.R</a></p>
 
 <p><a href='https://raw.githubusercontent.com/gilmore-lab/gilmore-thomas-fesi-2015/master/gilmore-thomas-fesi.Rmd' title=''>https://raw.githubusercontent.com/gilmore-lab/gilmore-thomas-fesi-2015/master/gilmore-thomas-fesi.Rmd</a></p>
+
+</article></slide><slide class=''><hgroup><h2>Making a <a href='http://rmarkdown.rstudio.com/rmarkdown_websites.html' title=''>website</a> in R Markdown</h2></hgroup><article  id="making-a-website-in-r-markdown">
+
+<ul>
+<li>Components (in a separate folder):
+
+<ul>
+<li><code>_site.yml</code> parameter file</li>
+<li><code>index.Rmd</code> and other <code>*.Rmd</code> files. (N.B., the * character is a wildcard meaning it can represent any number of characters)</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article >
+
+<p><code>_site.yml</code></p>
+
+<pre >name: &quot;A Site&quot;
+navbar:
+  title: &quot;Site Title&quot;
+  left:
+    - text: &quot;Home&quot;
+      href: index.html</pre>
+
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article >
+
+<p><code>index.Rmd</code></p>
+
+<pre >---
+title: &quot;Website home&quot;
+---
+
+My website&#39;s home page.</pre>
+
+<p>Note that the <code>index.Rmd</code> file looks like the simplest possible R Markdown file. There&#39;s nothing but the title in the header. Of course, you can put all kinds of text, images, videos, and such on each page.</p>
+
+<p>Render this file into a web page with <code>rmarkdown:render_site()</code> or by pressing the <code>Knit</code> button.</p>
+
+</article></slide><slide class=''><hgroup><h2>My workflow for this course</h2></hgroup><article  id="my-workflow-for-this-course">
+
+<ul>
+<li>Make slides in R Markdown with <code>ioslides_presentation</code> as output option</li>
+<li>Modify <code>schedule.Rmd</code> file adding links to lecture notes and in-class activities:</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2></h2></hgroup><article >
+
+<p>Code snippet from <code>schedule.Rmd</code></p>
+
+<pre >- **Lecture notes**. [HTML](lecture-notes/2017-01-30.html). [Rmd](lecture-notes/2017-01-30.Rmd). [PDF](lecture-notes/2017-01-30.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-01-23.html). [Rmd](in-class-activities/2017-01-23.Rmd). [PDF](in-class-activities/2017-01-23.pdf).</pre>
+
+</article></slide><slide class=''><hgroup><h2>My workflow for this course</h2></hgroup><article  id="my-workflow-for-this-course-1">
+
+<ul>
+<li>Render slides into .html and .pdf versions</li>
+<li>Render site
+
+<ul>
+<li>Save site documents (.html +) into a special <code>docs/</code> folder</li>
+<li>I wrote <a href='../R/Build.all.R' title=''>R functions</a> to render slides and site</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>My workflow for this course</h2></hgroup><article  id="my-workflow-for-this-course-2">
+
+<ul>
+<li>Commit changes (save this version) and push to GitHub</li>
+<li>I&#39;ve set up course repository (repo) so GitHub renders pages as a website with <a href='http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017/' title=''>http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017/</a> as the URL.</li>
+<li>Any repo can have a site like this</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Your assignment</h2></hgroup><article  id="your-assignment">
 
@@ -367,17 +443,17 @@ output:
 <li>Create a template for a reproducible research report <strong>OR</strong>
 
 <ul>
-<li><a href='rmd-templates/report-template.Rmd' title=''>Rmd template</a>.</li>
+<li><a href='rmd-templates/report-template.Rmd' title=''>Rmd template</a></li>
 </ul></li>
-<li>Create a draft project website <strong>OR</strong>
-
-<ul>
-<li><a href='rmd-templates/website' title=''>Rmd template</a></li>
-</ul></li>
-<li>Create talk slides
+<li>Create talk slides <strong>OR</strong>
 
 <ul>
 <li><a href='rmd-templates/ioslides-template.Rmd' title=''>Rmd template</a></li>
+</ul></li>
+<li>Create a draft project website
+
+<ul>
+<li><a href='rmd-templates/website' title=''>Rmd template</a></li>
 </ul></li>
 </ul>
 
@@ -391,7 +467,8 @@ output:
 <li>Send Rick a zip file archive <strong>OR</strong></li>
 <li>Email Rick your files <strong>OR</strong></li>
 <li>Print out your files <strong>OR</strong></li>
-<li>Push to a web site somewhere and send a link on our Slack channel.</li>
+<li>Push to a web site somewhere and send a link on our Slack channel <strong>OR</strong></li>
+<li>(very soon) Submit a pull request to the class GitHub repo.</li>
 </ul></li>
 </ul></article></slide>
 

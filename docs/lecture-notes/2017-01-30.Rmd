@@ -32,7 +32,22 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## What are they?
 
+- Peer review and provisional acceptance of methodologically sound study proposals
+
 ## Why registered reports?
+
+- Results (positive or null) don't determine publication (prevent publication bias)
+- Reduce questionable practices
+    + p-hacking
+    + HARKing
+    
+## Why [**not**](http://www.cogsci.nl/blog/miscellaneous/215-the-pros-and-cons-of-pre-registration-in-fundamental-research) registered reports
+
+- Restrict creativity in reporting "un-registered"/exploratory analyses?
+    + Clearer communication about confirmatory vs. exploratory
+- Mandatory vs. optional
+- Clinical trials vs. fundamental research
+- Exploration is not a dirty word
 
 ## Who's doing them?
 
@@ -44,13 +59,26 @@ knitr::opts_chunk$set(echo = TRUE)
 - [*Cortex*](http://cdn.elsevier.com/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf)
 - [*Nature Human Behavior*](http://www.nature.com/nathumbehav/about/content)
 
-## How they work
+## How do they work
 
 - Google sheet comparing features <https://docs.google.com/spreadsheets/d/1D4_k-8C_UENTRtbPzXfhjEyu3BfLxdOsn9j-otrO870/edit#gid=0>
 
-## How to get involved
+---
 
-- Study pre-registration separate from registered reports
+<div class="centered">
+<a href="https://www.elsevier.com/editors-update/story/peer-review/cortexs-registered-reports">
+<img src="https://www.elsevier.com/__data/assets/image/0017/143162/Registered-Reports_EditorialPipeline.jpg" height=500px/>
+</a>
+</div>
+
+## Preregistration separate from publication
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SWkqdNppL-s" frameborder="0" allowfullscreen></iframe>
+
+## [Center for Open Science (COS) Preregistration Challenge](https://cos.io/our-services/prereg/)
+
+- 1,000 $1K awards, July 1, 2017 (100), January 1, 2018 (100), July 1, 2018 (250), December 31, 2018 (500)
+- Preregister [hypothesis, sampling, analysis plans](https://osf.io/zwkqj/?_ga=1.163745855.1251838540.1458403228) with OSF
 
 ## [RStudio](http://rstudio.com)
 

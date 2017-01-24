@@ -31,7 +31,7 @@ knitr::opts_chunk$set(echo = TRUE)
     + HTML
         + Embedded or non-embedded figures
     + MS Word
-    + PDF
+    + <PDF
 
 ## Output options
 
@@ -45,6 +45,10 @@ knitr::opts_chunk$set(echo = TRUE)
 - Shiny (interactive document)
     + Document
     + Presentation (ioslides)
+    
+## Output options
+
+- A website!
 
 ## All in your head(er)
 
@@ -222,7 +226,7 @@ See <http://rmarkdown.rstudio.com/pdf_document_format.html>
 
 - Put in 1st position in header, then `rmarkdown::render(input = "my-report.Rmd")` 
 - Or, `rmarkdown::render(input = "my-report.Rmd", output_format = "pdf_document")`
-- Must install LaTeX for this to work
+- Must [install LaTeX](https://www.latex-project.org/get/) for this to work
 
 ---
 
@@ -242,21 +246,83 @@ See <http://rmarkdown.rstudio.com/pdf_document_format.html>
 - `output_dir = reports` or `output_dir = docx` to direct output to a specific directory.
 - `params = list(name = "Joe", quest = "Find the grail", favorite.color = "blue")` to pass parameters that R can use via `params$name`
 
-## How I used this
+## How I used parameter passing like this
 
 <https://github.com/gilmore-lab/gilmore-thomas-fesi-2015/blob/master/render_all.R>
 
 <https://raw.githubusercontent.com/gilmore-lab/gilmore-thomas-fesi-2015/master/gilmore-thomas-fesi.Rmd>
 
+## Making a [website](http://rmarkdown.rstudio.com/rmarkdown_websites.html) in R Markdown
+
+- Components (in a separate folder):
+    + `_site.yml` parameter file
+    + `index.Rmd` and other `*.Rmd` files. (N.B., the * character is a wildcard meaning it can represent any number of characters)
+
+---
+
+`_site.yml`
+
+~~~
+name: "A Site"
+navbar:
+  title: "Site Title"
+  left:
+    - text: "Home"
+      href: index.html
+~~~
+
+---
+
+`index.Rmd`
+
+~~~
+---
+title: "Website home"
+---
+
+My website's home page.
+~~~
+
+Note that the `index.Rmd` file looks like the simplest possible R Markdown file. There's nothing but the title in the header. Of course, you can put all kinds of text, images, videos, and such on each page. 
+
+Render this file into a web page with `rmarkdown:render_site()` or by pressing the `Knit` button.
+
+## My workflow for this course
+
+- Make slides in R Markdown with `ioslides_presentation` as output option
+- Modify `schedule.Rmd` file adding links to lecture notes and in-class activities: 
+
+---
+
+Code snippet from `schedule.Rmd`
+
+~~~
+- **Lecture notes**. [HTML](lecture-notes/2017-01-30.html). [Rmd](lecture-notes/2017-01-30.Rmd). [PDF](lecture-notes/2017-01-30.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-01-23.html). [Rmd](in-class-activities/2017-01-23.Rmd). [PDF](in-class-activities/2017-01-23.pdf).
+~~~
+
+## My workflow for this course
+
+- Render slides into .html and .pdf versions
+- Render site
+    + Save site documents (.html +) into a special `docs/` folder
+    + I wrote [R functions](../R/Build.all.R) to render slides and site
+    
+## My workflow for this course
+
+- Commit changes (save this version) and push to GitHub
+- I've set up course repository (repo) so GitHub renders pages as a website with <http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017/> as the URL.
+- Any repo can have a site like this
+
 ## Your assignment
 
 - Create a template for a reproducible research report **OR**
     + [Rmd template](rmd-templates/report-template.Rmd)
-- Create a draft project website **OR**
-    + [Rmd template](rmd-templates/website)
-- Create talk slides
+- Create talk slides **OR**
     + [Rmd template](rmd-templates/ioslides-template.Rmd)
-    
+- Create a draft project website
+    + [Rmd template](rmd-templates/website)
+
 ---
 
 - Show us your work!
@@ -264,4 +330,5 @@ See <http://rmarkdown.rstudio.com/pdf_document_format.html>
     + Send Rick a zip file archive **OR**
     + Email Rick your files **OR**
     + Print out your files **OR**
-    + Push to a web site somewhere and send a link on our Slack channel.
+    + Push to a web site somewhere and send a link on our Slack channel **OR**
+    + (very soon) Submit a pull request to the class GitHub repo.
