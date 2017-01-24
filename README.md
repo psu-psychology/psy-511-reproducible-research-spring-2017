@@ -4,7 +4,7 @@ This is the repo for PSY 511, a course taught by Rick Gilmore in the Spring of 2
 
 Contents include:
 
-`.Rmd` files used to generate the course website.</br>
+`.Rmd` and `*.yml` files used to generate the course website.</br>
 `doc/` directory where GitHub pages finds and renders the site.</br>
 `R/` directory with R code to render the site.</br>
 `bib/ css/ img/` directories with bib.tex css and image files.</br>

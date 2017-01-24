@@ -1,6 +1,8 @@
 # This script updates the local git repo, commits it, and pushes to
 # the remote server
 
+system(command = "git add README.md")
+
 # Update selected files in docs/
 system(command = "git add docs/*.html")
 system(command = "git add docs/bib docs/css docs/img docs/R")
