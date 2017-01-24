@@ -24,6 +24,20 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <"https://www.google.com/search?q=workflow">
 
+<!-- Scrolling page -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style> 
+
 ## Typical workflows in experimental psychology
 
 - Idea/question/hypotheses
@@ -415,6 +429,7 @@ merged
 
 ## Project/write-up (due start of next class)
 
+- Pick one of the recommended elements from [Table 1 in Munafò, et al. (2017)](http://www.nature.com/articles/s41562-016-0021/tables/1). Evaluate the recommendation. Do you agree that it would mitigate one or more threats to reproducibility. Why or why not? Do you agree with the assessment about the degree to which stakeholders have adopted the recommended practice?
 - Edit/create a text-based workflow for an active project you are working on.
     + Annote the workflow to indicate where it could be made more reproducible, transparent.
 
