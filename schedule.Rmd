@@ -9,8 +9,8 @@ title: "Schedule"
 - Introduction to the course
 - Cases of scientific misconduct
 - What is reproducibility? Are we in a crisis?
-- Lecture notes. [HTML](lecture-notes/2017-01-09-course-intro.html). [Rmd](lecture-notes/2017-01-09-course-intro.Rmd). [PDF](lecture-notes/2017-01-09-course-intro.pdf).
-- Activity notes. [HTML](in-class-activities/2017-01-09.html). [Rmd](in-class-activities/2017-01-09.Rmd). [PDF](in-class-activities/2017-01-09.pdf).
+- **Lecture notes**. [HTML](lecture-notes/2017-01-09-course-intro.html). [Rmd](lecture-notes/2017-01-09-course-intro.Rmd). [PDF](lecture-notes/2017-01-09-course-intro.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-01-09.html). [Rmd](in-class-activities/2017-01-09.Rmd). [PDF](in-class-activities/2017-01-09.pdf).
 
 ### Readings/webinars
 
@@ -60,7 +60,7 @@ title: "Schedule"
 - Registration and registered reports
 - Introduction to RStudio and R Markdown
 - RStudio for research
-- Lecture notes. [HTML](lecture-notes/2017-01-30.html). [Rmd](lecture-notes/2017-01-30.Rmd). [PDF](lecture-notes/2017-01-30.pdf).
+- **Lecture notes**. [HTML](lecture-notes/2017-01-30.html). [Rmd](lecture-notes/2017-01-30.Rmd). [PDF](lecture-notes/2017-01-30.pdf).
 - **Activity notes**. [HTML](in-class-activities/2017-01-23.html). [Rmd](in-class-activities/2017-01-23.Rmd). [PDF](in-class-activities/2017-01-23.pdf).
 
 <!---
