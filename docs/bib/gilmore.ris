@@ -1,0 +1,177 @@
+TY  - CONF
+TI  - What accounts for developmental shifts in optic flow sensitivity?
+AU  - Gilmore, R. O.
+AU  - Raudies, F.
+AU  - Jayaraman, S.
+T2  - 2015 Joint IEEE International Conference on Development and Learning and Epigenetic Robotics (ICDL-EpiRob)
+AB  - Human infants undergo significant changes in body size, posture, and locomotor capability over the first several years of life. As a result, the statistics of visual motion infant observers experience differs from adults in some situations [1,2]. We ask whether these differences apply more generally, and if so, what factors account for them. In one analysis, we simulate the effects of changes in body posture, speed of locomotion, and surface geometry on motion statistics. In a second analysis, we empirically measure the statistics of visual motion experienced by observers across the first year of life using infant-perspective videos captured during episodes when infants were moving through space or were stationary. We include samples of infants in from North America and those from India to assess how variations in cultural practices influence infants' visual experiences. We find that fast laminar motion patterns dominate the visual input young infants experience and that cultural differences play a role in shaping visual motion experiences.
+C3  - 2015 Joint IEEE International Conference on Development and Learning and Epigenetic Robotics (ICDL-EpiRob)
+DA  - 2015/08//
+PY  - 2015
+DO  - 10.1109/DEVLRN.2015.7345450
+DP  - IEEE Xplore
+SP  - 19
+EP  - 25
+L1  - http://ieeexplore.ieee.org/ielx7/7332337/7346087/07345450.pdf?tp=&arnumber=7345450&isnumber=7346087
+L2  - http://ieeexplore.ieee.org/document/7345450/?reload=true
+KW  - cultural aspects
+KW  - culture
+KW  - Geometry
+KW  - human factors
+KW  - image motion analysis
+KW  - image sequences
+KW  - India
+KW  - infants
+KW  - Legged locomotion
+KW  - locomotion speed
+KW  - North America
+KW  - Optical sensors
+KW  - Optical variables measurement
+KW  - optic flow
+KW  - optic flow
+KW  - optic flow sensitivity
+KW  - Sensitivity
+KW  - surface geometry
+KW  - Videos
+KW  - visual development
+KW  - Visualization
+KW  - visual motion experience
+KW  - visual motion statistics
+ER  - 
+
+TY  - CONF
+TI  - Understanding the development of motion processing by characterizing optic flow experienced by infants and their mothers
+AU  - Raudies, F.
+AU  - Gilmore, R.O.
+AU  - Kretch, K.S.
+AU  - Franchak, J.M.
+AU  - Adolph, K.E.
+T2  - 2012 IEEE International Conference on Development and Learning and Epigenetic Robotics (ICDL)
+AB  - Understanding the development of mature motion processing may require knowledge about the statistics of the visual input that infants are exposed to, how these change across development, and how they influence the maturation of motion-sensitive brain networks. Here we develop a set of techniques to study the optic flow experienced by infants and mothers during locomotion as a first step toward a broader analysis of the statistics of the natural visual environment during development.
+C3  - 2012 IEEE International Conference on Development and Learning and Epigenetic Robotics (ICDL)
+DA  - 2012/11//
+PY  - 2012
+DO  - 10.1109/DevLrn.2012.6400584
+DP  - IEEE Xplore
+SP  - 1
+EP  - 6
+L2  - http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6400584&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6400584
+KW  - Biomedical optical imaging
+KW  - Brain
+KW  - Cameras
+KW  - eye-tracking
+KW  - gaze
+KW  - Head
+KW  - Heading
+KW  - image sequences
+KW  - infant visual input statistics
+KW  - mature motion processing development
+KW  - mother
+KW  - motion-sensitive brain network maturation
+KW  - natural visual environment
+KW  - neural nets
+KW  - Nonlinear optics
+KW  - Optical imaging
+KW  - Optical sensors
+KW  - Optic flow
+KW  - optic flow
+KW  - Optic flow
+KW  - optic flow characterization
+KW  - optic flow experience
+KW  - Self-motion
+KW  - statistical analysis
+KW  - Visualization
+KW  - Visual perception
+ER  - 
+
+TY  - JOUR
+TI  - Egocentric Action in Early Infancy: Spatial Frames of Reference for Saccades
+AU  - Gilmore, Rick O.
+AU  - Johnson, Mark H.
+T2  - Psychological Science
+AB  - The extent to which infants combine visual (i e, retinal position) and nonvisual (eye or head position) spatial information in planning saccades relates to the issue of what spatial frame or frames of reference influence early visually guided action We explored this question by testing infants from 4 to 6 months of age on the double-step saccade paradigm, which has shown that adults combine visual and eye position information into an egocentric (head- or trunk-centered) representation of saccade target locations In contrast, our results imply that infants depend on a simple retinocentric representation at age 4 months, but by 6 months use egocentric representations more often to control saccade planning Shifts in the representation of visual space for this simple sensorimotor behavior may index maturation in cortical circuitry devoted to visual spatial processing in general
+DA  - 1997/05/01/
+PY  - 1997
+DO  - 10.1111/j.1467-9280.1997.tb00416.x
+DP  - pss.sagepub.com
+VL  - 8
+IS  - 3
+SP  - 224
+EP  - 230
+J2  - Psychological Science
+LA  - en
+SN  - 0956-7976, 1467-9280
+ST  - Egocentric Action in Early Infancy
+UR  - http://pss.sagepub.com/content/8/3/224
+Y2  - 2015/02/25/17:25:27
+L1  - http://pss.sagepub.com/content/8/3/224.full.pdf
+L2  - http://pss.sagepub.com/content/8/3/224.abstract
+ER  - 
+
+TY  - JOUR
+TI  - Body-centered representations for visually-guided action emerge during early infancy
+AU  - Gilmore, Rick O
+AU  - Johnson, Mark H
+T2  - Cognition
+AB  - The nature of the spatial representations that underlie simple visually guided actions early in life were investigated through the application of a `double-step' saccade paradigm to 3- and 7-month-old infants. Saccades in the older infants, like those observed in adults, were executed within body-centered spatial coordinates that take into account the effects of intervening eye movements. In contrast, younger infants tended to respond according to the targets' retinocentric locations and did not incorporate the effects of displacements caused by previous saccades. These results indicate that, contrary to prevailing views, body-centered representations for action are not present from birth but emerge, probably through experience, over the first few months of life.
+DA  - 1997/12//
+PY  - 1997
+DO  - 10.1016/S0010-0277(97)00038-3
+DP  - ScienceDirect
+VL  - 65
+IS  - 1
+SP  - B1
+EP  - B9
+J2  - Cognition
+SN  - 0010-0277
+UR  - http://www.sciencedirect.com/science/article/pii/S0010027797000383
+Y2  - 2015/02/25/17:24:55
+L1  - http://www.sciencedirect.com/science/article/pii/S0010027797000383/pdfft?md5=1e861176ddb9d91a9fea59416ba13fe9&pid=1-s2.0-S0010027797000383-main.pdf
+L2  - http://www.sciencedirect.com/science/article/pii/S0010027797000383
+KW  - Body-centered representations
+KW  - Double-step saccade paradigm
+KW  - Eye movements
+KW  - eye movements
+KW  - eye movements
+ER  - 
+
+TY  - JOUR
+TI  - Acquisition of Intellectual and Perceptual-Motor Skills
+AU  - Rosenbaum, David A.
+AU  - Carlson, Richard A.
+AU  - Gilmore, Rick O.
+T2  - Annual Review of Psychology
+AB  - Recent evidence indicates that intellectual and perceptual-motor skills are acquired in fundamentally similar ways. Transfer specificity, generativity, and the use of abstract rules and reflexlike productions are similar in the two skill domains; brain sites subserving thought processes and perceptual-motor processes are not as distinct as once thought; explicit and implicit knowledge characterize both kinds of skill; learning rates, training effects, and learning stages are remarkably similar for the two skill classes; and imagery, long thought to play a distinctive role in high-level thought, also plays a role in perceptual-motor learning and control. The conclusion that intellectual skills and perceptual-motor skills are psychologically more alike than different accords with the view that all knowledge is performatory.
+DA  - 2001///
+PY  - 2001
+DO  - 10.1146/annurev.psych.52.1.453
+DP  - Annual Reviews
+VL  - 52
+IS  - 1
+SP  - 453
+EP  - 470
+UR  - http://dx.doi.org/10.1146/annurev.psych.52.1.453
+Y2  - 2015/02/18/16:11:37
+L1  - http://www.annualreviews.org/doi/pdf/10.1146/annurev.psych.52.1.453
+ER  - 
+
+TY  - JOUR
+TI  - Object-centered attention in 8-month-old infants
+AU  - Johnson, Mark H.
+AU  - Gilmore, Rick O.
+T2  - Developmental Science
+AB  - We examined the extent to which visual orienting in 8-month-old infants shows evidence of being guided by object-based representations. Infants’ preferences to look at conspicuous targets presented on one of two stationary objects were measured following an event (cue) which directed their covert attention to one of the objects. The results indicate that by 8 months of age a cue presented on one part of an object directs attention to the whole object (object-centered attention). This then affects responses to targets that appear elsewhere on the cued object.
+DA  - 1998///
+PY  - 1998
+DO  - 10.1111/1467-7687.00034
+DP  - Wiley Online Library
+VL  - 1
+IS  - 2
+SP  - 221
+EP  - 225
+LA  - en
+SN  - 1467-7687
+UR  - http://onlinelibrary.wiley.com/doi/10.1111/1467-7687.00034/abstract
+Y2  - 2012/07/01/13:21:26
+ER  - 
+

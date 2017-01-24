@@ -1,0 +1,25 @@
+---
+title: "ioslides-template"
+author: "X. Ellent Student"
+date: "`r Sys.time()`"
+output:
+  ioslides_presentation:
+    widescreen: true
+    incremental: false
+    transition: default
+    self-contained: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# A top-level slide
+
+## Slide 1
+
+## Slide 2
+
+---
+
+- A slide without a header
