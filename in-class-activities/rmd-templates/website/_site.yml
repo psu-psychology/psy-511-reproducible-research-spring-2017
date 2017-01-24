@@ -1,0 +1,15 @@
+name: "Rmd Template Site"
+navbar:
+  title: "Template"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Site info"
+      href: site-info.html
+output_dir: "docs"
+output:
+  html_document:
+    theme: spacelab
+    highlight: textmate
+    include:
+      after_body: footer.html

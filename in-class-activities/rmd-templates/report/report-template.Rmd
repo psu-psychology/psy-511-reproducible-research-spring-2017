@@ -1,0 +1,131 @@
+---
+title: "report-template"
+author: "X. Ellent Student"
+date: "`r Sys.time()`"
+output: 
+  html_document:
+    self_contained: false
+  word_document:
+    fig_width: 5
+    fig_height: 5
+    fig_caption: false
+    df_print: kable
+  pdf_document:
+    toc: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Abstract
+
+This is a report template. 
+
+## Introduction
+
+If you hit the `Knit` button in RStudio, it will create an `html_document` because that is the first line in the YAML header. 
+
+~~~
+---
+title: "report-template"
+author: "X. Ellent Student"
+date: "`r Sys.time()`"
+output: 
+  html_document:
+    self_contained: false
+  word_document:
+    fig_width: 5
+    fig_height: 5
+    fig_caption: false
+    df_print: kable
+  pdf_document:
+    toc: true
+    toc_depth: 2
+---
+~~~
+
+You can just render the document at the command line with `rmarkdown::render(input = "report-template.Rmd"`.
+
+You can change the default output format by changing the order of the items in the header:
+
+~~~
+---
+title: "report-template"
+author: "X. Ellent Student"
+date: "`r Sys.time()`"
+output: 
+  word_document:
+    fig_width: 5
+    fig_height: 5
+    fig_caption: false
+    df_print: kable
+  html_document:
+    self_contained: false
+  pdf_document:
+    toc: true
+    toc_depth: 2
+---
+~~~
+
+This renders a Word file by default.
+
+To pick some but not all output formats, enter `rmarkdown::render(input = "report-template.Rmd", output_format = c("html_document", "pdf_document"))`
+
+You can also go hog-wild and render all three output formats at once by entering `rmarkdown::render(input = "report-template.Rmd", output_format = "all")`.
+
+## Methods
+
+Describe what you did here.
+
+### Participants
+
+With whom...
+
+### Materials
+
+With what...
+
+### Procedure
+
+How...
+
+### Analysis
+
+What you measured...
+
+```{r sample-data}
+x = rnorm(n = 100, mean = 0, sd = 1)
+y = rnorm(n = 100, mean = 5, sd = 10)
+```
+
+## Results
+
+What you found...
+
+### My scatterplot
+
+```{r figure-1}
+plot(x,y)
+```
+
+The correlation between x and y is `r cor(x,y)`.
+
+### Some histograms
+
+```{r figure-2}
+hist(x)
+hist(y)
+```
+
+The mean of x is `r mean(x)` and the standard deviation is `r sd(x)`. Or, try a table:
+
+| Variable | Mean        | SD        |
+|----------|-------------|-----------|
+| x        | `r mean(x)` | `r sd(x)` |
+| y        | `r mean(y)` | `r sd(y)` |
+
+## Conclusion
+
+What you concluded.
