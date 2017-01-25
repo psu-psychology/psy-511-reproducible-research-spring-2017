@@ -80,6 +80,18 @@ knitr::opts_chunk$set(echo = TRUE)
 - 1,000 $1K awards, July 1, 2017 (100), January 1, 2018 (100), July 1, 2018 (250), December 31, 2018 (500)
 - Preregister [hypothesis, sampling, analysis plans](https://osf.io/zwkqj/?_ga=1.163745855.1251838540.1458403228) with OSF
 
+## [AsPredicted.org](https://aspredicted.org/)
+
+- Standardized preregistration tool
+- Separate confirmatory from exploratory analyses
+- One author completes checklist, others receive email to approve
+- Unique (private) URL to pdf
+- Share when you like or never
+
+## Your thoughts on preregistration, registered reports?
+
+# Tools for reproducible workflows
+
 ## [RStudio](http://rstudio.com)
 
 - An integrated development environment (IDE) for R
