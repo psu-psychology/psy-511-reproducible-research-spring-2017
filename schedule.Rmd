@@ -88,6 +88,7 @@ title: "Schedule"
     + Chambers, C., Munafò, M., & signatories, more than 80. (2013, June 5). Trust in science would be improved by study pre-registration. *The Guardian*. Retrieved from <https://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration>
     + Registered Reports. (n.d.). Retrieved January 24, 2017, from <https://cos.io/rr/?_ga=1.163722943.1251838540.1458403228>
     + Mathot, S. (2013, March 26). The pros and cons of pre-registration in fundamental research. Retrieved January 24, 2017 from <http://www.cogsci.nl/blog/miscellaneous/215-the-pros-and-cons-of-pre-registration-in-fundamental-research>
+    + (Optional) Frank, M. (2016, July 22). Preregister everything. <http://babieslearninglanguage.blogspot.com/2016/07/preregister-everything.html>
 - [R Markdown](http://rmarkdown.rstudio.com/) exercise
     + [Getting started with R Markdown](https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/)
 - Optional
@@ -95,21 +96,13 @@ title: "Schedule"
     - [Working with the RStudio IDE (Part II)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-1). 3 hrs.
     - [Working with the RStudio IDE (Part II)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2)
 
-<!--
-### Activities
-
-- Create a template for a reproducible research report
-- Create a draft project website
-- Create talk slides
--->
-
 ## Week 5: February 6
 
 ### Topics
 
 - Version control
 - git
-- GitHub
+    + GitHub
     + GitHub pages
 - Reproducible computation
     + [packrat](http://rstudio.github.io/packrat/)
@@ -117,15 +110,7 @@ title: "Schedule"
 ### Readings/webinars
 
 - [GitHub and RStudio](https://www.rstudio.com/resources/webinars/rstudio-essentials-webinar-series-managing-part-2/)
-- <http://happygitwithr.com/>
-
-### Activities
-
-- Create a GitHub account.
-- [Hello World](https://guides.github.com/activities/hello-world/) exercise on GitHub
-- Add version control to an RStudio project
-- Add packrat to an RStudio project
-- Create a website using GitHub pages
+- Jenny Bryan's <http://happygitwithr.com/>
 
 ## Week 6: February 13
 
@@ -166,15 +151,16 @@ title: "Schedule"
 
 ## Week 8: February 27
 
-**NO CLASS*
+**NO CLASS**
 
 ## Spring Break March 6 - 10
 
-**NO CLASS*
+**NO CLASS**
 
 ## Week 9: March 13
 
 ### Topics
+
 - Tools for reproducible data-gathering
     + E-Prime, Matlab ([Psychophysics Toolbox](http://psychtoolbox.org/)), [PsychoPy](http://www.psychopy.org/).
     + [jsPsych](http://www.jspsych.org/)
@@ -184,7 +170,7 @@ title: "Schedule"
 ### Readings/webinars
 
 - de Leeuw, J.R. (2015). jsPsych: A JavaScript library for creating behavioral experiments in a Web browser. Behavior Research Methods, 47(1), 1-12. doi:10.3758/s13428-014-0458-y
-- [Lecture notes](jpsych.html)
+<!--- [Lecture notes](jpsych.html)-->
 
 ### Activities
 
