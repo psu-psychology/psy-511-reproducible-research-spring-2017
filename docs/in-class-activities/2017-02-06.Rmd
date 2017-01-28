@@ -1,0 +1,98 @@
+---
+title: "2017-02-06"
+author: "Rick O. Gilmore"
+date: "`r Sys.time()`"
+bibliography: ../bib/reproducibility.bib
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    widescreen: true
+    incremental: false
+    transition: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Activities
+
+- Create a GitHub account.
+- Complete [Hello World](https://guides.github.com/activities/hello-world/) exercise on GitHub
+- Clone GitHub repo into RStudio project
+
+## Create a GitHub account
+
+- Instructions: <http://happygitwithr.com/github-acct.html>
+- Request student discount: <https://education.github.com/>
+
+## Complete Hello World exercise
+
+- Complete [Hello World](https://guides.github.com/activities/hello-world/) exercise on GitHub
+
+## Install git on your computer
+
+- Instructions: <http://happygitwithr.com/install-git.html>
+
+## Tell git who you are
+
+- Instructions: <http://happygitwithr.com/hello-git.html>
+
+## Connect git to your GitHub account
+
+- Instructions: <http://happygitwithr.com/push-pull-github.html>
+- Avoid authenticating each time by [caching credentials](http://happygitwithr.com/credential-caching.html) or using [ssh keys](http://happygitwithr.com/ssh-keys.html).
+
+## Connect RStudio with git and GitHub
+
+- Clone the Hello World repo, following these instructions: <http://happygitwithr.com/rstudio-git-github.html#clone-the-new-github-repository-to-your-computer-via-rstudio>
+
+## Create new RStudio project
+
+- Instructions: <http://happygitwithr.com/new-github-first.html#new-rstudio-project-via-git-clone>
+- GitHub repo first
+- New RStudio project by cloning repo
+
+---
+
+<div class="centered">
+<video width="800" height="600" controls>
+  <source src="../video/clone-github-repo-into-rstudio-proj.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+## GitHub pages web site for an organization (or individual)
+
+- What's an organization?
+    + [psu-psychology](http://github.com/psu-psychology) is a GitHub organization
+    + [gilmore-lab](http://github.com/gilmore-lab) is a GitHub organization
+- How to
+    + Put web site files in 'organization-name.github.io' repo.
+    + Configure organization to enable GitHub pages.
+    
+## GitHub pages web site for an organization (or individual)
+
+- Example
+    + Organization: <http://github.com/gilmore-lab>
+    + Repo: <http://github.com/gilmore-lab/gilmore-lab.github.io>
+    + Site: <http://gilmore-lab.github.io>
+    
+## GitHub pages web site for an individual repo
+
+- Example use cases
+    + Projects within lab organization
+    + <https://psu-psychology.github.io/psych-260-spring-2017/>
+    + <https://psu-psychology.github.io/data-science-and-reproducibility>
+    + <https://psu-psychology.github.io/psy-511-reproducible-research-spring-2017>
+- How to
+    + URL combines `organization-name` + `github.io/` + `repo-name`
+    + Web files to `docs/` folder within repo. [Example](https://psu-psychology.github.io/data-science-and-reproducibility) or
+    + Repo itself. [Example](https://gilmore-lab.github.io/soda-2017-01-31/soda-2017-01-31#1). *Should probably change file name for better URL*.
+    + Configure repo's GitHub pages settings accordingly
+
+## Assignments
+
+- Create GitHub repo for the project you completed last week
+- Create a repo for notes related to your final course project
+    + Start outlining the possible directions that project might take

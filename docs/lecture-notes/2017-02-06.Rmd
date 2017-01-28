@@ -1,0 +1,175 @@
+---
+title: "2017-02-06"
+author: "Rick O. Gilmore"
+date: "`r Sys.Date()`"
+bibliography: ../bib/reproducibility.bib
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    widescreen: true
+    incremental: false
+    transition: default
+    self-contained: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+<div class="centered">
+<a href="http://www.phdcomics.com/comics/archive.php?comicid=1531">
+<img src="http://www.phdcomics.com/comics/archive/phd101212s.gif" height=550px/>
+</a>
+</div>
+
+
+## Today's topics
+
+- The whats, whys and hows of version control
+
+## What is version control
+
+- "management of changes to documents, computer programs, large web sites, and other collections of information." <https://en.wikipedia.org/wiki/Version_control>
+- Track changes an example
+- Wikipedia another
+
+## Why do version control
+
+<div class="centered">
+<a href="https://whatdoidowithmylife.wordpress.com/2012/06/27/back-to-the-drawing-board/">
+<img src="https://whatdoidowithmylife.files.wordpress.com/2012/06/drawing-board.jpg" height=500px/>
+</a>
+</div>
+
+---
+
+<div class="centered">
+<img src="http://smutch.github.io/VersionControlTutorial/_images/vc-xkcd.jpg" width=800px/>
+</div>
+
+## Why do version control
+
+- Revert to previous version
+- Keep record of who made what changes when
+- Transparency
+
+## How to do version control
+
+- [Edit, Save, Attach](http://happygitwithr.com/big-picture.html#what-is-the-payoff)
+- Consistent file-naming (and incrementing) conventions
+    + gilmore-etal-nature-2017-01-28-1319.docx
+    + gilmore-etal-nature-2017-01-28-1400.docx
+    + ... etc.
+    
+## Pros and cons
+
+- Pros
+    + No special software needed
+    + Works with every file type
+    + Good for any file type
+- Cons
+    + Not everyone uses the same file naming conventions
+    + Dealing with conflicts
+    + File management
+
+## How to do version control
+
+- Google Docs
+    + Gilmore, Diaz, Wyble, & Yarkoni (in press). Progress Toward Openness, Transparency, and Reproducibility in Cognitive Neuroscience. *Annals of the New York Academy of Sciences*. <https://docs.google.com/document/d/1BOL_AdvMceJluyPsL9aop1iBqxOla15fXcstPFHe9e0/edit?usp=sharing>
+
+## Pros and cons
+
+- Pros
+    + Works with docs and sheets
+    + Unlimited, automatic track changes
+    + Stored in cloud
+    + No special naming conventions
+- Cons
+    + NYAS Editor wanted Word doc with track changes!
+    + Not all types of files
+    + Not everyone likes/knows how to use Google docs
+    
+## How to do version control
+
+- Box.com
+    + Enterprise version stores 100 versions
+
+---
+
+<div class="centered">
+<video width="800" height="600" controls>
+  <source src="../video/version-control-box.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+## Pros and cons
+
+- Pros
+    + Keep the same file name
+    + Let Box do automatic versioning
+    + Shared file space
+    + Any kind of file Box supports
+- Cons
+    + 100 versions
+    + Penn State enterprise license
+    
+## How to do version control
+
+- [Microsoft OneDrive](https://onedrive.live.com/about/en-us/)
+- Pros
+    + Multiple platforms (like Box)
+    + Multiple file types
+    + Hallquist lab uses for non-code
+- Cons
+    + ?
+
+## How to do version control
+
+- [Open Science Framework](http://osf.io)
+    + Integrates with Box, Dropbox, GitHub
+- Pros
+    + Free, open source, devoted to open science
+    + Many different file types
+- Cons
+    + Version control depends on storage sources
+    + Wyble lab reports [some frustrations](https://psu-psychology.github.io/data-science-and-reproducibility/forum.html?place=msg%2Fpsu-psychology-data-science%2Fi9D-O5lwB6k%2Fb8aPOnUDAgAJ)
+    
+## How to do version control
+
+- [Git](https://en.wikipedia.org/wiki/Git)
+    + free, open source version control system
+    + created by Linus Torvalds, creator of the Linux operating system, to manage that project's software development
+- Web-based git repositories
+    + [GitHub](http://github.com)
+    + [GitLab](https://about.gitlab.com/)
+    + [Bitbucket](https://bitbucket.org/)
+    
+## Cons
+
+- Designed by and for software developers
+- Text files
+- Wonky
+- Longevity of web-based repos?
+- User have to specifically push (upload) and pull (download) files
+
+## Pros
+
+- Great for R code, data
+- Great for Jupyter notebooks (later in course)
+- GitHub exploits the power of the web
+- Gilmore, Hallquist, Wyble use
+
+## Distributed version control
+
+<div class="centered">
+<img src="https://homes.cs.washington.edu/~mernst/advice/version-control-fig3.png" height=500px/>
+</div>
+
+## Distributed version control
+
+- Everyone works on their own local copies
+- Pull before they start work
+- Save and push when they're finished

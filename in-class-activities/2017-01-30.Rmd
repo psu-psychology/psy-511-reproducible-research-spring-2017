@@ -318,6 +318,7 @@ Code snippet from `schedule.Rmd`
 
 - Create a template for a reproducible research report **OR**
     + [Rmd template](rmd-templates/report-template.Rmd)
+    + You might also convert your study protocol into an Rmd document.
 - Create talk slides **OR**
     + [Rmd template](rmd-templates/ioslides-template.Rmd)
 - Create a draft project website
