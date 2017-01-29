@@ -332,4 +332,4 @@ Code snippet from `schedule.Rmd`
     + Email Rick your files **OR**
     + Print out your files **OR**
     + Push to a web site somewhere and send a link on our Slack channel **OR**
-    + (very soon) Submit a pull request to the class GitHub repo.
+    + Add to your private GitHub repo for this course. <https://github.com/psu-psych-511-2017-spring>.

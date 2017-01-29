@@ -9,6 +9,7 @@ system(command = "git add docs/bib docs/css docs/img docs/R")
 system(command = "git add docs/lecture-notes/*html docs/lecture-notes/*.pdf docs/lecture-notes/*.Rmd")
 system(command = "git add docs/in-class-activities/*html docs/in-class-activities/*.pdf docs/in-class-activities/*.Rmd")
 system(command = "git add docs/in-class-activities/csv docs/in-class-activities/rmd-templates")
+system(command = "git add docs/video")
 
 # Update selected raw (mostly *.Rmd) files since .html and .pdf get re-rendered
 system(command = "git add lecture-notes/*.Rmd")
