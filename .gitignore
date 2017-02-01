@@ -4,7 +4,7 @@
 .Ruserdata
 .DS_Store
 packrat/lib*/
-*.pdf
+./*.pdf
 lecture-notes/*.pdf
 lecture-notes/*.html
 in-class-activities/*.pdf

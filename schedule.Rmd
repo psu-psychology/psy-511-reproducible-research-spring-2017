@@ -61,7 +61,7 @@ title: "Schedule"
 - Introduction to RStudio and R Markdown
 - RStudio for research
 - **Lecture notes**. [HTML](lecture-notes/2017-01-30.html). [Rmd](lecture-notes/2017-01-30.Rmd). [PDF](lecture-notes/2017-01-30.pdf).
-- **Activity notes**. [HTML](in-class-activities/2017-01-23.html). [Rmd](in-class-activities/2017-01-23.Rmd). [PDF](in-class-activities/2017-01-23.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-01-30.html). [Rmd](in-class-activities/2017-01-30.Rmd). [PDF](in-class-activities/2017-01-30.pdf).
 
 <!---
 - RStudio for research
@@ -104,8 +104,8 @@ title: "Schedule"
 - git
     + GitHub
     + GitHub pages
-- Reproducible computation
-    + [packrat](http://rstudio.github.io/packrat/)
+- **Lecture notes**. [HTML](lecture-notes/2017-02-06.html). [Rmd](lecture-notes/2017-02-06.Rmd). [PDF](lecture-notes/2017-02-06.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-02-06.html). [Rmd](in-class-activities/2017-02-06.Rmd). [PDF](in-class-activities/2017-02-06.pdf).
         
 ### Readings/webinars
 

@@ -4,14 +4,15 @@ title: "Students"
 
 The following students are taking PSY 511.
 
-## Berenice Anaya
-
-## Yushuang Liu
-
-## Natalie Motta-Mena
-
-## Kingsley Schroeder
-
-## Alicia Vallorani
-
-## Sara Winter
+- Berenice Anaya
+    + Course GitHub repo. <https://github.com/psu-psych-511-2017-spring/anaya_berenice>
+- Yushuang Liu
+    + Course GitHub repo. <https://github.com/psu-psych-511-2017-spring/liu_yushuang>
+- Natalie Motta-Mena
+    + Course GitHub repo. <https://github.com/psu-psych-511-2017-spring/motta-mena_natalie>
+- Kingsley Schroeder
+    + Course GitHub repo. <https://github.com/psu-psych-511-2017-spring/schroeder_kingsley>
+- Alicia Vallorani
+    + Course GitHub repo. <https://github.com/psu-psych-511-2017-spring/vallorani_alicia>
+- Sara Winter
+    + Course GitHub repo. <https://github.com/psu-psych-511-2017-spring/winter_sara>
