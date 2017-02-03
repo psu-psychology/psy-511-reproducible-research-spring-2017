@@ -19,6 +19,9 @@ title: "Resources"
 
 ## Software tools
 
+- R style guides
+    - [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml)
+    - [Hadley Wickham's](http://adv-r.had.co.nz/Style.html) from *Advanced R*
 - LaTeX on the web
     - ShareLaTex <http://sharelatex.com>
     - Overleaf <http://www.overleaf.com>

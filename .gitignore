@@ -9,3 +9,6 @@ lecture-notes/*.pdf
 lecture-notes/*.html
 in-class-activities/*.pdf
 in-class-activities/*.html
+.Rprofile
+psy-511-reproducible-research.Rproj
+video

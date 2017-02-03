@@ -15,6 +15,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# in-class activities
+
 ## Activities
 
 - Create a GitHub account.
@@ -94,5 +96,13 @@ Your browser does not support the video tag.
 ## Assignments
 
 - Create GitHub repo for the project you completed last week
-- Create a repo for notes related to your final course project
-    + Start outlining the possible directions that project might take
+    + Open an issue flagging `@rogilmore` so I know to look at your repo and document.
+- Create a repo for your final course project
+    + Create a Markdown document where you start to outline the possible directions that your final project might take.
+    + Open an issue so I can take a look.
+- Clone a repo; fix/change something; make a [pull request](https://help.github.com/articles/about-pull-requests/).
+    + Option 1: <http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017/>
+        - Suggestion: Add something about yourself to `students.html` by editing `students.Rmd` and then rebuilding the site via `rmarkdown::render_site(encoding = "utf8")`
+    + Option 2: <https://psu-psychology.github.io/data-science-and-reproducibility/>
+        - Suggestion: Add or edit `resources.html` by editing `resources.Rmd` and then rebuilding the site via `rmarkdown::render_site(encoding = "utf8")`
+        - If you want to be added to the repo as an editor so you can do this more easily (w/o a pull request), let me know.
