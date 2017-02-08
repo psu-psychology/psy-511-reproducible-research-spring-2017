@@ -1,4 +1,9 @@
-Make.lecture.notes <- function(fn, fdir = "lecture-notes", all = TRUE, output_format = c("ioslides_presentation", "pdf_document")) {
+Make.lecture.notes <- function(fn, 
+                               fdir = "lecture-notes", 
+                               all = TRUE, 
+                               output_format = c("ioslides_presentation", 
+                                                 "github_document", 
+                                                 "pdf_document")) {
   # Renders Rmd lecture notes
   #
   # Args:
@@ -6,10 +11,13 @@ Make.lecture.notes <- function(fn, fdir = "lecture-notes", all = TRUE, output_fo
   #   fdir: Directory for lecture notes files, default is "lecture-notes"
   #   all: Boolean if TRUE, then print all *.Rmd files in fdir. Default is TRUE.
   #   output_format: Specifies the output formats to render. 
-  #     Default is c("ioslides_presentation", "pdf_document"))
+  #     Default is c("ioslides_presentation", "github_document", pdf_document"))
   #
   # Returns:
   #
+  
+  # History
+  # 2017-02-03 rog added "github_document" to output formats.
   
   if (!all) {
     if (missing(fn)) {

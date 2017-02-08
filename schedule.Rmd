@@ -9,8 +9,8 @@ title: "Schedule"
 - Introduction to the course
 - Cases of scientific misconduct
 - What is reproducibility? Are we in a crisis?
-- **Lecture notes**. [HTML](lecture-notes/2017-01-09-course-intro.html). [Rmd](lecture-notes/2017-01-09-course-intro.Rmd). [PDF](lecture-notes/2017-01-09-course-intro.pdf).
-- **Activity notes**. [HTML](in-class-activities/2017-01-09.html). [Rmd](in-class-activities/2017-01-09.Rmd). [PDF](in-class-activities/2017-01-09.pdf).
+- **Lecture notes**. [HTML](lecture-notes/2017-01-09-course-intro.html). [Markdown](lecture-notes/2017-01-09-course-intro.md). [PDF](lecture-notes/2017-01-09-course-intro.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-01-09.html). [Markdown](in-class-activities/2017-01-09.md). [PDF](in-class-activities/2017-01-09.pdf).
 
 ### Readings/webinars
 
@@ -34,8 +34,8 @@ title: "Schedule"
 
 - Evaluating Munafò et al.'s (2017) "Manifesto for reproducible science", <https://doi.org/10.1038/s41562-016-0021>
 - Workflows and *methods* reproducibility
-- **Lecture notes**. [HTML](lecture-notes/2017-01-23.html). [Rmd](lecture-notes/2017-01-23.Rmd). [PDF](lecture-notes/2017-01-23.pdf).
-- **Activity notes**. [HTML](in-class-activities/2017-01-23.html). [Rmd](in-class-activities/2017-01-23.Rmd). [PDF](in-class-activities/2017-01-23.pdf).
+- **Lecture notes**. [HTML](lecture-notes/2017-01-23.html). [Markdown](lecture-notes/2017-01-23.md). [PDF](lecture-notes/2017-01-23.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-01-23.html). [Markdown](in-class-activities/2017-01-23.md). [PDF](in-class-activities/2017-01-23.pdf).
 
 ### Readings/webinars
 
@@ -60,8 +60,8 @@ title: "Schedule"
 - Registration and registered reports
 - Introduction to RStudio and R Markdown
 - RStudio for research
-- **Lecture notes**. [HTML](lecture-notes/2017-01-30.html). [Rmd](lecture-notes/2017-01-30.Rmd). [PDF](lecture-notes/2017-01-30.pdf).
-- **Activity notes**. [HTML](in-class-activities/2017-01-30.html). [Rmd](in-class-activities/2017-01-30.Rmd). [PDF](in-class-activities/2017-01-30.pdf).
+- **Lecture notes**. [HTML](lecture-notes/2017-01-30.html). [Markdown](lecture-notes/2017-01-30.md). [PDF](lecture-notes/2017-01-30.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-01-30.html). [Markdown](in-class-activities/2017-01-30.md). [PDF](in-class-activities/2017-01-30.pdf).
 
 <!---
 - RStudio for research
@@ -104,8 +104,8 @@ title: "Schedule"
 - git
     + GitHub
     + GitHub pages
-- **Lecture notes**. [HTML](lecture-notes/2017-02-06.html). [Rmd](lecture-notes/2017-02-06.Rmd). [PDF](lecture-notes/2017-02-06.pdf).
-- **Activity notes**. [HTML](in-class-activities/2017-02-06.html). [Rmd](in-class-activities/2017-02-06.Rmd). [PDF](in-class-activities/2017-02-06.pdf).
+- **Lecture notes**. [HTML](lecture-notes/2017-02-06.html). [Markdown](lecture-notes/2017-02-06.md). [PDF](lecture-notes/2017-02-06.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-02-06.html). [Markdown](in-class-activities/2017-02-06.md). [PDF](in-class-activities/2017-02-06.pdf).
         
 ### Readings/webinars
 
@@ -118,18 +118,14 @@ title: "Schedule"
 
 - Simulation as a tool for reproducible and transparent science
 - Visualization tools in R
-- **Lecture notes**. [HTML](lecture-notes/2017-02-13-simulation.html). [Rmd](lecture-notes/2017-02-13-simulation.Rmd). [PDF](lecture-notes/2017-02-13-simulation.pdf).
+- **Lecture notes**. [HTML](lecture-notes/2017-02-06.html). [Markdown](lecture-notes/2017-02-06.md). [PDF](lecture-notes/2017-02-06.pdf).
+- **Activity notes**. [HTML](in-class-activities/2017-02-13.html). [Markdown](in-class-activities/2017-02-13.md). [PDF](in-class-activities/2017-02-13.pdf).
 
 ### Readings/webinars
 
 - Required. [Data Visualization with ggplot2 (Part 1)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
 - Desirable. [Data Visualization with ggplot2 (Part 2)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-2)
 - Optional. [Data Visualization in R with ggvis](https://www.datacamp.com/courses/ggvis-data-visualization-r-tutorial)
-
-### Activities
-
-- Develop a simulated dataset for a study you have run, are running, or might want to run.
-- Develop code to visualize the data
 
 ## Week 7: February 20
 

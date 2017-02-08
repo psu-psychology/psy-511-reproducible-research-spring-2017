@@ -1,0 +1,307 @@
+---
+title: "2017-02-13"
+author: "Rick O. Gilmore"
+date: "`r Sys.Date()`"
+bibliography: ../bib/reproducibility.bib
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    widescreen: true
+    incremental: false
+    transition: default
+    self-contained: true
+---
+<!-- In-class activities -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+list.of.packages <- c("ggplot2", "DescTools")
+
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+# Loading packages
+lapply(list.of.packages, require, character.only = TRUE)
+```
+
+## Goals
+
+- Advanced simulation
+- Practice with visualization
+
+## Advanced simulation
+
+- Putting code into a function
+- A factorial design?
+
+## Let's make it a function
+
+- Functions help automate routines
+- Parts of a function:
+    + Input parameters
+        - Defaults or not
+    + Output(s)
+- `My.function.name <- function(my.param1, my.param2 = "cool")`
+
+----
+
+```{r define-global-constants}
+
+# define global constants from prior simulation
+sample.n = 200
+beta0 = 36
+beta1 = .33
+sigma = 10
+min.x = 80
+max.x = 250
+```
+
+
+<!-- Code to make slides that overflow scroll. -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
+
+---
+
+```{r define-function}
+Height.weight.sim <- function(sample.n = 200, beta0 = 36, beta1 = .33, sigma = 10, min.x = 80, max.x = 250) {
+  # Calculates correlation, intercept, slope estimates for
+  # linear relation between two variables
+  
+  # Args:
+  #   sample.n: Number of sample poings, default is 200
+  #   beta0: Intercept, default is 36 (inches)
+  #   beta1: Slope, default is .33
+  #   sigma: Standard deviation of error
+  #   min.x: Minimum value for x (weight in lbs)
+  #   max.x: Maximum value for x (weight in lbs)
+  #
+  # Returns:
+  #   Named array with values
+  #   beta0
+  #   beta1
+  #   beta0.lo: 2.5% quantile for intercept
+  #   beta0.hi  97.5% quantile for intercept
+  #   beta1.lo  2.5% quantile for slope
+  #   beta1.hi  97.5% quantile for slope
+
+  w <- runif(n = sample.n, min = min.x, max = max.x)
+
+  h.pred <- rep(x = beta0, n = sample.n) + beta1 * w
+  h <- h.pred + rnorm(n = sample.n, mean = 0, sd = sigma)
+  height.weight <- data.frame(inches = h, lbs = w)
+
+  fit <- lm(formula = inches ~ lbs, data = height.weight)
+  ci <- confint(fit)
+  
+  # Create output vector with named values
+  (results <- c("beta0" = beta0, 
+    "beta1"= beta1, 
+    "beta0.lo" = ci[1,1],
+    "beta0.hi" = ci[1,2],
+    "beta1.lo" = ci[2,1],
+    "beta1.hi" = ci[2,2]))
+}
+```
+
+---
+
+```{r run-height-weight-function}
+# Defaults only
+Height.weight.sim()
+
+# Larger sample size
+Height.weight.sim(sample.n = 500)
+```
+
+## Doing a series of simulations
+
+- Goal: run our function a number of times, collect the results
+
+```{r run-n-simulations}
+n.simulations = 100
+n.vars = 6 # variables Height.weight.sim() outputs
+
+# initialize output array
+height.weight.sim.data <- array(0, dim=c(n.simulations, n.vars))
+
+# Repeat Height.weight.sim() n.simulations times
+for (i in 1:n.simulations) { 
+  height.weight.sim.data[i,] <- Height.weight.sim()
+  }
+```
+
+---
+
+```{r plot-n-simulation-results}
+
+# Easier to make simulation data a data frame
+ht.wt.sims <- as.data.frame(sim.num = 1:n.simulations, height.weight.sim.data)
+
+# Add a variable to index the simulation number
+ht.wt.sims$sim.num <- 1:n.simulations
+
+# Plot beta0 min and max (now called V3, V4)
+ggplot(data = ht.wt.sims) +
+  aes(x = sim.num) +
+  geom_linerange(mapping = aes(ymin=V3,
+                                ymax=V4)) +
+  ylab("CIs for Intercept") +
+  geom_hline(yintercept = beta0, color = "red")
+```
+
+---
+
+```{r}
+# Plot beta1 min and max (now called V5, V6)
+ggplot(data = ht.wt.sims) +
+  aes(x = sim.num) +
+  geom_linerange(mapping = aes(ymin=V5,
+                                ymax=V6)) +
+  ylab("CIs for Slope") +
+  geom_hline(yintercept = beta1, color = "red")
+```
+
+## How about a factorial design?
+
+- Dependent variable: RT
+- Independent variables
+    + Fixed
+        - Symbol type: {letter, number}
+    + Random
+        - Subject mean RT
+- Hypothesis:
+    + RT to detect numbers is lower than for letters
+    + There is no order effect
+    
+---
+```{r factorial-design}
+# Simulation parameters
+n.subs = 30
+trials.per.cond = 100
+
+letters.numbers.rt.diff = 50 # ms
+rt.mean.across.subs = 350
+sigma = 50
+cond.labels = c("letter", "number")
+cond.rts <- c("letter" = 0, "number" = letters.numbers.rt.diff)
+
+stim.types <- factor(x = rep(x = c(1,2), trials.per.cond), labels = cond.labels)
+
+random.stim.types <- sample(stim.types, trials.per.cond*length(cond.labels))
+
+mean.sub.rt <- rnorm(n = 1, mean = rt.mean.across.subs, sd = sigma)
+trial.rt <- array(0, dim = length(random.stim.types))
+
+# Generate RTs based on trial, condition
+for (t in 1:length(random.stim.types)) {
+  trial.rt[t] <- mean.sub.rt + cond.rts[random.stim.types[t]] + rnorm(n = 1, mean = 0, sd = sigma)
+}
+
+# Make data frame
+letter.number.df <- data.frame(trial = 1:length(random.stim.types), stim = random.stim.types, rt = trial.rt)
+
+ggplot(data = letter.number.df, aes(x = random.stim.types, y = rt)) + geom_boxplot()
+```
+
+## Put this in a function
+
+```{r make-factorial-function}
+Simulate.sub.rt <- function(trials.per.cond = 100,
+                            letters.numbers.rt.diff = 50,
+                            rt.mean.across.subs = 350, 
+                            sigma = 50) {
+  
+  cond.rts <- c("letter" = 0, "number" = letters.numbers.rt.diff)
+  stim.types <- factor(x = rep(x = c(1,2), trials.per.cond), labels = c("letter", "number"))
+  random.stim.types <- sample(stim.types, 200)
+
+  mean.sub.rt <- rnorm(n = 1, mean = rt.mean.across.subs, sd = sigma)
+  trial.rt <- array(0, dim = length(random.stim.types))
+
+  # Generate RTs based on trial, condition
+  for (t in 1:length(random.stim.types)) {
+    trial.rt[t] <- mean.sub.rt + cond.rts[random.stim.types[t]] +
+      rnorm(n = 1, mean = 0, sd = sigma)
+    }
+
+  # Make data frame
+  letter.number.df <- data.frame(trial = 1:length(random.stim.types), 
+                                 stim = random.stim.types, 
+                                 rt = trial.rt)
+}
+```
+
+## Create code to a set of participants and create one merged data frame
+
+```{r make-merged-simulation-df}
+Make.sub.rt.df <- function(sub.id) {
+  sub.rt.df <- Simulate.sub.rt()
+  sub.rt.df$sub.id <- sub.id
+  sub.rt.df
+}
+
+# Use lapply to make separate data frames for all subs
+sub.rt.df.list <- lapply(1:n.subs, Make.sub.rt.df)
+
+# Use Reduce() with the merge function to make one big file
+sub.rt.df.merged <- Reduce(function(x, y) merge(x, y, all=TRUE), sub.rt.df.list)
+```
+
+## Now, want to see what we have?
+
+```{r plot-merged-simulation-data}
+ggplot(data = sub.rt.df.merged) +
+  aes(x=stim, y=rt, color=stim) +
+  geom_boxplot() +
+  facet_grid(facets = . ~ as.factor(sub.id))
+```
+
+## And, just for fun
+
+```{r one-way-anova}
+library(lme4)
+fit1 <- lmer(formula = rt ~ stim + (1|sub.id), data = sub.rt.df.merged)
+summary(fit1)
+```
+
+## Or
+
+```{r one-way-using-aov}
+fit2 <- aov(formula = rt ~ stim + Error(as.factor(sub.id)), data = sub.rt.df.merged)
+summary(fit2)
+```
+
+## Practice with visualization
+
+- Work through the Wickham & Grolemund chapter on your own.
+
+## Learning by example
+
+```
+# Installing packages
+list.of.packages <- c("xlsx", "ggplot2","nlme", "foreign", "gplots", "stats", "psych" , "ISwR", "ggm" , "car" , "ppcor", "StatDA", "plyr","DescTools")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+# Loading packages
+lapply(list.of.packages, require, character.only = TRUE)
+```
+<https://github.com/psu-psych-511-2017-spring/liu_yushuang/blob/master/output.Rmd>
+
+## Assignment (due Monday, Feburary 20)
+
+- Create your own simulated data set for a real or proposed study.
+    + You may adapt or build upon the examples used in class.
+- Plot the results of your simulation using ggplot2 commands.

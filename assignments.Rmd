@@ -44,6 +44,12 @@ This page describes details about the weekly (in-class + homework) assignments a
         - Suggestion: Add or edit `resources.html` by editing `resources.Rmd` and then rebuilding the site via `rmarkdown::render_site(encoding = "utf8")`
         - If you want to be added to the repo as an editor so you can do this more easily (w/o a pull request), let me know.
 
+## Week 6: (due 2017-02-20)
+
+- Create your own simulated data set for a real or proposed study.
+    + You may adapt or build upon the examples used in class.
+- Plot the results of your simulation using ggplot2 commands.
+
 ## Final project
 
 Each student will produce a final project and demo or report upon it during one of the last two class periods in the semester. The specific project topic will be determined in consultation with the instructor. Here are some possible topics for students to consider:
