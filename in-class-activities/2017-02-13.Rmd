@@ -1,15 +1,22 @@
 ---
-title: "2017-02-13"
+title: '2017-02-13'
 author: "Rick O. Gilmore"
-date: "`r Sys.Date()`"
-bibliography: ../bib/reproducibility.bib
+date: '`r Sys.Date()`'
 output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 2
   ioslides_presentation:
     css: ../css/gilmore-ioslides.css
-    widescreen: true
-    incremental: false
+    incremental: no
+    self-contained: yes
     transition: default
-    self-contained: true
+    widescreen: yes
+  html_document:
+    keep_md: yes
+    self_contained: yes
+bibliography: ../bib/reproducibility.bib
 ---
 <!-- In-class activities -->
 
@@ -184,7 +191,8 @@ ggplot(data = ht.wt.sims) +
 - Hypothesis:
     + RT to detect numbers is lower than for letters
     + There is no order effect
-    
+- Rick wishes he'd found this first: <https://www.r-bloggers.com/design-of-experiments-%E2%80%93-full-factorial-designs/>
+
 ---
 ```{r factorial-design}
 # Simulation parameters
@@ -192,13 +200,14 @@ n.subs = 30
 trials.per.cond = 100
 
 letters.numbers.rt.diff = 50 # ms
-rt.mean.across.subs = 350
+rt.mean.across.subs = 35
 sigma = 50
 cond.labels = c("letter", "number")
 cond.rts <- c("letter" = 0, "number" = letters.numbers.rt.diff)
 
 stim.types <- factor(x = rep(x = c(1,2), trials.per.cond), labels = cond.labels)
 
+#sample(factor(x=rep(c("letter", "number"), 100)), 200)
 random.stim.types <- sample(stim.types, trials.per.cond*length(cond.labels))
 
 mean.sub.rt <- rnorm(n = 1, mean = rt.mean.across.subs, sd = sigma)
@@ -286,6 +295,7 @@ summary(fit2)
 ## Practice with visualization
 
 - Work through the Wickham & Grolemund chapter on your own.
+    + <http://r4ds.had.co.nz/data-visualisation.html>
 
 ## Learning by example
 
@@ -299,6 +309,22 @@ if(length(new.packages)) install.packages(new.packages)
 lapply(list.of.packages, require, character.only = TRUE)
 ```
 <https://github.com/psu-psych-511-2017-spring/liu_yushuang/blob/master/output.Rmd>
+
+## A syntax I like
+
+```
+my.data <- data.frame(x.var = ..., y.var = ...)
+
+my.data %>% 
+  ggplot() +      # pipe %>% operator feeds it my.data
+  aes(x=x.var, y=y.var) + # plus + operator 'adds' to plot
+  geom_point() -> # assign -> operator saves output 
+  my.scatter.plot # variable containing plot
+  
+my.scatter.plot # prints it
+```
+- Uses 'pipe' `%>%` operator and 'assign' `->` operator
+- Easy to follow flow of what's going on
 
 ## Assignment (due Monday, Feburary 20)
 

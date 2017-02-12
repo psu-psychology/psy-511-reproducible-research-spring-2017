@@ -1,9 +1,9 @@
 Make.lecture.notes <- function(fn, 
                                fdir = "lecture-notes", 
                                all = TRUE, 
-                               output_format = c("ioslides_presentation", 
-                                                 "github_document", 
-                                                 "pdf_document")) {
+                               output_format = c("github_document", 
+                                                 "pdf_document",
+                                                 "ioslides_presentation")) {
   # Renders Rmd lecture notes
   #
   # Args:
