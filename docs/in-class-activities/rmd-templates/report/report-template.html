@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="X. Ellent Student" />
+
+
+<title>report-template</title>
+
+<script src="report-template_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="report-template_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="report-template_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="report-template_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="report-template_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="report-template_files/navigation-1.1/tabsets.js"></script>
+<link href="report-template_files/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="report-template_files/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">report-template</h1>
+<h4 class="author"><em>X. Ellent Student</em></h4>
+<h4 class="date"><em>2017-01-30 16:11:12</em></h4>
+
+</div>
+
+
+<div id="abstract" class="section level2">
+<h2>Abstract</h2>
+<p>This is a report template.</p>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>If you hit the <code>Knit</code> button in RStudio, it will create an <code>html_document</code> because that is the first line in the YAML header.</p>
+<pre><code>---
+title: &quot;report-template&quot;
+author: &quot;X. Ellent Student&quot;
+date: &quot;2017-01-30 16:11:12&quot;
+output: 
+  html_document:
+    self_contained: false
+  word_document:
+    fig_width: 5
+    fig_height: 5
+    fig_caption: false
+    df_print: kable
+  pdf_document:
+    toc: true
+    toc_depth: 2
+---</code></pre>
+<p>You can just render the document at the command line with <code>rmarkdown::render(input = &quot;report-template.Rmd&quot;</code>.</p>
+<p>You can change the default output format by changing the order of the items in the header:</p>
+<pre><code>---
+title: &quot;report-template&quot;
+author: &quot;X. Ellent Student&quot;
+date: &quot;2017-01-30 16:11:12&quot;
+output: 
+  word_document:
+    fig_width: 5
+    fig_height: 5
+    fig_caption: false
+    df_print: kable
+  html_document:
+    self_contained: false
+  pdf_document:
+    toc: true
+    toc_depth: 2
+---</code></pre>
+<p>This renders a Word file by default.</p>
+<p>To pick some but not all output formats, enter <code>rmarkdown::render(input = &quot;report-template.Rmd&quot;, output_format = c(&quot;html_document&quot;, &quot;pdf_document&quot;))</code></p>
+<p>You can also go hog-wild and render all three output formats at once by entering <code>rmarkdown::render(input = &quot;report-template.Rmd&quot;, output_format = &quot;all&quot;)</code>.</p>
+</div>
+<div id="methods" class="section level2">
+<h2>Methods</h2>
+<p>Describe what you did here.</p>
+<div id="participants" class="section level3">
+<h3>Participants</h3>
+<p>With whom…</p>
+</div>
+<div id="materials" class="section level3">
+<h3>Materials</h3>
+<p>With what…</p>
+</div>
+<div id="procedure" class="section level3">
+<h3>Procedure</h3>
+<p>How…</p>
+</div>
+<div id="analysis" class="section level3">
+<h3>Analysis</h3>
+<p>What you measured…</p>
+<pre class="r"><code>x = rnorm(n = 100, mean = 0, sd = 1)
+y = rnorm(n = 100, mean = 5, sd = 10)</code></pre>
+</div>
+</div>
+<div id="results" class="section level2">
+<h2>Results</h2>
+<p>What you found…</p>
+<div id="my-scatterplot" class="section level3">
+<h3>My scatterplot</h3>
+<pre class="r"><code>plot(x,y)</code></pre>
+<p><img src="report-template_files/figure-html/figure-1-1.png" width="672" /></p>
+<p>The correlation between x and y is 0.0020701.</p>
+</div>
+<div id="some-histograms" class="section level3">
+<h3>Some histograms</h3>
+<pre class="r"><code>hist(x)</code></pre>
+<p><img src="report-template_files/figure-html/figure-2-1.png" width="672" /></p>
+<pre class="r"><code>hist(y)</code></pre>
+<p><img src="report-template_files/figure-html/figure-2-2.png" width="672" /></p>
+<p>The mean of x is 0.0457303 and the standard deviation is 0.9282611. Or, try a table:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Mean</th>
+<th>SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>x</td>
+<td>0.0457303</td>
+<td>0.9282611</td>
+</tr>
+<tr class="even">
+<td>y</td>
+<td>5.6509954</td>
+<td>9.3985258</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>What you concluded.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
