@@ -66,8 +66,8 @@ knitr::opts_chunk$set(echo = TRUE)
 - Pre-plan/test, polish data-munging workflows
 - Make hypotheses even more explicit
     + Simulation == Pregistration on steroids
-    + '~~X affects Y~~' -> 'Mean(X) > Mean(Y)'
-    + or 'Mean(X) >= 2*Mean(Y)'
+    + '~~X affects Y~~' -> 'mean(X) > mean(Y)'
+    + or 'mean(X) >= 2*mean(Y)'
 - Simulate data analysis in advance
 
 ---
@@ -106,6 +106,8 @@ sigma <- 10 # Rick's guess
 w <- runif(n = sample.n, min = 80, max = 250)
 
 h.pred <- rep(x = beta0, n = sample.n) + beta1 * w
+
+# add random (normal) error
 h <- h.pred + rnorm(n = sample.n, mean = 0, sd = sigma)
 ```
 

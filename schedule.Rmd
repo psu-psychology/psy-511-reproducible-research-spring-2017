@@ -118,7 +118,7 @@ title: "Schedule"
 
 - Simulation as a tool for reproducible and transparent science
 - Visualization tools in R
-- **Lecture notes**. [HTML](lecture-notes/2017-02-06.html). [Markdown](lecture-notes/2017-02-06.md). [PDF](lecture-notes/2017-02-06.pdf).
+- **Lecture notes**. [HTML](lecture-notes/2017-02-13.html). [Markdown](lecture-notes/2017-02-13.md). [PDF](lecture-notes/2017-02-13.pdf).
 - **Activity notes**. [HTML](in-class-activities/2017-02-13.html). [Markdown](in-class-activities/2017-02-13.md). [PDF](in-class-activities/2017-02-13.pdf).
 
 ### Readings/webinars
@@ -139,11 +139,13 @@ title: "Schedule"
 - [How to start with Shiny (Part 2)](https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-2/)
 - [How to start with Shiny (Part 3)](https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-3/)
 
+<!--
 ### Activities
 
 - Build Shiny app to simulate and visualize a regression or ANOVA analysis based on the data you simulated last week.
     + Suggestion: vary the error
     + Suggestion: vary the number of participants
+-->
 
 ## Week 8: February 27
 

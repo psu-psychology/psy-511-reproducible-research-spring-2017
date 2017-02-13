@@ -1,0 +1,40 @@
+---
+title: 'branches-pull-requests'
+author: "Rick O. Gilmore"
+date: '`r Sys.Date()`'
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    incremental: no
+    self-contained: yes
+    transition: default
+    widescreen: yes
+  html_document:
+    keep_md: yes
+    self_contained: yes
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 2
+bibliography: ../bib/reproducibility.bib
+---
+<!-- How to handle branches and pull requests -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Goal
+
+- Use GitHub's branches feature to manage changes in a shared repository where multiple parties have write privileges.
+- Use RStudio to edit a branch, commit and push it to GitHub.
+
+## Scenario
+
+- You're sharing a code base with a colleague and want to make an edit to one or more files
+- You share edit privileges on the repo, but you don't want to ruin your colleague's hard work by making commits directly to the master branch.
+
+## Step 1: Make your own code branch
+
+- Go to the repo on GitHub
+- 

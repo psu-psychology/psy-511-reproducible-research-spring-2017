@@ -6,6 +6,7 @@ title: "Resources"
 
 - Gandrud, C. (2015). Reproducible Research with R and R Studio, Second Edition. CRC Press. <https://www.crcpress.com/Reproducible-Research-with-R-and-R-Studio-Second-Edition/Gandrud/p/book/9781498715379>
 - Wickham, H. & Grolemund, G. (2016). R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. O'Reilly Media. <http://shop.oreilly.com/product/0636920034407.do>
+- Chang, W. (2012). R Graphics Cookbook. <http://ase.tufts.edu/bugs/guide/assets/R%20Graphics%20Cookbook.pdf>
 
 ## Blogs/Projects
 
@@ -34,7 +35,7 @@ title: "Resources"
 
 ## Citation Management 
 
-###Comparisons
+### Comparisons
 - <http://guides.lib.uchicago.edu/c.php?g=297307&p=1984557>
 
 - <https://en.wikipedia.org/wiki/Comparison_of_reference_management_software>
