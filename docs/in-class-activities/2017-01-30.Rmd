@@ -31,7 +31,7 @@ knitr::opts_chunk$set(echo = TRUE)
     + HTML
         + Embedded or non-embedded figures
     + MS Word
-    + <PDF
+    + PDF
 
 ## Output options
 
@@ -87,7 +87,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Or, just
 
-`rmarkdown::render(input = "my-report.Rmd", output_format = c("html_document", "word_document", "pdf_document")`
+`rmarkdown::render(input = "my-report.Rmd", output_format = c("html_document", "word_document", "pdf_document"))`
 
 makes all three with **one** command.
 
@@ -160,6 +160,23 @@ allows you to show one bullet at a time for that slide
 ```
 
 Centers items between the `<div>` and `<\div>` tags vertically.
+
+## ioslides formatting
+
+```
+---
+
+The three dashes will start a new slide without a header.
+
+## Slide with a header
+
+- Some text
+
+---
+
+Another header-less slide
+
+```
 
 ## Rendering ioslides
 

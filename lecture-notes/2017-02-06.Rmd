@@ -12,6 +12,19 @@ output:
     self-contained: true
 ---
 
+<!-- Scrolling slides -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -122,7 +135,7 @@ Your browser does not support the video tag.
 - Pros
     + Multiple platforms (like Box)
     + Multiple file types
-    + Hallquist lab uses for non-code
+    + HT: Hallquist lab uses for non-code
 - Cons
     + ?
 
@@ -153,7 +166,7 @@ Your browser does not support the video tag.
 - Text files
 - Wonky
 - Longevity of web-based repos?
-- User have to specifically push (upload) and pull (download) files
+- User have to specifically push (upload), pull (download) files, merge/manage conflicts
 
 ## Pros
 
@@ -173,3 +186,13 @@ Your browser does not support the video tag.
 - Everyone works on their own local copies
 - Pull before they start work
 - Save and push when they're finished
+
+## Version control and a realistic workflow
+
+- One size won't fit all.
+- See [Seisler & Gilmore workflow](https://github.com/gilmore-lab/ss-repro-case-public/blob/master/rgilmore.md)
+
+## Version control for RStudio Projects
+
+- [packrat](http://rstudio.github.io/packrat/)
+- Trying it again for this course. Progress report soon.

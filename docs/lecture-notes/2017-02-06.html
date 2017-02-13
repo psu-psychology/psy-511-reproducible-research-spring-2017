@@ -10,7 +10,7 @@
 
 
 
-  <meta name="date" content="2017-01-30" />
+  <meta name="date" content="2017-02-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -95,9 +95,25 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2017-01-30</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2017-02-12</p>
           </hgroup>
   </slide>
+
+<!-- Scrolling slides -->
+
+<!-- http://stackoverflow.com/q/38260799 -->
+
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
 
 <slide class=''><hgroup><h2></h2></hgroup><article >
 
@@ -245,7 +261,7 @@
 <ul>
 <li>Multiple platforms (like Box)</li>
 <li>Multiple file types</li>
-<li>Hallquist lab uses for non-code</li>
+<li>HT: Hallquist lab uses for non-code</li>
 </ul></li>
 <li>Cons
 
@@ -301,7 +317,7 @@
 <li>Text files</li>
 <li>Wonky</li>
 <li>Longevity of web-based repos?</li>
-<li>User have to specifically push (upload) and pull (download) files</li>
+<li>User have to specifically push (upload), pull (download) files, merge/manage conflicts</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Pros</h2></hgroup><article  id="pros">
@@ -324,6 +340,20 @@
 <li>Everyone works on their own local copies</li>
 <li>Pull before they start work</li>
 <li>Save and push when they&#39;re finished</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Version control and a realistic workflow</h2></hgroup><article  id="version-control-and-a-realistic-workflow">
+
+<ul>
+<li>One size won&#39;t fit all.</li>
+<li>See <a href='https://github.com/gilmore-lab/ss-repro-case-public/blob/master/rgilmore.md' title=''>Seisler &amp; Gilmore workflow</a></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Version control for RStudio Projects</h2></hgroup><article  id="version-control-for-rstudio-projects">
+
+<ul>
+<li><a href='http://rstudio.github.io/packrat/' title=''>packrat</a></li>
+<li>Trying it again for this course. Progress report soon.</li>
 </ul></article></slide>
 
 

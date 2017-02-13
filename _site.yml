@@ -1,6 +1,6 @@
 name: "PSY 511.002 Spring 2017"
 navbar:
-  title: "PSY 511.002"
+  title: "PSY 511"
   left:
     - text: "Home"
       href: index.html
@@ -8,6 +8,8 @@ navbar:
       href: about.html
     - text: "Schedule"
       href: schedule.html
+    - text: "Students"
+      href: students.html
     - text: "Assignments"
       href: assignments.html
     - text: "Evaluation"

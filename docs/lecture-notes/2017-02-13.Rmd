@@ -1,0 +1,274 @@
+---
+title: '2017-02-13'
+author: "Rick O. Gilmore"
+date: '`r Sys.Date()`'
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    incremental: no
+    self-contained: yes
+    transition: default
+    widescreen: yes
+  html_document:
+    keep_md: yes
+    self_contained: yes
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 2
+bibliography: ../bib/reproducibility.bib
+---
+<!-- Lecture -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Today's topics
+
+- Some observations about GitHub use and R Markdown
+- Simulation as a tool for reproducible and transparent science
+- Visualization tools in R
+
+## Observations about GitHub use
+
+- You're in charge of what goes where.
+- Public repos are public, but no one knows what you're doing unless you alert them.
+    - If you create a repo in your own account, add `rogilmore` or other collaborators to use the `@rogilmore` type at-mentions feature.
+    - Files you create in `https://github.com/psu-psych-511-2017-spring` I can already comment on.
+
+## Observations about GitHub use
+
+- Pull requests are when you edit my code and want me to "pull"/adopt it.
+    - If I'm a collaborator on the project with `write` privileges, I don't have to issue a pull request.
+
+## Observations about R Markdown
+
+- Ok to make multiple R Markdown files
+- Make sure to add spaces where they belong: `##Header` vs. `## Header`
+- Comments! Add them. This is your record of what you did.
+- Don't forget you can hide things
+
+## Be a risk-taker; be your own professor
+
+- <http://www.stat.cmu.edu/~cshalizi/rmarkdown>
+- <http://stat545.com/bit006_github-browsability-wins.html>
+
+## Simulation as a tool for reproducible and transparent science
+
+- Why simulate
+- What to simulate
+- How to simulate
+
+## Why & what to simulate?
+
+- Explore sample sizes, effect sizes, power
+- Pre-plan/test, polish data-munging workflows
+- Make hypotheses even more explicit
+    + Simulation == Pregistration on steroids
+    + '~~X affects Y~~' -> 'Mean(X) > Mean(Y)'
+    + or 'Mean(X) >= 2*Mean(Y)'
+- Simulate data analysis in advance
+
+---
+
+- Plan data visualizations in advance
+- Avoid avoidable errors
+- Plan your work, work your plan
+- Super easy to run analyses when your data come in
+
+## How to simulate
+
+- R functions
+- R Markdown document(s)
+
+## Super-simple example
+
+- Hypothesis 1: Height (inches) is correlated with weight (lbs)
+
+```{r pick-parameters}
+
+# choose sample size
+sample.n <- 200
+
+# choose intercept and slope
+beta0 <- 36   # inches
+beta1 <- 0.33  # Rick's guess
+
+# choose standard deviation for error
+sigma <- 10 # Rick's guess
+```
+
+---
+
+```{r generate-data}
+# random weights between 80 lbs and 250 lbs (uniform sampling)
+w <- runif(n = sample.n, min = 80, max = 250)
+
+h.pred <- rep(x = beta0, n = sample.n) + beta1 * w
+h <- h.pred + rnorm(n = sample.n, mean = 0, sd = sigma)
+```
+
+<!-- Code to make scrolling slides -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
+---
+
+```{r plot-hist}
+library(ggplot2)
+library(dplyr)
+
+hist(w)
+hist(h)
+hist(h.pred)
+```
+
+---
+
+```{r plot-scatter}
+# Put h and w into data frame for ggplot
+height.weight <- data.frame(inches = h, lbs = w)
+
+# Plot
+scatter.1 <- ggplot(data = height.weight) +
+  aes(x = lbs, y = inches) +
+  geom_point()
+scatter.1
+```
+
+## That's synthesis, now analysis
+
+- Remember Hypothesis 1: Height (inches) is correlated with weight (lbs)?
+
+```{r measure-correlation}
+
+# Could use the raw data
+# cor.test(x = w, y = h)
+# Or, to use the values in the data frame, use with(...)
+
+with(height.weight, cor.test(x = inches, y = lbs))
+```
+
+## Aside: extracting the statistics to make an interactive report
+
+```{r save.cor.stats}
+# Save output as a variable
+cor.test.inches.lbs <- with(height.weight, cor.test(x = inches, y = lbs))
+
+# What sort of beast is this?
+mode(cor.test.inches.lbs)
+```
+
+---
+
+```{r unpack-list}
+# Aha, it's a list, this shows me all of the parts
+unlist(cor.test.inches.lbs)
+
+# Looks like the t value is the first element
+cor.test.inches.lbs[[1]]
+```
+
+---
+
+The `r cor.test.inches.lbs[[7]]` correlation between height and weight is `r sprintf("%.3f", cor.test.inches.lbs[[4]])`, $t$(`r sprintf("%i", cor.test.inches.lbs[[2]])`)=`r sprintf("%2.3f", cor.test.inches.lbs[[1]])`, $p$=`r sprintf("%.5f", cor.test.inches.lbs[[3]])`, with a 95$\%$ confidence interval of [`r sprintf("%.3f", cor.test.inches.lbs[[9]][1])`, `r sprintf("%.3f", cor.test.inches.lbs[[9]][2])`].
+
+<span class="blue">I did some formatting to make the numbers look pretty.</span>
+
+`sprintf("%.3f", my.var)` limits `my.var` to 3 decimal places; where `sprintf("%2.3f", my.var)` limits it to 2 digits to the left and 3 to the right.
+
+## Now back to analysis with our synthetic data
+
+```{r linear-reg}
+fit <- lm(formula = inches ~ lbs, data = height.weight)
+summary(fit) # Use lm() command to fit formula
+(ci <- confint(fit)) # confint() command fits confidence intervals
+```
+
+Surrounding `(ci <- confint(fit))` in parentheses saves variable ci and prints it out.
+
+## How'd we do?
+
+| Parameter | Actual    | Low Estimate | High Estimate |
+|-----------|-----------|--------------|---------------|
+| $\beta0$  | `r beta0` | `r ci[1,1]`  | `r ci[1,2]`   |
+| $\beta1$  | `r beta1` | `r ci[2,1]`  | `r ci[2,2]`   |
+
+- Why off on the slope ($\beta1$)
+- Random error, probably. Could run again.
+
+---
+
+```{r run-it-all-again, echo=FALSE}
+# random weights between 80 lbs and 250 lbs (uniform sampling)
+w <- runif(n = sample.n, min = 80, max = 250)
+
+h.pred <- rep(x = beta0, n = sample.n) + beta1 * w
+h <- h.pred + rnorm(n = sample.n, mean = 0, sd = sigma)
+height.weight <- data.frame(inches = h, lbs = w)
+
+fit <- lm(formula = inches ~ lbs, data = height.weight)
+summary(fit)
+(ci <- confint(fit)) # saves in variable ci and prints
+```
+
+---
+
+| Parameter | Actual    | Low Estimate | High Estimate |
+|-----------|-----------|--------------|---------------|
+| $\beta0$  | `r beta0` | `r ci[1,1]`  | `r ci[1,2]`   |
+| $\beta1$  | `r beta1` | `r ci[2,1]`  | `r ci[2,2]`   |
+
+## Simulation of fMRI data
+
+- Critical review: Welvaert, M., & Rosseel, Y. (2014). A Review of fMRI Simulation Studies. PLOS ONE, 9(7), e101953. <https://doi.org/10.1371/journal.pone.0101953>.
+- Welvaert, M., Durnez, J., Moerkerke, B., Berdoolaege, G. & Rosseel, Y. (2011). neuRosim: An R Package for Generating fMRI Data. Journal of Statistical Software, 44(10). Retrieved from <https://www.jstatsoft.org/article/view/v044i10>
+- AFNI's *AlphaSim*, <https://afni.nimh.nih.gov/pub/dist/doc/program_help/AlphaSim.html>
+
+# Visualization in R
+
+## Plot first, analyze last
+
+>- Why?
+  + [Mike Meyer](https://www.linkedin.com/in/mike-meyer-0056578a) told me so
+  + Less biased
+  + Easier to be transparent and reproducible
+  + Want/need to plot eventually anyway
+  + If a picture's worth a thousand words...
+>- How?
+
+## How
+
+- Base graphics
+    + `plot(x,y)` `hist(x)`, `coplot()`
+- `ggplot2`
+    + Grammar of graphics
+    
+## Base graphics
+
+- Try it, maybe you'll like it
+- `plot()` takes many types of input
+- So does `summary()`
+- A little harder to customize
+
+## Data visualization with ggplot2
+
+Wickham, H. & Grolemund, G. (2017). *R for Data Science*. O'Reilly. <http://r4ds.had.co.nz/>
+
+## Let's just walk through the data visualiation chapter
+
+<http://r4ds.had.co.nz/data-visualisation.html>
+
+## Other ggplot2 resources
+
+- Wickham, H. (2010). *ggplot2: Elegant Graphics for Data Analysis (Use R!)* <http://ggplot2.org/book/>
+- ggplot2 2.1.0 documentation: <http://docs.ggplot2.org/current/>

@@ -4,7 +4,7 @@ author: "X. Ellent Student"
 date: "`r Sys.time()`"
 output: 
   html_document:
-    self_contained: false
+    self_contained: true
   word_document:
     fig_width: 5
     fig_height: 5
