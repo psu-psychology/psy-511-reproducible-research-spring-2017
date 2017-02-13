@@ -126,6 +126,7 @@ title: "Schedule"
 - Required. [Data Visualization with ggplot2 (Part 1)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-1)
 - Desirable. [Data Visualization with ggplot2 (Part 2)](https://www.datacamp.com/courses/data-visualization-with-ggplot2-2)
 - Optional. [Data Visualization in R with ggvis](https://www.datacamp.com/courses/ggvis-data-visualization-r-tutorial)
+- Helpful. [Tutorial about GitHub branches and pull requests](lecture-notes/branches-pull-requests.html)
 
 ## Week 7: February 20
 

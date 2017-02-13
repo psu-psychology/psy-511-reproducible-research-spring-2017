@@ -3,20 +3,9 @@ title: 'branches-pull-requests'
 author: "Rick O. Gilmore"
 date: '`r Sys.Date()`'
 output:
-  ioslides_presentation:
-    css: ../css/gilmore-ioslides.css
-    incremental: no
-    self-contained: yes
-    transition: default
-    widescreen: yes
   html_document:
     keep_md: yes
     self_contained: yes
-  pdf_document:
-    latex_engine: xelatex
-    toc: yes
-    toc_depth: 2
-bibliography: ../bib/reproducibility.bib
 ---
 <!-- How to handle branches and pull requests -->
 
@@ -37,4 +26,63 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Step 1: Make your own code branch
 
 - Go to the repo on GitHub
-- 
+- Create a new branch
+
+----
+
+<video width="720" height="450" controls>
+  <source src="../video/create-github-branch.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+## Step 2: Pull repo from RStudio
+
+- Go to RStudio
+- Open the project for this repo
+- Pull from GitHub
+
+---
+
+<video width="720" height="450" controls>
+  <source src="../video/pull-repo-within-rstudio.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+## Step 3: Switch to the new branch and edit
+
+- Switch to the new branch
+- Edit one or more files in the new branch
+
+---
+
+<video width="720" height="450" controls>
+  <source src="../video/switch-2-branch-and-edit.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+## Step 4: Commit your changes and push them back to GitHub
+
+- Commit your changes
+- Push to GitHub
+
+----
+
+<video width="800" height="600" controls>
+  <source src="../video/commit-and-push.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+## Step 5: Create pull request on GitHub
+
+<video width="720" height="450" controls>
+  <source src="../video/create-pull-request.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+## Next steps
+
+- Collaborator merges pull request
+- You make sure to "pull" repo the next time you work
+- Good practice to work in your own branch(es)
+
+
