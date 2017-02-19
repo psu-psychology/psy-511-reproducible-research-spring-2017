@@ -1,9 +1,0 @@
-# Transparent, Open, and Reproducible Research Practices in the Social and Behavioral Sciences
-
-## PSY 511.002, Spring 2017, Mon 2:30-5:30 pm, course 037521
-
-## Rick O. Gilmore
-
-Is there a crisis of reproducibility in psychological science? What does it mean to ask the question? What are transparent, open, and reproducible research practices? Should one implement them? How? This course will seek answers to these questions. Students will read about recent failures in research transparency and reproducibility and discuss the ethics of open practices in scientific research. Through a series of guided exercises students will learn how to use new research tools (e.g. [RStudio](https://www.rstudio.com), [Jupyter/iPython](http://jupyter.org), the [Open Science Framework](http://osf.io), [GitHub](http://github.com), [command line scripting](https://en.wikipedia.org/wiki/Command-line_interface)) that  make it easier to implement open and reproducible research practices. At the end of the course, students will be capable of implementing one or more new research practices into their own workflows. Evaluation will be based on in-class participation, short papers, and project assignments. No prior software development experience is required, but a willingness to learn new skills is essential.
-
-Rick Gilmore ([Dept](http://psych.la.psu.edu/directory/rog1), [Lab](http://gilmore-lab.github.io), [GitHub](http://github.com/gilmore-lab), [Blog](http://rick-gilmore.org)) is Associate Professor of Psychology and the  Co-Director of [Databrary.org](http://databrary.org), a digital data library devoted to storing and sharing research video and related data as a means to leverage data reuse and accelerated discovery.
