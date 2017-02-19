@@ -1,0 +1,112 @@
+---
+title: "shiny-demo-template"
+author: "Awesome Student"
+output:
+  ioslides_presentation:
+    incremental: no
+    self-contained: yes
+    transition: default
+    widescreen: yes
+  html_document:
+    keep_md: yes
+    self_contained: yes
+runtime: shiny
+---
+
+## Introduction
+
+This document summarizes my own personal explorations of the Shiny package. I have edited the YAML header so that the `author:` field has my name.
+
+## This is the demo app
+
+```{r, echo=FALSE}
+shiny.dir <- "shiny-apps/"
+shiny.app <- "hello-world"
+shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
+  options=list(
+    width="100%", height=700
+  )
+)
+```
+
+## Quest 1a: Change the list of names
+
+To create this new app, I copied the `hello-world` directory and app and renamed the copy `hello-world-1a`. 
+
+Then I...*(describe what you did)*
+
+---
+
+```{r, echo=FALSE}
+shiny.dir <- "shiny-apps/"
+shiny.app <- "hello-world-1a"
+shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
+  options=list(
+    width="100%", height=700
+  )
+)
+```
+
+## Quest 1b: Change the greeting
+
+To create this new app, I copied the `hello-world-1a` directory and app and renamed the copy `hello-world-1b`. Then... 
+---
+
+```{r, echo=FALSE}
+shiny.dir <- "shiny-apps/"
+shiny.app <- "hello-world-1b"
+shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
+  options=list(
+    width="100%", height=700
+  )
+)
+```
+
+At this point, I decided to commit my changes and push the commit to GitHub.
+
+## Quest 2
+
+In Quest 2, I have added comments to `shiny-apps/correlation-app/app.R`...
+
+---
+
+```{r, echo=FALSE}
+shiny.dir <- "shiny-apps/"
+shiny.app <- "correlation-app"
+shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
+  options=list(
+    width="100%", height=700
+  )
+)
+```
+
+## Quest 3
+
+In Quest 3, I have added comments to `shiny-apps/correlation-app-2/app.R`...
+
+---
+
+```{r, echo=FALSE}
+shiny.dir <- "shiny-apps/"
+shiny.app <- "correlation-app-2"
+shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
+  options=list(
+    width="100%", height=700
+  )
+)
+```
+
+## Quest 4
+
+In Quest 4, I {created my own/modified a Shiny app from <src>}...
+
+```{r, echo=FALSE}
+# You will need to uncomment this and edit it for this chunk to run.
+# shiny.dir <- "shiny-apps/"
+# shiny.app <- "my-shiny-app"
+# shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
+#   options=list(
+#     width="100%", height=700
+#   )
+# )
+```

@@ -1,12 +1,3 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 
 # Define UI for application that draws a histogram
@@ -15,7 +6,7 @@ ui <- fluidPage(
    # Application title
    titlePanel("Correlation Demo"),
    
-   # Sidebar with a slider input for number of points 
+   # Sidebar 
    sidebarLayout(
       sidebarPanel(
          sliderInput(inputId = "points",
@@ -45,26 +36,15 @@ ui <- fluidPage(
 # Define server logic
 
 server <- function(input, output) {
-  
-  newPts <- function(n, sd, slope) {
-    newPts$x <- runif(n)
-    newPts$y <- rep(slope, n) * as.vector(newPts$x) + 
-      rnorm(n, sd)
-    newPts
-  }
- pts <- reactive(do.call(newPts), inputp)  
- output$scatterPlot <- renderPlot({
-    # Calculate x, y, with slope and error
-    x = runif(input$points)
-    y = rep(input$slope, input$points) * as.vector(x) + rnorm(input$points, sd = input$error)
+   output$scatterPlot <- renderPlot({
 
-    # draw the plot and write correlation value as x axis label (xlab)
-    scatter.smooth(x = x, y = y, 
-                   xlab = paste("Corr= ", as.character(cor(x,y)), sep=""), 
-                   ylab = "y")
+    x = runif(input$points)
+    y = rep(input$slope, input$points) * as.vector(x) + 
+      rnorm(input$points, sd = input$error)
+
+    scatter.smooth(x = x, y = y, xlab = "x", ylab = "y")
    })
 }
 
 # Run the application 
 shinyApp(ui = ui, server = server)
-

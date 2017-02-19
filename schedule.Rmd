@@ -139,6 +139,8 @@ title: "Schedule"
 - [How to start with Shiny (Part 1)](https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-1/)
 - [How to start with Shiny (Part 2)](https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-2/)
 - [How to start with Shiny (Part 3)](https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-3/)
+- **Lecture notes**. [HTML](lecture-notes/2017-02-20.html). [Markdown](lecture-notes/2017-02-20.md).
+- **Activity notes**. [HTML](in-class-activities/2017-02-20.html). [Markdown](in-class-activities/2017-02-20.md).
 
 <!--
 ### Activities
