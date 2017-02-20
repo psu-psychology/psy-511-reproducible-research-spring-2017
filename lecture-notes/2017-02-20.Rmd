@@ -1,6 +1,7 @@
 ---
 title: "2017-02-20-shiny"
 author: "Rick O. Gilmore"
+date: "`r Sys.time()`"
 output:
   ioslides_presentation:
     css: ../css/gilmore-ioslides.css

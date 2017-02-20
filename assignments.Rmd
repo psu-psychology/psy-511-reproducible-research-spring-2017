@@ -44,13 +44,23 @@ This page describes details about the weekly (in-class + homework) assignments a
         - Suggestion: Add or edit `resources.html` by editing `resources.Rmd` and then rebuilding the site via `rmarkdown::render_site(encoding = "utf8")`
         - If you want to be added to the repo as an editor so you can do this more easily (w/o a pull request), let me know.
 
-## Week 6: (due 2017-02-20)
+#### Week 6: (due 2017-02-20)
 
 - Create your own simulated data set for a real or proposed study.
     + You may adapt or build upon the examples used in class.
+    + Put the results in an R Markdown (.Rmd) file.
+    + Commit the .Rmd file to your private repo on GitHub and either raise an Issue on GitHub or submit a pull request.
 - Plot the results of your simulation using ggplot2 commands.
+- Make sure that your simulation has the following sub-sections:
+    + Introduction/Motivation
+        - What are you simulating and why? Where do the parameter estimates come from? The literature or your best guess?
+    + Plots
+    + Statistical Analyses
+    + Discussion/Conclusions
+        - What did you discover or demonstrate?
+- Please label the r chunks in your R Markdown files
 
-## Week 7: (due 2017-03-03)
+#### Week 7: (due 2017-03-03)
 
 1. Complete [*Quest 1*](in-class-activities/2016-02-20.html), push files to GitHub, raise issue.
 2. Complete [*Quest 2*](in-class-activities/2016-02-20.html), push files to GitHub, raise issue.
@@ -58,7 +68,7 @@ This page describes details about the weekly (in-class + homework) assignments a
 4. Complete [*Quest 4*](in-class-activities/2016-02-20.html), push files to GitHub, raise issue.
     - Create your own Shiny app based on 
         + a demonstration of the various ways to get input from a user **OR**
-        + the simulated data you created **OR**
+        + the simulated data you created for 2/20 **OR**
         + modifying a Shiny app someone else built.
 
 ## Final project

@@ -2,6 +2,10 @@
 title: "Resources"
 ---
 
+## Videos
+
+- A GitHub/RStudio workflow for branching and making pull requests. [HTML](lecture-notes/branches-pull-requests.html)
+
 ## Books
 
 - Gandrud, C. (2015). Reproducible Research with R and R Studio, Second Edition. CRC Press. <https://www.crcpress.com/Reproducible-Research-with-R-and-R-Studio-Second-Edition/Gandrud/p/book/9781498715379>
