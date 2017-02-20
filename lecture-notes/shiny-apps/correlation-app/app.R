@@ -46,13 +46,6 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   
-  newPts <- function(n, sd, slope) {
-    newPts$x <- runif(n)
-    newPts$y <- rep(slope, n) * as.vector(newPts$x) + 
-      rnorm(n, sd)
-    newPts
-  }
- pts <- reactive(do.call(newPts), inputp)  
  output$scatterPlot <- renderPlot({
     # Calculate x, y, with slope and error
     x = runif(input$points)
