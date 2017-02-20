@@ -62,14 +62,17 @@ This page describes details about the weekly (in-class + homework) assignments a
 
 #### Week 7: (due 2017-03-03)
 
-1. Complete [*Quest 1*](in-class-activities/2016-02-20.html), push files to GitHub, raise issue.
-2. Complete [*Quest 2*](in-class-activities/2016-02-20.html), push files to GitHub, raise issue.
-3. Complete [*Quest 3*](in-class-activities/2016-02-20.html), push files to GitHub, raise issue.
-4. Complete [*Quest 4*](in-class-activities/2016-02-20.html), push files to GitHub, raise issue.
+1. Complete *Quest 1a*, push files to GitHub, raise issue or create merge request.
+2. Complete *Quest 1b*, push files to GitHub, raise issue or create merge request.
+2. Complete *Quest 2*, push files to GitHub, raise issue or create merge request.
+3. Complete *Quest 3*, push files to GitHub, raise issue or create merge request.
+4. Complete *Quest 4*, push files to GitHub, raise issue.
     - Create your own Shiny app based on 
         + a demonstration of the various ways to get input from a user **OR**
         + the simulated data you created for 2/20 **OR**
         + modifying a Shiny app someone else built.
+        
+For all four quests, please report what you did using the template `shiny-work.Rmd` file in `shiny-templates/`. Here is link to the template file <https://github.com/psu-psych-511-2017-spring/testbed/blob/master/shiny-templates/shiny-work.Rmd>.
 
 ## Final project
 

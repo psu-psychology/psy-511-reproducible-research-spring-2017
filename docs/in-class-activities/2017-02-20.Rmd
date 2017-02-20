@@ -114,31 +114,32 @@ server <- function(input, output) {
 }
 ~~~
 
-## Quest 1
+## Quest 1a
 
 - Goals
     - Edit the list of names
-    - Edit the message in your own way
-    
-## Quest 1
+
+## Quest 1a
 
 - Instructions
     - "Pull" your personal/private course repo from GitHub
     - If you haven't already, I suggest creating an RStudio project for this repo.
         + Get repo URL from GitHub. It will be something like `https://github.com/psu-psych-511-2017-spring/liu_yushuang.git`
         + Create new project from RStudio, linked to this repo.
-        
+      
 ---
 
-- You'll find a `shiny-templates/` directory with a `shiny-work.Rmd` file and a `shiny-apps` folder for you to work on.
+- You'll find a `shiny-templates/` directory with a `shiny-work.Rmd` file and a `shiny-apps/` folder for you to work on.
+
+## Quest 1b: Change the greeting
     
-## Quest 2
+## Quest 2: Comment on `correlation-app/`
 
-- Review and add your own comments to Rick's simple correlation demo
+- Review and add your own comments to Rick's simple correlation demo app `shiny-apps/correlation-app/`
 
-## Quest 3
+## Quest 3: Comment on `correlation-app-2/`
 
-- Review, comment upon, and modify Rick's enhanced correlation demo
+- Review, comment upon, and modify Rick's enhanced correlation demo app `shiny-apps/correlation-app-2/`
 
 ## Quest 4 (optional)
 

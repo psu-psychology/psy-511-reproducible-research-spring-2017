@@ -16,10 +16,9 @@ output:
     toc: yes
     toc_depth: 2
 bibliography: ../bib/reproducibility.bib
-runtime: shiny
 ---
 
-<!-- In-class activities -->
+<!-- In-class activities; No runtime: shiny -->
 
 ## Goals
 
@@ -29,6 +28,7 @@ runtime: shiny
 ---
 
 ```{r, echo=FALSE}
+library(shiny)
 shiny.dir <- "shiny-apps/"
 shiny.app <- "hello-world"
 shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),

@@ -50,6 +50,7 @@ shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
 ## Quest 1b: Change the greeting
 
 To create this new app, I copied the `hello-world-1a` directory and app and renamed the copy `hello-world-1b`. Then... 
+
 ---
 
 ```{r, echo=FALSE}
@@ -61,6 +62,8 @@ shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
   )
 )
 ```
+
+---
 
 At this point, I decided to commit my changes and push the commit to GitHub.
 
