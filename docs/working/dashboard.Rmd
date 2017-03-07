@@ -1,0 +1,7 @@
+---
+title: "Dashboard"
+---
+
+- Course GitHub repo, <https://github.com/psu-psychology/psy-511-reproducible-research-spring-2017>
+- Course site, <http://psu-psychology.github.io/psy-511-reproducible-research-spring-2017>
+- DataCamp dashboard, <https://www.datacamp.com/groups/psy-511-reproducible-social-and-behavioral-science>
