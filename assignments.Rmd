@@ -74,6 +74,17 @@ This page describes details about the weekly (in-class + homework) assignments a
         
 For all four quests, please report what you did using the template `shiny-work.Rmd` file in `shiny-templates/`. Here is link to the template file <https://github.com/psu-psych-511-2017-spring/testbed/blob/master/shiny-templates/shiny-work.Rmd>.
 
+## Week 9: (due 2017-03-20)
+
+Use the template found at <https://github.com/psu-psych-511-2017-spring/testbed/blob/master/week-9-quest-report.Rmd>. It's best to pull it from within the project linked to your private repo.
+
+1. Complete Quest 1. 
+2. Complete Quest 2.
+3. Complete Quest 3.
+4. Complete Quest 4.
+
+Save, commit files, push to GitHub, and raise an issue when you are ready for me to see what you've done.
+
 ## Final project
 
 Each student will produce a final project and demo or report upon it during one of the last two class periods in the semester. The specific project topic will be determined in consultation with the instructor. Here are some possible topics for students to consider:

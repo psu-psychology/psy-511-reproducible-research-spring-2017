@@ -167,12 +167,15 @@ title: "Schedule"
     + [jsPsych](http://www.jspsych.org/)
     + MTurk
         - [psiTurk](https://psiturk.org/)
+- **Lecture notes**. [HTML](lecture-notes/2017-03-13-displays.html). [Markdown](lecture-notes/2017-03-13-displays.md).
+- **Activity notes**. [HTML](in-class-activities/2017-03-13-jspsych.html). [Markdown](in-class-activities/2017-03-13-jspsych.md).
 
 ### Readings/webinars
 
 - de Leeuw, J.R. (2015). jsPsych: A JavaScript library for creating behavioral experiments in a Web browser. Behavior Research Methods, 47(1), 1-12. doi:10.3758/s13428-014-0458-y
-<!--- [Lecture notes](jpsych.html)-->
 
+
+<!--
 ### Activities
 
 - Download [jsPsych](https://github.com/jodeleeuw/jsPsych/releases)
@@ -180,6 +183,7 @@ title: "Schedule"
     + [Simple RT tutorial](http://docs.jspsych.org/tutorials/rts-task/) starting with the experiment [template](jpsych.template.html)
 - Install psiturk 
     + Download and modify a study from the shared [experiment exchange](https://psiturk.org/ee/).
+-->
 
 ## Week 10: March 20
 
