@@ -169,11 +169,11 @@ title: "Schedule"
         - [psiTurk](https://psiturk.org/)
 - **Lecture notes**. [HTML](lecture-notes/2017-03-13-displays.html). [Markdown](lecture-notes/2017-03-13-displays.md).
 - **Activity notes**. [HTML](in-class-activities/2017-03-13-jspsych.html). [Markdown](in-class-activities/2017-03-13-jspsych.md).
+- **Week 9 Quest Template**. [Markdown](https://github.com/psu-psych-511-2017-spring/testbed/blob/master/week-9-quest-report.md).
 
 ### Readings/webinars
 
 - de Leeuw, J.R. (2015). jsPsych: A JavaScript library for creating behavioral experiments in a Web browser. Behavior Research Methods, 47(1), 1-12. doi:10.3758/s13428-014-0458-y
-
 
 <!--
 ### Activities
@@ -198,9 +198,11 @@ title: "Schedule"
 - [Importing data in Python (Part 1)](https://www.datacamp.com/courses/importing-data-in-python-part-1)
 - [Importing data in Python (Part 2)](https://www.datacamp.com/courses/importing-data-in-python-part-2)
 
+<!--
 ### Activities
 
 - Reproduce data analysis or visualization from Week 6 or 7.
+-->
 
 ## Week 11: March 27
 

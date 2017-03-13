@@ -113,8 +113,19 @@ bibliography: ../bib/reproducibility.bib
 - Share videos, stills of displays
     + [[@gilmore-adolph-video-2017]](http://http://osf.io/3kvp7)
     + e.g., [[@https://doi.org/10.17910/B7.272]](https://doi.org/10.17910/B7.272)
+    
+---
+
 - Use Open Science Framework (OSF) or Databrary as a project "hub"
 - Future: "containerize" experiment apps
     + [Docker.com](https://www.docker.com/)
     
-## References
+## Self-assessment
+
+- What tool(s) are you using now?
+- Do you use shared code? What was the source?
+- Do you alter shared display code? How do you document the changes?
+- Do you share display code? How?
+- Barriers to greater sharing?
+
+## References {.smaller}
