@@ -25,6 +25,7 @@ title: "Resources"
     - Authorea <http://www.authorea.com>
 - Experimental Design Assistant for planning animal studies <https://eda.nc3rs.org.uk/>
 - p-hacker Shiny app <http://shinyapps.org/apps/p-hacker/>
+- SoloLearn (coding tutorials) <https://www.sololearn.com/Courses/>
 
 ## Articles
 
