@@ -63,14 +63,14 @@ slides > slide:not(.nobackground):after {
 ---
 
 - Nested tags: `<html></html>`, `<head></head>`, `<body></body>`
-- Resources: links (`<a></a>`), imgs (`<img></img>`), video (`<video></video`), etc.
+- Resources: links (`<a></a>`), imgs (`<img></img>`), video (`<video></video>`), etc.
 - Tag + src + parameter syntax: `<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" width = 200px></img>`
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" width = 200px></img>
 
 ## More on web page anatomy and physiology
 
-- [HTML](http://www.w3schools.com/html/default.asp)
+- Hypertext Markup Language [(HTML)](http://www.w3schools.com/html/default.asp)
     + Structure of web pages
 - [Cascading Style Sheets (CSS)](http://www.w3schools.com/css/default.asp)
     + Style of web page elements
@@ -149,8 +149,6 @@ slides > slide:not(.nobackground):after {
 ~~~~
 
 ## Run finished "Hello World" example
-
-
 
 ## jsPsych produces data files in JSON format
 
