@@ -190,8 +190,11 @@ title: "Schedule"
 ### Topics
 
 - Python, the other language of data science
-- Intro to [Jupyter](http://jupyter.org/)
-- Jupyter for research, teaching, talks
+    - Intro to [Jupyter](http://jupyter.org/)
+    - Jupyter for research, teaching, talks
+- **Lecture notes**. [HTML](lecture-notes/2017-03-20-python.html). [Markdown](lecture-notes/2017-03-20-python.md).
+- **Week 9 Quest Template**. [HTML](https://rawgit.com/psu-psych-511-2017-spring/testbed/master/week-10-quest-report.md) [Markdown](https://github.com/psu-psych-511-2017-spring/testbed/blob/master/week-10-quest-report.md).
+<!-- Must use rawgit.com for HTML files from psu-psych-511-spring org because github pages not enabled. -->
 
 ### Readings/webinars
 
@@ -220,14 +223,16 @@ title: "Schedule"
 
 ### Readings
 
-- Gilmore, Diaz, Wyble & Yarkoni (in prep).
+- Gilmore, R. O., Diaz, M., Wyble, B., & Yarkoni, T. (2017, February 10). Progress toward openness, transparency, and reproducibility in cognitive neuroscience. Retrieved from <http://osf.io/yt3s4>. 
 - Ascoli, G. A. (2006). The ups and downs of neuroscience shares. Neuroinformatics, 4(3), 213–215. https://doi.org/10.1385/NI:4:3:213
 - Szucs, D., & Ioannidis, J. P. (2016). Empirical assessment of published effect sizes and power in the recent cognitive neuroscience and psychology literature. bioRxiv, 071530. https://doi.org/10.1101/071530
 
+<!--
 ### Activities
 
 - Meta-analysis on neurosynth
 - Create a jupyter notebook with your images and comments
+-->
 
 ## Week 12: April 3
 
@@ -254,11 +259,9 @@ title: "Schedule"
     + NIMH
     + Foundations
 
-### Readings
-
 ### Activities
 
-- Create an ORCID profile
+- Create an ORCID profile.
 - Create an account on OSF.
 - Buy your own domain.
 
