@@ -24,7 +24,7 @@ bibliography: ../bib/reproducibility.bib
 
 ## Today's topics
 
-- Feedback about last week's assigments
+- Feedback about last week's assignments
 - Changes in the quests
     + Focus on advanced R Markdown
     + Shifting focus to final projects

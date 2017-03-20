@@ -24,9 +24,14 @@ bibliography: ../bib/reproducibility.bib
 
 ## Today's topics
 
-- The other language for data science
+- Feedback about last week's assignments
+- Changes in the quests
+    + Focus on advanced R Markdown
+    + Shifting focus to final projects
+- The *other* language for reproducible data science
     + python
-- The Jupyter Project
+    + The Jupyter Project
+- "Ten Simple Rules..."
 
 ## What is Jupyter?
 
@@ -59,8 +64,9 @@ bibliography: ../bib/reproducibility.bib
 
 - Open `Welcome R - demo.ipynb`
 
-## `pandas` package for data science
+## The `pandas` package for data science
 
+- Similar functionality to `ggplot2` and `dplyr`
 - [10 min to pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html)
 - [Python for data analysis notebook](http://nbviewer.jupyter.org/urls/gist.github.com/wesm/4757075/raw/a72d3450ad4924d0e74fb57c9f62d1d895ea4574/PandasTour.ipynb)
 
@@ -86,12 +92,6 @@ bibliography: ../bib/reproducibility.bib
 - Need
     + `RISE` package from Damian Vila, <https://github.com/damianavila/RISE>
     + `reveal.js` JavaScript framework
-
-```{bash}
-wd <- getwd()
-setwd("jupyter")
-system(command="jupyter notebook")
-```
 
 ## R vs. Python
 
