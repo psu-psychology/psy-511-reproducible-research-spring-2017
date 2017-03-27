@@ -1,7 +1,7 @@
 ---
 title: "2017-03-27-neuro-spss"
 author: "Rick O. Gilmore"
-date: "`r Sys.time()`"
+date: '`r Sys.time()`'
 output:
   ioslides_presentation:
     css: ../css/gilmore-ioslides.css
@@ -10,9 +10,13 @@ output:
     transition: default
     widescreen: yes
   html_document:
+    code_folding: hide
     keep_md: yes
     self_contained: yes
-    code_folding: hide
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+  github_document: default
   pdf_document:
     latex_engine: xelatex
     toc: yes
@@ -47,19 +51,23 @@ bibliography: ../bib/reproducibility.bib
 ## Reproducible methods for set-up
 
 - Consistent project file naming conventions
-    + <pi-access-id>_<project-code>
+    + `<pi-access-id>_<project-code>/<participant-id>`
 - Consent, preparation procedures
+    + Video useful? [[@gilmore-adolph-video-2017]](http://osf.io/3kvp7)
 - Scanner, amplifier, task parameters
-    + Save as hard copies, electronic
+    + <https://practicalfmri.blogspot.com/2012/10/draft-checklist-for-fmri-methods.html>
+    + Save as hard copies, electronic (.pdf)
 
 ## Reproducible analyses
 
 - FSL & AFNI
 - SPM* & EEGLab
     + Scripts vs. GUIs
-    + Screencapture GUI sequences
+    + Screen capture GUI sequences
 - BrainVoyager
+    + Can be scripted
 - Pipelines
+    + Use shell, R, or python to script?
 
 ## Initiatives in reproducible neuroscience
 
@@ -77,10 +85,13 @@ bibliography: ../bib/reproducibility.bib
 - [1000 Functional Connectomes Project](http://fcon_1000.projects.nitrc.org/)
 - [Human Connectome Project](http://www.humanconnectomeproject.org/)
 
-## Reproducible practices with other tools
+# Reproducible practices with other tools
 
-- Matlab
-    + git or GitHub
+## Matlab
+
+- Matlab script `.m` files are plain text
+- git or GitHub
+    + <https://www.mathworks.com/help/matlab/matlab_prog/set-up-git-source-control.html?s_tid=gn_loc_drop>
     + Comments, history in file
 
 ## Reproducible practices with other tools
@@ -189,4 +200,4 @@ Primary hypotheses and major comparisons
 
 - <https://github.com/lebebr01/SPSStoR>
 
-## References
+## References {.smaller}
