@@ -1,0 +1,192 @@
+---
+title: "2017-03-27-neuro-spss"
+author: "Rick O. Gilmore"
+date: "`r Sys.time()`"
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    incremental: no
+    self-contained: yes
+    transition: default
+    widescreen: yes
+  html_document:
+    keep_md: yes
+    self_contained: yes
+    code_folding: hide
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 2
+bibliography: ../bib/reproducibility.bib
+---
+
+<!-- Lecture notes -->
+
+## Today's topics
+
+- Reproducible neuroscience
+- Reproducible practices in Matlab, MS Office, & SPSS
+
+# Reproducible neuroscience
+
+## Components of a reproducible workflow
+
+- Tasks
+- Data collection
+- Data analysis
+- Data reporting
+- Data sharing
+
+## Reproducible tasks
+
+- E-Prime
+- Matlab & PsychToolbox
+- PsychoPy
+- jsPsych?
+
+## Reproducible methods for set-up
+
+- Consistent project file naming conventions
+    + <pi-access-id>_<project-code>
+- Consent, preparation procedures
+- Scanner, amplifier, task parameters
+    + Save as hard copies, electronic
+
+## Reproducible analyses
+
+- FSL & AFNI
+- SPM* & EEGLab
+    + Scripts vs. GUIs
+    + Screencapture GUI sequences
+- BrainVoyager
+- Pipelines
+
+## Initiatives in reproducible neuroscience
+
+- [Brain Imaging Data Structure (BIDS)](http://bids.neuroimaging.io/)
+- [Center for Reproducible Neuroscience](http://reproducibility.stanford.edu/)
+
+## Reproducible neuroscience initiatives
+
+- [OpenfMRI](http://openfmri.org)
+- [NeuroVault](http://neurovault.org/)
+- [BrainMap](http://www.brainmap.org)
+
+## Reproducible neuroscience initiatives
+
+- [1000 Functional Connectomes Project](http://fcon_1000.projects.nitrc.org/)
+- [Human Connectome Project](http://www.humanconnectomeproject.org/)
+
+## Reproducible practices with other tools
+
+- Matlab
+    + git or GitHub
+    + Comments, history in file
+
+## Reproducible practices with other tools
+
+- MS Office
+    + Consistent file naming conventions
+        - `<proj>-<date-time>.docx`
+        - `<proj>-<date>-v1.docx`
+- Spreadsheets as csv's
+        
+## Reproducible SPSS
+
+- Thanks to Karen Adolph
+- History of analyses
+    + Comment-out things tried
+- SPSS `.sps` files are text
+
+## GENERAL RULES OF THUMB FOR USING SPSS (KEA Lab)
+
+-	Use old .sps and .sav files as your guide
+-	Know what data and what files can be generated with a button push (.sav, .spv) and what cannot (.sps)
+- .sps files most important to save in a fire. Others can be regenerated.
+
+----
+
+-	Keep a straight workflow (Datavyu to SPSS to Sigma/Illustrator or Word) and never ever for any reason proliferate files. File proliferation poisons your workflow.
+-	Maintain order, organization, and tidy workflows as a top priority.
+
+----
+
+-	Annotate everything, assume an intelligent user who is ignorant about your study. 
+-	Remember the limitations of SPSS as a programming language: Most calculations are across columns, not over rows; looping is hard.
+
+## GENERAL RULES OF THUMB FOR ANALYZING DATA
+- Do not analyze data using menu
+-	You can paste commands from menu, but do not only use menu. The menu does not give you a record of your analyses and does not allow you to run analyses again with a button push. 
+- Check your data before you run inferential statistics, then check again
+
+---
+
+- Look at every distribution using Frequencies and Scatterplots. All of the values must make sense. Crap in leads to crap out. Never assume anything before you’ve seen the data distribution with your own eyes.
+- Descriptives > inferentials
+-	You want to SEE the results yourself. Inferential statistics should confirm, not reveal, the results.
+-	You want multiple measures, converging evidence, for experimental hypothesis-testing analyses
+-	You want nearly every measure (9/10, etc)—however you slice it and dice it—to show the same answer for exploratory hypothesis-generating analyses
+
+## Follow a concerted plan of attack and allow yourself follow-ups and side-bars as new questions arise
+
+-	Plan out the analysis attack
+    -	Let the data speak to you! Listen to the data. If the data tell you something new, follow it up.
+- Aggregate function
+    -	Allows (small number of fixed function) analyses over rows. Results can be merged back into the master file.
+
+## How do I write syntax for X?
+
+-	For fancy analyses (GLM, ANOVA, etc). Think of lab quiz and lab papers. Who would have done something like that before? What other study has that structure? Find an exemplar in a previous syntax file.
+-	For multi-step processes. Pull it apart into basic common sense. Write up the steps. Then figure out mechanically how to do it in syntax.
+
+## COMPONENTS OF SYNTAX
+
+- Notes
+    + Who has done what
+    + Things users should be alerted about immediately (don't force them to skim whole document)
+- Macros for getting data files and saving data files
+    +	Ensures that you always start with the master data and save data back to the right place
+
+----
+
+- Outline
+    + Allows user quick overview of analysis plan
+    +	Provides search terms
+- Import data from Datavyu
+    +	Basic variables
+- Check data
+    +	Check the data from Datavyu, not your formulas! Only recode and compute variables that you need for common sense (dates convert to ages and experience, etc.)
+    
+----
+
+- Recode and compute data
+    +	Turn the data into variables that SPSS can analyze
+    +	This is the file you’ll work with most often, so variables must have names and labels!
+- Study level descriptives: What is the dataset?
+    +	Here’s where you figure out how much missing data, how many boys/girls in each condition, what’s the condition of the dataset
+    
+---
+
+- Subject level descriptives and inferentials
+    +	Aggregate to one row per subject per session
+Primary hypotheses and major comparisons
+    +	Analyze the big questions first. Organize by questions, not by variables. 
+- Address big questions with multiple variables.
+    + You might do this at the subject level, but in most studies, you are analyzing at the trial or condition level.
+
+----
+
+- Minor questions and follow-ups
+    +	Deal with minor questions later
+- Graphing data
+    +	Create the data to go into graphing software (Sigmaplot)
+
+## Example syntax file
+
+[sps/Diapers.Combined.sps](sps/Diapers.Combined.sps)
+
+## SPSS to R syntax converter
+
+- <https://github.com/lebebr01/SPSStoR>
+
+## References
