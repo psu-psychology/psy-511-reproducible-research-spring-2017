@@ -90,7 +90,7 @@ bibliography: ../bib/reproducibility.bib
 ---
 
 <iframe src="http://dataverse.org/">
-<iframe>
+</iframe>
 
 <div class="centered">
 <http://dataverse.org/>
