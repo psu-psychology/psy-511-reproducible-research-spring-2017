@@ -1,14 +1,31 @@
 2017-04-01-repositories
 ================
 Rick O. Gilmore
-2017-04-03 14:26:00
+2017-04-03 14:30:03
 
 Today's topics
 --------------
 
+-   Feedback about last week's assignment
+-   The road ahead
 -   Where to share?
 -   Publishing data, open access
 -   Your open science profile
+
+Administrative matters
+======================
+
+Week 11 Quest
+-------------
+
+-   Deleting old Google sheets when you re-knit
+-   <https://github.com/psu-psych-511-2017-spring/testbed>
+
+Final projects
+--------------
+
+-   Week 14
+-   Week 15
 
 Where to share?
 ===============
