@@ -136,7 +136,7 @@ bibliography: ../bib/reproducibility.bib
 - Social network for shared data
 - <http://data.world>
 
-# Publishing data
+## Publishing data
 
 - [Nature Scientific Data](http://www.nature.com/sdata/)
 - [APA's Archives of Scientific Psychology](http://www.apa.org/pubs/journals/arc/index.aspx)
