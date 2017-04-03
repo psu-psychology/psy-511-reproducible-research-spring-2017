@@ -39,6 +39,9 @@ bibliography: ../bib/reproducibility.bib
     - For colleagues
     - For funders/journals
 - What are you planning to share/store?
+
+---
+
 - What permissions do you have?
     - From participants
     - From colleagues/collaborators
@@ -58,128 +61,56 @@ bibliography: ../bib/reproducibility.bib
 - Dominant player in sociology, demography, political science
 - Search by measure
 - Some online analyses
-
----
-
-<iframe src="https://www.icpsr.umich.edu/icpsrweb/">
-</iframe>
-
-<div class="centered">
-<https://www.icpsr.umich.edu/icpsrweb/>
-</div>
+- <https://www.icpsr.umich.edu/icpsrweb/>
 
 ## [Data Dryad](http://datadryad.org/)
 
 - Focus on data linked to publications
 - Strong presence in biological sciences, but not domain-specific
-
----
-
-<iframe src="http://datadryad.org/">
-</iframe>
-
-<div class="centered">
-<http://datadryad.org/>
-</div>
+- <http://datadryad.org/>
 
 ## [Dataverse](http://dataverse.org)
 
 - Domain general repository + software for repositories
 - Institute for Quantitative Social Sciences at Harvard
-
----
-
-<iframe src="http://dataverse.org/">
-</iframe>
-
-<div class="centered">
-<http://dataverse.org/>
-</div>
+- <http://dataverse.org/>
 
 ## [Databrary](http://databrary.org)
 
 - Specialized for video
 - Emphasizing developmental science
 - Search for data
-
----
-
-<iframe src="http://databrary.org">
-</iframe>
-
-<div class="centered">
-<http://databrary.org>
-</div>
+- <http://databrary.org>
 
 ## [Open Science Framework](http://osf.io)
 
 - Product of the [Center for Open Science (COS)](http://cos.io)
 - Domain general "hub" for research workflows
 - Home of [PsyArXiv](https://osf.io/preprints/psyarxiv) preprints
-
----
-
-<iframe src="http://osf.io">
-</iframe>
-
-<div class="centered">
-<http://osf.io>
-</div>
+- <http://osf.io>
 
 ## [PSU's ScholarSphere](https://scholarsphere.psu.edu/)
 
 - Institutional repository
 - Domain general, linked to individual scholars
-
----
-
-<iframe src="https://scholarsphere.psu.edu/">
-</iframe>
-
-<div class="centered">
-<https://scholarsphere.psu.edu/>
-</div>
+- <https://scholarsphere.psu.edu/>
 
 ## [National Database for Autism Research (NDAR)](https://ndar.nih.gov/)
 
 - Now the NIMH data archive
 - Data aggregation, secondary analyses
 - Details about measures, individual participants
-
----
-
-<iframe src="https://ndar.nih.gov/">
-</iframe>
-
-<div class="centered">
-<https://ndar.nih.gov/>
-</div>
+- <https://ndar.nih.gov/>
 
 ## TalkBank/CHILDES
 
 - Language transcripts, audio, video
-
----
-
-<iframe src="http://talkbank.org/">
-</iframe>
-
-<div class="centered">
-<http://talkbank.org/>
-</div>
+- <http://talkbank.org/>
 
 ## WordBank
 
 - Repository of one type of measure: MacArthur-Bates Communicative Development Inventory (M-CDI)
-
----
-
-<iframe src="http://wordbank.stanford.edu/">
-</iframe>
-
-<div class="centered">
-<http://wordbank.stanford.edu/>
-</div>
+- <http://wordbank.stanford.edu/>
 
 ## Other options
 
@@ -189,11 +120,7 @@ bibliography: ../bib/reproducibility.bib
 ## [Data.World](http://data.world)
 
 - Social network for shared data
-
----
-
-<iframe src="http://data.world">
-</iframe>
+- <http://data.world>
 
 # Publishing data
 

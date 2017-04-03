@@ -1,7 +1,7 @@
 2017-04-01-repositories
 ================
 Rick O. Gilmore
-2017-04-03 14:16:47
+2017-04-03 14:26:00
 
 Today's topics
 --------------
@@ -21,6 +21,9 @@ Considerations for storing
     -   For colleagues
     -   For funders/journals
 -   What are you planning to share/store?
+
+------------------------------------------------------------------------
+
 -   What permissions do you have?
     -   From participants
     -   From colleagues/collaborators
@@ -42,36 +45,21 @@ Considerations for using/reusing
 -   Dominant player in sociology, demography, political science
 -   Search by measure
 -   Some online analyses
-
-------------------------------------------------------------------------
-
-<iframe src="https://www.icpsr.umich.edu/icpsrweb/">
-</iframe>
-<https://www.icpsr.umich.edu/icpsrweb/>
+-   <https://www.icpsr.umich.edu/icpsrweb/>
 
 [Data Dryad](http://datadryad.org/)
 -----------------------------------
 
 -   Focus on data linked to publications
 -   Strong presence in biological sciences, but not domain-specific
-
-------------------------------------------------------------------------
-
-<iframe src="http://datadryad.org/">
-</iframe>
-<http://datadryad.org/>
+-   <http://datadryad.org/>
 
 [Dataverse](http://dataverse.org)
 ---------------------------------
 
 -   Domain general repository + software for repositories
 -   Institute for Quantitative Social Sciences at Harvard
-
-------------------------------------------------------------------------
-
-<iframe src="http://dataverse.org/">
-</iframe>
-<http://dataverse.org/>
+-   <http://dataverse.org/>
 
 [Databrary](http://databrary.org)
 ---------------------------------
@@ -79,12 +67,7 @@ Considerations for using/reusing
 -   Specialized for video
 -   Emphasizing developmental science
 -   Search for data
-
-------------------------------------------------------------------------
-
-<iframe src="http://databrary.org">
-</iframe>
-<http://databrary.org>
+-   <http://databrary.org>
 
 [Open Science Framework](http://osf.io)
 ---------------------------------------
@@ -92,24 +75,14 @@ Considerations for using/reusing
 -   Product of the [Center for Open Science (COS)](http://cos.io)
 -   Domain general "hub" for research workflows
 -   Home of [PsyArXiv](https://osf.io/preprints/psyarxiv) preprints
-
-------------------------------------------------------------------------
-
-<iframe src="http://osf.io">
-</iframe>
-<http://osf.io>
+-   <http://osf.io>
 
 [PSU's ScholarSphere](https://scholarsphere.psu.edu/)
 -----------------------------------------------------
 
 -   Institutional repository
 -   Domain general, linked to individual scholars
-
-------------------------------------------------------------------------
-
-<iframe src="https://scholarsphere.psu.edu/">
-</iframe>
-<https://scholarsphere.psu.edu/>
+-   <https://scholarsphere.psu.edu/>
 
 [National Database for Autism Research (NDAR)](https://ndar.nih.gov/)
 ---------------------------------------------------------------------
@@ -117,34 +90,19 @@ Considerations for using/reusing
 -   Now the NIMH data archive
 -   Data aggregation, secondary analyses
 -   Details about measures, individual participants
-
-------------------------------------------------------------------------
-
-<iframe src="https://ndar.nih.gov/">
-</iframe>
-<https://ndar.nih.gov/>
+-   <https://ndar.nih.gov/>
 
 TalkBank/CHILDES
 ----------------
 
 -   Language transcripts, audio, video
-
-------------------------------------------------------------------------
-
-<iframe src="http://talkbank.org/">
-</iframe>
-<http://talkbank.org/>
+-   <http://talkbank.org/>
 
 WordBank
 --------
 
 -   Repository of one type of measure: MacArthur-Bates Communicative Development Inventory (M-CDI)
-
-------------------------------------------------------------------------
-
-<iframe src="http://wordbank.stanford.edu/">
-</iframe>
-<http://wordbank.stanford.edu/>
+-   <http://wordbank.stanford.edu/>
 
 Other options
 -------------
@@ -156,11 +114,8 @@ Other options
 -------------------------------
 
 -   Social network for shared data
+-   <http://data.world>
 
-------------------------------------------------------------------------
-
-<iframe src="http://data.world">
-</iframe>
 Publishing data
 ===============
 
