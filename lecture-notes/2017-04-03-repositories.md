@@ -1,7 +1,7 @@
 2017-04-01-repositories
 ================
 Rick O. Gilmore
-2017-04-03 13:52:53
+2017-04-03 14:16:47
 
 Today's topics
 --------------
@@ -70,7 +70,7 @@ Considerations for using/reusing
 ------------------------------------------------------------------------
 
 <iframe src="http://dataverse.org/">
-<iframe>
+</iframe>
 <http://dataverse.org/>
 
 [Databrary](http://databrary.org)
