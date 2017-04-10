@@ -1,0 +1,34 @@
+---
+title: "2017-03-20-python"
+author: "Rick O. Gilmore"
+date: "`r Sys.time()`"
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    incremental: no
+    self-contained: yes
+    transition: default
+    widescreen: yes
+  html_document:
+    keep_md: yes
+    self_contained: yes
+    code_folding: hide
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 2
+bibliography: ../bib/reproducibility.bib
+---
+
+<!-- In-class activities -->
+
+## Goals
+
+- Path 1
+    + Install Jupyter
+    + Make simple notebook
+    + Work through: <https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook#gs.110hTa8>
+    + Work through: <https://www.datacamp.com/community/open-courses/tidy-data-in-python-mini-course>
+- Path 2
+    + Read 3 of the [Ten Simple Rules](http://collections.plos.org/ten-simple-rules) papers.
+    + Write your own "Ten Simple Rules for Reproducible Psychological Science""

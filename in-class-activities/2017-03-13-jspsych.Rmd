@@ -1,0 +1,199 @@
+---
+title: "2017-03-13-jsPsych"
+author: "Rick O. Gilmore"
+date: "`r Sys.time()`"
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    incremental: no
+    self-contained: yes
+    transition: default
+    widescreen: yes
+  html_document:
+    keep_md: yes
+    self_contained: yes
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 2
+bibliography: ../bib/reproducibility.bib
+---
+
+<!-- In-class activity for jsPsych -->
+
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
+
+## Goals
+
+- Go a bit deeper into jsPsych
+    - [jsPsych documentation](http://docs.jspsych.org/).
+- ["Hello, World" demo](http://docs.jspsych.org/tutorials/hello-world/).
+- Prepare to tackle Week 9 Quests.
+- Why jsPsych?
+    + No platform dependencies!
+    + Can run/test from within RStudio!
+
+## A basic [web page](simple-page.html)
+
+~~~~
+<!doctype html>
+<html>
+    <head>
+        <title>My page</title>
+    </head>
+    <body>
+    <h1>This is a top-level header.</h1>
+    <h2>This is a second level header.</h2>
+    <p>This is a paragraph.</p>
+    </body>
+</html>
+~~~~
+
+---
+
+- Nested tags: `<html></html>`, `<head></head>`, `<body></body>`
+- Resources: links (`<a></a>`), imgs (`<img></img>`), video (`<video></video>`), etc.
+- Tag + src + parameter syntax: `<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" width = 200px></img>`
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" width = 200px></img>
+
+## More on web page anatomy and physiology
+
+- Hypertext Markup Language [(HTML)](http://www.w3schools.com/html/default.asp)
+    + Structure of web pages
+- [Cascading Style Sheets (CSS)](http://www.w3schools.com/css/default.asp)
+    + Style of web page elements
+    
+## More on web page anatomy and physiology
+
+- [JavaScript](http://www.w3schools.com/js/)
+    + Programming language for web pages
+    + Frameworks/libraries are collections of useful commands
+- [Web application framework](https://en.wikipedia.org/wiki/Web_framework)
+    + Integration with other resources and services (e.g., databases)
+
+## Hello, World!
+
+~~~~
+<!doctype html>
+<html>
+    <head>
+        <title>My experiment</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/jspsych-5.0.3/jspsych.js"></script>
+        <script src="js/jspsych-5.0.3/plugins/jspsych-text.js"></script>
+        <link href="js/jspsych-5.0.3/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+    </head>
+    
+    <body>
+    </body>
+    
+    <script>
+
+    var hello_trial = {
+        type: 'text',
+        text: 'Hello world!'
+    }
+
+    jsPsych.init({
+        timeline: [ hello_trial ]
+    })
+
+    </script>
+</html>
+~~~~
+
+## Loading JavaScript libraries
+
+~~~~
+<!--- From the web --->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--- From local directories --->
+<script src="js/jspsych-5.0.3/jspsych.js"></script>
+<script src="js/jspsych-5.0.3/plugins/jspsych-text.js"></script>
+~~~~
+
+- JQuery a widely used library to access/manipulate/style HTML tags with consistent syntax.
+
+## Loading jsPsych CSS
+
+~~~~
+<link href="js/jspsych-5.0.3/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+~~~~
+
+## jsPsych code to show message
+
+~~~~
+<script>
+  var hello_trial = {
+      type: 'text',
+      text: 'Hello world!'
+  }
+
+  jsPsych.init({
+      timeline: [ hello_trial ]
+  })
+</script>
+~~~~
+
+## Run finished "Hello World" example
+
+## jsPsych produces data files in JSON format
+
+Here's what the data look like in JavaScript Object Notation (JSON)
+
+~~~~
+ {
+  "rt": 1219,
+  "stimulus": "img/orange.png",
+  "key_press": 70,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 2,
+  "time_elapsed": 13924,
+  "internal_node_id": "0.0-2.0-0.0",
+  "correct": false
+ },
+ {
+  "rt": -1,
+  "stimulus": "img/orange.png",
+  "key_press": -1,
+  "response": "no-go",
+  "trial_type": "single-stim",
+  "trial_index": 3,
+  "time_elapsed": 16305,
+  "internal_node_id": "0.0-2.0-1.0",
+  "correct": true
+ },
+~~~~
+
+## Downside of jsPsych
+
+- Copy data file manually (if running locally)
+- Save to web server (if running on server)
+
+## Questions?
+
+## Optional in-class quests
+
+- Work through jsPsych Hello, World! [demo](http://docs.jspsych.org/tutorials/hello-world/).
+- Work through jsPsych simple RT [demo](http://docs.jspsych.org/tutorials/rt-task/).
+
+## Ready to Quest?
+
+- `week-9-quest-report.Rmd` template on your private course repo: <https://github.com/psu-psych-511-2017-spring>
+- Remember to pull, edit, test, commit, edit, push, raise issue.
+- Let's look at the template at <https://github.com/psu-psych-511-2017-spring/testbed/blob/master/week-9-quest-report.md>
+

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="data:text/css;charset=utf-8,%0A%40font%2Dface%20%7B%0Afont%2Dfamily%3A%20octicons%2Dlink%3B%0Asrc%3A%20url%28data%3Afont%2Fwoff%3Bcharset%3Dutf%2D8%3Bbase64%2Cd09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM%2B8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB%2FaFGpk3jaTY6xa8JAGMW%2FO62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v%2Bk%2F0an2i%2BitHDw3v2%2B9%2BDBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3%2FI7AtxEJLtzzuZfI%2BVVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy%2FLt7Kc%2B0vWY%2FgAgIIEqAN9we0pwKXreiMasxvabDQMM4riO%2BqxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw%2Bymhce7vwM9jSqO8JyVd5RH9gyTt2%2BJ%2FyUmYlIR0s04n6%2B7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv%2FocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi%2BW2%2BMjCzMIDApSwvXzC97Z4Ig8N%2FBxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh%2F8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT%2BAEjAwuDFpBmA9KMDEwMCh9i%2Fv8H8sH0%2F4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9%2FlqYwOGZxeUelN2U2R6%2BcArgtCJpauW7UQBqnFkUsjAY%2FkOU1cP%2BDAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl%2BvvmM%2FbyA48e6tWrKArm4ZJlCbdsrxksL1AwWn%2FyBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO%2F%2FsdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd%2F89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF%2B9JOS0nbaaYDCQfwCJ7Au3AHj%2BLO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm%2BEBXuAbHmIMSRMs%2B4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL%2BhD7C1xoaHeLJSEao0FEW14ckxC%2BTU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13%2F%2Blm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl%2B9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O%2FAdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB%2F%2F%2FAA8AAQAAAAAAAAAAAAAAAAABAAAAAA%3D%3D%29%20format%28%27woff%27%29%3B%0A%7D%0Abody%20%7B%0A%2Dwebkit%2Dtext%2Dsize%2Dadjust%3A%20100%25%3B%0Atext%2Dsize%2Dadjust%3A%20100%25%3B%0Acolor%3A%20%23333%3B%0Afont%2Dfamily%3A%20%22Helvetica%20Neue%22%2C%20Helvetica%2C%20%22Segoe%20UI%22%2C%20Arial%2C%20freesans%2C%20sans%2Dserif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0Afont%2Dsize%3A%2016px%3B%0Aline%2Dheight%3A%201%2E6%3B%0Aword%2Dwrap%3A%20break%2Dword%3B%0A%7D%0Aa%20%7B%0Abackground%2Dcolor%3A%20transparent%3B%0A%7D%0Aa%3Aactive%2C%0Aa%3Ahover%20%7B%0Aoutline%3A%200%3B%0A%7D%0Astrong%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Ah1%20%7B%0Afont%2Dsize%3A%202em%3B%0Amargin%3A%200%2E67em%200%3B%0A%7D%0Aimg%20%7B%0Aborder%3A%200%3B%0A%7D%0Ahr%20%7B%0Abox%2Dsizing%3A%20content%2Dbox%3B%0Aheight%3A%200%3B%0A%7D%0Apre%20%7B%0Aoverflow%3A%20auto%3B%0A%7D%0Acode%2C%0Akbd%2C%0Apre%20%7B%0Afont%2Dfamily%3A%20monospace%2C%20monospace%3B%0Afont%2Dsize%3A%201em%3B%0A%7D%0Ainput%20%7B%0Acolor%3A%20inherit%3B%0Afont%3A%20inherit%3B%0Amargin%3A%200%3B%0A%7D%0Ahtml%20input%5Bdisabled%5D%20%7B%0Acursor%3A%20default%3B%0A%7D%0Ainput%20%7B%0Aline%2Dheight%3A%20normal%3B%0A%7D%0Ainput%5Btype%3D%22checkbox%22%5D%20%7B%0Abox%2Dsizing%3A%20border%2Dbox%3B%0Apadding%3A%200%3B%0A%7D%0Atable%20%7B%0Aborder%2Dcollapse%3A%20collapse%3B%0Aborder%2Dspacing%3A%200%3B%0A%7D%0Atd%2C%0Ath%20%7B%0Apadding%3A%200%3B%0A%7D%0A%2A%20%7B%0Abox%2Dsizing%3A%20border%2Dbox%3B%0A%7D%0Ainput%20%7B%0Afont%3A%2013px%20%2F%201%2E4%20Helvetica%2C%20arial%2C%20nimbussansl%2C%20liberationsans%2C%20freesans%2C%20clean%2C%20sans%2Dserif%2C%20%22Apple%20Color%20Emoji%22%2C%20%22Segoe%20UI%20Emoji%22%2C%20%22Segoe%20UI%20Symbol%22%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%234078c0%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Ahover%2C%0Aa%3Aactive%20%7B%0Atext%2Ddecoration%3A%20underline%3B%0A%7D%0Ahr%20%7B%0Aheight%3A%200%3B%0Amargin%3A%2015px%200%3B%0Aoverflow%3A%20hidden%3B%0Abackground%3A%20transparent%3B%0Aborder%3A%200%3B%0Aborder%2Dbottom%3A%201px%20solid%20%23ddd%3B%0A%7D%0Ahr%3Abefore%20%7B%0Adisplay%3A%20table%3B%0Acontent%3A%20%22%22%3B%0A%7D%0Ahr%3Aafter%20%7B%0Adisplay%3A%20table%3B%0Aclear%3A%20both%3B%0Acontent%3A%20%22%22%3B%0A%7D%0Ah1%2C%0Ah2%2C%0Ah3%2C%0Ah4%2C%0Ah5%2C%0Ah6%20%7B%0Amargin%2Dtop%3A%2015px%3B%0Amargin%2Dbottom%3A%2015px%3B%0Aline%2Dheight%3A%201%2E1%3B%0A%7D%0Ah1%20%7B%0Afont%2Dsize%3A%2030px%3B%0A%7D%0Ah2%20%7B%0Afont%2Dsize%3A%2021px%3B%0A%7D%0Ah3%20%7B%0Afont%2Dsize%3A%2016px%3B%0A%7D%0Ah4%20%7B%0Afont%2Dsize%3A%2014px%3B%0A%7D%0Ah5%20%7B%0Afont%2Dsize%3A%2012px%3B%0A%7D%0Ah6%20%7B%0Afont%2Dsize%3A%2011px%3B%0A%7D%0Ablockquote%20%7B%0Amargin%3A%200%3B%0A%7D%0Aul%2C%0Aol%20%7B%0Apadding%3A%200%3B%0Amargin%2Dtop%3A%200%3B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Aol%20ol%2C%0Aul%20ol%20%7B%0Alist%2Dstyle%2Dtype%3A%20lower%2Droman%3B%0A%7D%0Aul%20ul%20ol%2C%0Aul%20ol%20ol%2C%0Aol%20ul%20ol%2C%0Aol%20ol%20ol%20%7B%0Alist%2Dstyle%2Dtype%3A%20lower%2Dalpha%3B%0A%7D%0Add%20%7B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20Consolas%2C%20%22Liberation%20Mono%22%2C%20Menlo%2C%20Courier%2C%20monospace%3B%0Afont%2Dsize%3A%2012px%3B%0A%7D%0Apre%20%7B%0Amargin%2Dtop%3A%200%3B%0Amargin%2Dbottom%3A%200%3B%0Afont%3A%2012px%20Consolas%2C%20%22Liberation%20Mono%22%2C%20Menlo%2C%20Courier%2C%20monospace%3B%0A%7D%0A%2Eselect%3A%3A%2Dms%2Dexpand%20%7B%0Aopacity%3A%200%3B%0A%7D%0A%2Eocticon%20%7B%0Afont%3A%20normal%20normal%20normal%2016px%2F1%20octicons%2Dlink%3B%0Adisplay%3A%20inline%2Dblock%3B%0Atext%2Ddecoration%3A%20none%3B%0Atext%2Drendering%3A%20auto%3B%0A%2Dwebkit%2Dfont%2Dsmoothing%3A%20antialiased%3B%0A%2Dmoz%2Dosx%2Dfont%2Dsmoothing%3A%20grayscale%3B%0A%2Dwebkit%2Duser%2Dselect%3A%20none%3B%0A%2Dmoz%2Duser%2Dselect%3A%20none%3B%0A%2Dms%2Duser%2Dselect%3A%20none%3B%0Auser%2Dselect%3A%20none%3B%0A%7D%0A%2Eocticon%2Dlink%3Abefore%20%7B%0Acontent%3A%20%27%5Cf05c%27%3B%0A%7D%0A%2Emarkdown%2Dbody%3Abefore%20%7B%0Adisplay%3A%20table%3B%0Acontent%3A%20%22%22%3B%0A%7D%0A%2Emarkdown%2Dbody%3Aafter%20%7B%0Adisplay%3A%20table%3B%0Aclear%3A%20both%3B%0Acontent%3A%20%22%22%3B%0A%7D%0A%2Emarkdown%2Dbody%3E%2A%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%20%21important%3B%0A%7D%0A%2Emarkdown%2Dbody%3E%2A%3Alast%2Dchild%20%7B%0Amargin%2Dbottom%3A%200%20%21important%3B%0A%7D%0Aa%3Anot%28%5Bhref%5D%29%20%7B%0Acolor%3A%20inherit%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0A%2Eanchor%20%7B%0Adisplay%3A%20inline%2Dblock%3B%0Apadding%2Dright%3A%202px%3B%0Amargin%2Dleft%3A%20%2D18px%3B%0A%7D%0A%2Eanchor%3Afocus%20%7B%0Aoutline%3A%20none%3B%0A%7D%0Ah1%2C%0Ah2%2C%0Ah3%2C%0Ah4%2C%0Ah5%2C%0Ah6%20%7B%0Amargin%2Dtop%3A%201em%3B%0Amargin%2Dbottom%3A%2016px%3B%0Afont%2Dweight%3A%20bold%3B%0Aline%2Dheight%3A%201%2E4%3B%0A%7D%0Ah1%20%2Eocticon%2Dlink%2C%0Ah2%20%2Eocticon%2Dlink%2C%0Ah3%20%2Eocticon%2Dlink%2C%0Ah4%20%2Eocticon%2Dlink%2C%0Ah5%20%2Eocticon%2Dlink%2C%0Ah6%20%2Eocticon%2Dlink%20%7B%0Acolor%3A%20%23000%3B%0Avertical%2Dalign%3A%20middle%3B%0Avisibility%3A%20hidden%3B%0A%7D%0Ah1%3Ahover%20%2Eanchor%2C%0Ah2%3Ahover%20%2Eanchor%2C%0Ah3%3Ahover%20%2Eanchor%2C%0Ah4%3Ahover%20%2Eanchor%2C%0Ah5%3Ahover%20%2Eanchor%2C%0Ah6%3Ahover%20%2Eanchor%20%7B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Ah1%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%2C%0Ah2%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%2C%0Ah3%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%2C%0Ah4%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%2C%0Ah5%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%2C%0Ah6%3Ahover%20%2Eanchor%20%2Eocticon%2Dlink%20%7B%0Avisibility%3A%20visible%3B%0A%7D%0Ah1%20%7B%0Apadding%2Dbottom%3A%200%2E3em%3B%0Afont%2Dsize%3A%202%2E25em%3B%0Aline%2Dheight%3A%201%2E2%3B%0Aborder%2Dbottom%3A%201px%20solid%20%23eee%3B%0A%7D%0Ah1%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%3B%0A%7D%0Ah2%20%7B%0Apadding%2Dbottom%3A%200%2E3em%3B%0Afont%2Dsize%3A%201%2E75em%3B%0Aline%2Dheight%3A%201%2E225%3B%0Aborder%2Dbottom%3A%201px%20solid%20%23eee%3B%0A%7D%0Ah2%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%3B%0A%7D%0Ah3%20%7B%0Afont%2Dsize%3A%201%2E5em%3B%0Aline%2Dheight%3A%201%2E43%3B%0A%7D%0Ah3%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%2E2%3B%0A%7D%0Ah4%20%7B%0Afont%2Dsize%3A%201%2E25em%3B%0A%7D%0Ah4%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%2E2%3B%0A%7D%0Ah5%20%7B%0Afont%2Dsize%3A%201em%3B%0A%7D%0Ah5%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%2E1%3B%0A%7D%0Ah6%20%7B%0Afont%2Dsize%3A%201em%3B%0Acolor%3A%20%23777%3B%0A%7D%0Ah6%20%2Eanchor%20%7B%0Aline%2Dheight%3A%201%2E1%3B%0A%7D%0Ap%2C%0Ablockquote%2C%0Aul%2C%0Aol%2C%0Adl%2C%0Atable%2C%0Apre%20%7B%0Amargin%2Dtop%3A%200%3B%0Amargin%2Dbottom%3A%2016px%3B%0A%7D%0Ahr%20%7B%0Aheight%3A%204px%3B%0Apadding%3A%200%3B%0Amargin%3A%2016px%200%3B%0Abackground%2Dcolor%3A%20%23e7e7e7%3B%0Aborder%3A%200%20none%3B%0A%7D%0Aul%2C%0Aol%20%7B%0Apadding%2Dleft%3A%202em%3B%0A%7D%0Aul%20ul%2C%0Aul%20ol%2C%0Aol%20ol%2C%0Aol%20ul%20%7B%0Amargin%2Dtop%3A%200%3B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Ali%3Ep%20%7B%0Amargin%2Dtop%3A%2016px%3B%0A%7D%0Adl%20%7B%0Apadding%3A%200%3B%0A%7D%0Adl%20dt%20%7B%0Apadding%3A%200%3B%0Amargin%2Dtop%3A%2016px%3B%0Afont%2Dsize%3A%201em%3B%0Afont%2Dstyle%3A%20italic%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Adl%20dd%20%7B%0Apadding%3A%200%2016px%3B%0Amargin%2Dbottom%3A%2016px%3B%0A%7D%0Ablockquote%20%7B%0Apadding%3A%200%2015px%3B%0Acolor%3A%20%23777%3B%0Aborder%2Dleft%3A%204px%20solid%20%23ddd%3B%0A%7D%0Ablockquote%3E%3Afirst%2Dchild%20%7B%0Amargin%2Dtop%3A%200%3B%0A%7D%0Ablockquote%3E%3Alast%2Dchild%20%7B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Atable%20%7B%0Adisplay%3A%20block%3B%0Awidth%3A%20100%25%3B%0Aoverflow%3A%20auto%3B%0Aword%2Dbreak%3A%20normal%3B%0Aword%2Dbreak%3A%20keep%2Dall%3B%0A%7D%0Atable%20th%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Atable%20th%2C%0Atable%20td%20%7B%0Apadding%3A%206px%2013px%3B%0Aborder%3A%201px%20solid%20%23ddd%3B%0A%7D%0Atable%20tr%20%7B%0Abackground%2Dcolor%3A%20%23fff%3B%0Aborder%2Dtop%3A%201px%20solid%20%23ccc%3B%0A%7D%0Atable%20tr%3Anth%2Dchild%282n%29%20%7B%0Abackground%2Dcolor%3A%20%23f8f8f8%3B%0A%7D%0Aimg%20%7B%0Amax%2Dwidth%3A%20100%25%3B%0Abox%2Dsizing%3A%20content%2Dbox%3B%0Abackground%2Dcolor%3A%20%23fff%3B%0A%7D%0Acode%20%7B%0Apadding%3A%200%3B%0Apadding%2Dtop%3A%200%2E2em%3B%0Apadding%2Dbottom%3A%200%2E2em%3B%0Amargin%3A%200%3B%0Afont%2Dsize%3A%2085%25%3B%0Abackground%2Dcolor%3A%20rgba%280%2C0%2C0%2C0%2E04%29%3B%0Aborder%2Dradius%3A%203px%3B%0A%7D%0Acode%3Abefore%2C%0Acode%3Aafter%20%7B%0Aletter%2Dspacing%3A%20%2D0%2E2em%3B%0Acontent%3A%20%22%5C00a0%22%3B%0A%7D%0Apre%3Ecode%20%7B%0Apadding%3A%200%3B%0Amargin%3A%200%3B%0Afont%2Dsize%3A%20100%25%3B%0Aword%2Dbreak%3A%20normal%3B%0Awhite%2Dspace%3A%20pre%3B%0Abackground%3A%20transparent%3B%0Aborder%3A%200%3B%0A%7D%0A%2Ehighlight%20%7B%0Amargin%2Dbottom%3A%2016px%3B%0A%7D%0A%2Ehighlight%20pre%2C%0Apre%20%7B%0Apadding%3A%2016px%3B%0Aoverflow%3A%20auto%3B%0Afont%2Dsize%3A%2085%25%3B%0Aline%2Dheight%3A%201%2E45%3B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0Aborder%2Dradius%3A%203px%3B%0A%7D%0A%2Ehighlight%20pre%20%7B%0Amargin%2Dbottom%3A%200%3B%0Aword%2Dbreak%3A%20normal%3B%0A%7D%0Apre%20%7B%0Aword%2Dwrap%3A%20normal%3B%0A%7D%0Apre%20code%20%7B%0Adisplay%3A%20inline%3B%0Amax%2Dwidth%3A%20initial%3B%0Apadding%3A%200%3B%0Amargin%3A%200%3B%0Aoverflow%3A%20initial%3B%0Aline%2Dheight%3A%20inherit%3B%0Aword%2Dwrap%3A%20normal%3B%0Abackground%2Dcolor%3A%20transparent%3B%0Aborder%3A%200%3B%0A%7D%0Apre%20code%3Abefore%2C%0Apre%20code%3Aafter%20%7B%0Acontent%3A%20normal%3B%0A%7D%0Akbd%20%7B%0Adisplay%3A%20inline%2Dblock%3B%0Apadding%3A%203px%205px%3B%0Afont%2Dsize%3A%2011px%3B%0Aline%2Dheight%3A%2010px%3B%0Acolor%3A%20%23555%3B%0Avertical%2Dalign%3A%20middle%3B%0Abackground%2Dcolor%3A%20%23fcfcfc%3B%0Aborder%3A%20solid%201px%20%23ccc%3B%0Aborder%2Dbottom%2Dcolor%3A%20%23bbb%3B%0Aborder%2Dradius%3A%203px%3B%0Abox%2Dshadow%3A%20inset%200%20%2D1px%200%20%23bbb%3B%0A%7D%0A%2Epl%2Dc%20%7B%0Acolor%3A%20%23969896%3B%0A%7D%0A%2Epl%2Dc1%2C%0A%2Epl%2Ds%20%2Epl%2Dv%20%7B%0Acolor%3A%20%230086b3%3B%0A%7D%0A%2Epl%2De%2C%0A%2Epl%2Den%20%7B%0Acolor%3A%20%23795da3%3B%0A%7D%0A%2Epl%2Ds%20%2Epl%2Ds1%2C%0A%2Epl%2Dsmi%20%7B%0Acolor%3A%20%23333%3B%0A%7D%0A%2Epl%2Dent%20%7B%0Acolor%3A%20%2363a35c%3B%0A%7D%0A%2Epl%2Dk%20%7B%0Acolor%3A%20%23a71d5d%3B%0A%7D%0A%2Epl%2Dpds%2C%0A%2Epl%2Ds%2C%0A%2Epl%2Ds%20%2Epl%2Dpse%20%2Epl%2Ds1%2C%0A%2Epl%2Dsr%2C%0A%2Epl%2Dsr%20%2Epl%2Dcce%2C%0A%2Epl%2Dsr%20%2Epl%2Dsra%2C%0A%2Epl%2Dsr%20%2Epl%2Dsre%20%7B%0Acolor%3A%20%23183691%3B%0A%7D%0A%2Epl%2Dv%20%7B%0Acolor%3A%20%23ed6a43%3B%0A%7D%0A%2Epl%2Did%20%7B%0Acolor%3A%20%23b52a1d%3B%0A%7D%0A%2Epl%2Dii%20%7B%0Abackground%2Dcolor%3A%20%23b52a1d%3B%0Acolor%3A%20%23f8f8f8%3B%0A%7D%0A%2Epl%2Dsr%20%2Epl%2Dcce%20%7B%0Acolor%3A%20%2363a35c%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Epl%2Dml%20%7B%0Acolor%3A%20%23693a17%3B%0A%7D%0A%2Epl%2Dmh%2C%0A%2Epl%2Dmh%20%2Epl%2Den%2C%0A%2Epl%2Dms%20%7B%0Acolor%3A%20%231d3e81%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Epl%2Dmq%20%7B%0Acolor%3A%20%23008080%3B%0A%7D%0A%2Epl%2Dmi%20%7B%0Acolor%3A%20%23333%3B%0Afont%2Dstyle%3A%20italic%3B%0A%7D%0A%2Epl%2Dmb%20%7B%0Acolor%3A%20%23333%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Epl%2Dmd%20%7B%0Abackground%2Dcolor%3A%20%23ffecec%3B%0Acolor%3A%20%23bd2c00%3B%0A%7D%0A%2Epl%2Dmi1%20%7B%0Abackground%2Dcolor%3A%20%23eaffea%3B%0Acolor%3A%20%2355a532%3B%0A%7D%0A%2Epl%2Dmdr%20%7B%0Acolor%3A%20%23795da3%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Epl%2Dmo%20%7B%0Acolor%3A%20%231d3e81%3B%0A%7D%0Akbd%20%7B%0Adisplay%3A%20inline%2Dblock%3B%0Apadding%3A%203px%205px%3B%0Afont%3A%2011px%20Consolas%2C%20%22Liberation%20Mono%22%2C%20Menlo%2C%20Courier%2C%20monospace%3B%0Aline%2Dheight%3A%2010px%3B%0Acolor%3A%20%23555%3B%0Avertical%2Dalign%3A%20middle%3B%0Abackground%2Dcolor%3A%20%23fcfcfc%3B%0Aborder%3A%20solid%201px%20%23ccc%3B%0Aborder%2Dbottom%2Dcolor%3A%20%23bbb%3B%0Aborder%2Dradius%3A%203px%3B%0Abox%2Dshadow%3A%20inset%200%20%2D1px%200%20%23bbb%3B%0A%7D%0A%2Etask%2Dlist%2Ditem%20%7B%0Alist%2Dstyle%2Dtype%3A%20none%3B%0A%7D%0A%2Etask%2Dlist%2Ditem%2B%2Etask%2Dlist%2Ditem%20%7B%0Amargin%2Dtop%3A%203px%3B%0A%7D%0A%2Etask%2Dlist%2Ditem%20input%20%7B%0Amargin%3A%200%200%2E35em%200%2E25em%20%2D1%2E6em%3B%0Avertical%2Dalign%3A%20middle%3B%0A%7D%0A%3Achecked%2B%2Eradio%2Dlabel%20%7B%0Az%2Dindex%3A%201%3B%0Aposition%3A%20relative%3B%0Aborder%2Dcolor%3A%20%234078c0%3B%0A%7D%0Acode%20%3E%20%2Ekw%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Edt%20%7B%20color%3A%20%23ed6a43%3B%20%7D%0Acode%20%3E%20%2Edv%20%7B%20color%3A%20%23009999%3B%20%7D%0Acode%20%3E%20%2Ebn%20%7B%20color%3A%20%23009999%3B%20%7D%0Acode%20%3E%20%2Efl%20%7B%20color%3A%20%23009999%3B%20%7D%0Acode%20%3E%20%2Ech%20%7B%20color%3A%20%23009999%3B%20%7D%0Acode%20%3E%20%2Est%20%7B%20color%3A%20%23183691%3B%20%7D%0Acode%20%3E%20%2Eco%20%7B%20color%3A%20%23969896%3B%20%7D%0Acode%20%3E%20%2Eot%20%7B%20color%3A%20%230086b3%3B%20%7D%0Acode%20%3E%20%2Eal%20%7B%20color%3A%20%23a61717%3B%20%7D%0Acode%20%3E%20%2Efu%20%7B%20color%3A%20%2363a35c%3B%20%7D%0Acode%20%3E%20%2Eer%20%7B%20color%3A%20%23a61717%3B%20background%2Dcolor%3A%20%23e3d2d2%3B%20%7D%0Acode%20%3E%20%2Ewa%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Ecn%20%7B%20color%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Esc%20%7B%20color%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Evs%20%7B%20color%3A%20%23183691%3B%20%7D%0Acode%20%3E%20%2Ess%20%7B%20color%3A%20%23183691%3B%20%7D%0Acode%20%3E%20%2Eim%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Eva%20%7Bcolor%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Ecf%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Eop%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Ebu%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Eex%20%7B%20color%3A%20%23000000%3B%20%7D%0Acode%20%3E%20%2Epp%20%7B%20color%3A%20%23999999%3B%20%7D%0Acode%20%3E%20%2Eat%20%7B%20color%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Edo%20%7B%20color%3A%20%23969896%3B%20%7D%0Acode%20%3E%20%2Ean%20%7B%20color%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Ecv%20%7B%20color%3A%20%23008080%3B%20%7D%0Acode%20%3E%20%2Ein%20%7B%20color%3A%20%23008080%3B%20%7D%0A" rel="stylesheet">
+<style>
+body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+  padding-top: 0px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 id="shiny">2017-02-20-shiny</h1>
+<p>Rick O. Gilmore<br />
+2017-02-20 17:03:53</p>
+<!-- No runtime: shiny -->
+<h2 id="todays-topics">Today's topics</h2>
+<ul>
+<li>Old business
+<ul>
+<li>Using the tools</li>
+<li>Why we're here</li>
+</ul></li>
+<li>New business
+<ul>
+<li>A &quot;Shiny&quot; new toy</li>
+</ul></li>
+</ul>
+<h2 id="using-the-tools">Using the tools</h2>
+<ul>
+<li>Use R Markdown documents.</li>
+<li>Comment on your work. Tell me (and your future self) a story.</li>
+<li>Name your chunks
+<ul>
+<li>Makes it easier to debug a long document
+<ul>
+<li><code>{r histogram-age}</code> or <code>{r anova-full-model}</code></li>
+</ul></li>
+<li>If you use <code>keep_md: TRUE</code> option for <code>html_document</code> outputs, you'll get a folder with the figures.</li>
+<li>See: <a href="https://github.com/psu-psych-511-2017-spring/liu_yushuang/tree/master/simulation_files/figure-markdown_github" class="uri">https://github.com/psu-psych-511-2017-spring/liu_yushuang/tree/master/simulation_files/figure-markdown_github</a></li>
+</ul></li>
+</ul>
+<hr />
+<ul>
+<li>Use the git/GitHub work cycle.
+<ul>
+<li>pull</li>
+<li>edit and commit</li>
+<li>edit and commit</li>
+<li>push to GitHub</li>
+<li>Raise an issue or submit a pull request.</li>
+</ul></li>
+</ul>
+<h2 id="why-simulate">Why simulate?</h2>
+<ul>
+<li>Synthesis is the other half of analysis.</li>
+</ul>
+<p><img src="data:image/png;base64,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"></p>
+<h2 id="why-simulate-1">Why simulate?</h2>
+<ul>
+<li>What does your analysis <strong>really</strong> mean?
+<ul>
+<li>What does it mean to say x is correlated with y?</li>
+<li>What does it mean to say a regression model is &quot;significant&quot;?</li>
+<li>What does it mean to say that factor A has a main effect or that there is an interaction between A and B?</li>
+</ul></li>
+<li>Example:
+<ul>
+<li><a href="https://github.com/psu-psych-511-2017-spring/schroeder_kingsley/blob/master/PSY511_Assignment6_Schroeder.md" class="uri">https://github.com/psu-psych-511-2017-spring/schroeder_kingsley/blob/master/PSY511_Assignment6_Schroeder.md</a></li>
+</ul></li>
+</ul>
+<h2 id="shiny-1">Shiny</h2>
+<ul>
+<li>RStudio framework for making interactive, web-based data applications</li>
+<li>Basic <a href="http://shiny.rstudio.com/tutorial/">tutorial</a></li>
+<li><a href="http://shiny.rstudio.com/">Gallery</a></li>
+</ul>
+<h2 id="components">Components</h2>
+<ul>
+<li>User interface (UI)</li>
+<li>Server instructions</li>
+<li>Web server</li>
+<li>Web browser</li>
+</ul>
+<h2 id="template">Template</h2>
+<pre><code>library(shiny)
+ui &lt;- fluidPage()
+server &lt;- function(input, output) {}
+shinyApp(ui = ui, server = server)</code></pre>
+<h2 id="correlation-demo">Correlation demo</h2>
+<ul>
+<li>Goal: Create an app to visualize the effects of changing the slope (m) and error (sd) in a linear relation <em>Y</em> ∼ <em>X</em> * <em>β</em> + <em>N</em>(0, <em>σ</em>)</li>
+<li>Inputs
+<ul>
+<li>number of points</li>
+<li>slope</li>
+<li>error</li>
+</ul></li>
+<li>Outputs
+<ul>
+<li>scatter plot with fitted line</li>
+<li>correlation value</li>
+</ul></li>
+</ul>
+<hr />
+<!--html_preserve-->
+<p>Shiny applications not supported in static R Markdown documents</p>
+<!--/html_preserve-->
+<h2 id="ui-input-components">UI input components</h2>
+<ul>
+<li>Sliders for numeric input use <code>sliderInput()</code> function</li>
+<li>Parameters <em>inputId</em>, <em>label</em>, <em>min</em>, <em>max</em>, and <em>value</em></li>
+</ul>
+<!-- -->
+<pre><code>sliderInput(inputId = &quot;points&quot;,
+  label = &quot;Number of points:&quot;,
+  min = 10,
+  max = 200,
+  value = 50)</code></pre>
+<h2 id="sliders-for-slope-error">Sliders for slope, error</h2>
+<pre><code>sliderInput(inputId = &quot;slope&quot;,
+  label = &quot;Slope:&quot;,
+  min = -10,
+  max = 10,
+  value = 1)
+      
+sliderInput(inputId = &quot;error&quot;,
+  label = &quot;Error:&quot;,
+  min = .0001,
+  max = 5,
+  value = 0.5)</code></pre>
+<h2 id="under-the-hood">Under the hood</h2>
+<ul>
+<li>Adjust the slider -&gt; the <code>sliderInput</code> function converts the slider position into a number
+<ul>
+<li>That number gets assigned to the <code>inputId</code> of the UI element</li>
+<li>A list of elements with the <code>inputId</code> equal to the variable name(s) gets created: <code>input$points</code>, <code>input$slope</code>, ...</li>
+</ul></li>
+<li>A <code>server(input, output)</code> function takes the <code>ui</code> inputs and creates an <code>output</code></li>
+<li>The UI takes the <code>output</code> and shows it on the screen</li>
+</ul>
+<h2 id="server-function">Server function</h2>
+<ul>
+<li>Syntax is <code>server &lt;- function(input, output) {}</code></li>
+<li>Use <code>input$points</code>, <code>input$slope</code>, and <code>input$error</code> to grab values from UI</li>
+<li>Save plot to <code>output$scatterPlot</code></li>
+</ul>
+<h2 id="calculating-points-and-plotting-them">Calculating points and plotting them</h2>
+<ul>
+<li>Generate n = <code>input$points</code> as x</li>
+<li>Calculate y = x * <code>input$slope</code> + error
+<ul>
+<li>where error = <code>rnorm(input$points, sd = input$error)</code></li>
+</ul></li>
+<li>Plot x, y</li>
+</ul>
+<!-- -->
+<pre><code>output$scatterPlot &lt;- renderPlot({
+    # Calculate x, y, with slope and error
+    x = runif(input$points)
+    
+    # Vectorize x for point-wise multiplication
+    y = rep(input$slope, input$points) * as.vector(x) + 
+        rnorm(input$points, sd = input$error)
+        
+    # draw the histogram with the specified number of bins
+    scatter.smooth(x = x, y = y, xlab = &quot;x&quot;, ylab = &quot;y&quot;)
+})</code></pre>
+<!-- Scrolling slides -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
+<h2 id="the-whole-shebang">The whole shebang</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(shiny)
+
+<span class="co"># Define UI for application that draws a histogram</span>
+ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(
+  
+  <span class="co"># Application title</span>
+  <span class="kw">titlePanel</span>(<span class="st">&quot;Correlation Demo&quot;</span>),
+  
+  <span class="co"># Sidebar with a slider input for number of points </span>
+  <span class="kw">sidebarLayout</span>(
+    <span class="kw">sidebarPanel</span>(
+      <span class="kw">sliderInput</span>(<span class="dt">inputId =</span> <span class="st">&quot;points&quot;</span>,
+                  <span class="dt">label =</span> <span class="st">&quot;Number of points:&quot;</span>,
+                  <span class="dt">min =</span> <span class="dv">10</span>,
+                  <span class="dt">max =</span> <span class="dv">200</span>,
+                  <span class="dt">value =</span> <span class="dv">50</span>),
+      <span class="kw">sliderInput</span>(<span class="dt">inputId =</span> <span class="st">&quot;slope&quot;</span>,
+                  <span class="dt">label =</span> <span class="st">&quot;Slope:&quot;</span>,
+                  <span class="dt">min =</span> -<span class="dv">10</span>,
+                  <span class="dt">max =</span> <span class="dv">10</span>,
+                  <span class="dt">value =</span> <span class="dv">1</span>),
+      <span class="kw">sliderInput</span>(<span class="dt">inputId =</span> <span class="st">&quot;error&quot;</span>,
+                  <span class="dt">label =</span> <span class="st">&quot;Error:&quot;</span>,
+                  <span class="dt">min =</span> .<span class="dv">0001</span>,
+                  <span class="dt">max =</span> <span class="dv">5</span>,
+                  <span class="dt">value =</span> <span class="fl">0.5</span>)
+    ),
+    
+    <span class="co"># Show a plot of the generated distribution</span>
+    <span class="kw">mainPanel</span>(
+      <span class="kw">plotOutput</span>(<span class="dt">outputId =</span> <span class="st">&quot;scatterPlot&quot;</span>)
+    )
+  )
+)
+
+<span class="co"># Define server logic</span>
+server &lt;-<span class="st"> </span>function(input, output) {
+  
+  output$scatterPlot &lt;-<span class="st"> </span><span class="kw">renderPlot</span>({
+    
+    <span class="co"># Calculate x, y, with slope and error</span>
+    x =<span class="st"> </span><span class="kw">runif</span>(input$points)
+    y =<span class="st"> </span><span class="kw">rep</span>(input$slope, input$points) *<span class="st"> </span><span class="kw">as.vector</span>(x) +<span class="st"> </span><span class="kw">rnorm</span>(input$points, <span class="dt">sd =</span> input$error)
+    
+    <span class="co"># draw the plot</span>
+    <span class="kw">scatter.smooth</span>(<span class="dt">x =</span> x, <span class="dt">y =</span> y, <span class="dt">xlab =</span> <span class="st">&quot;x&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;y&quot;</span>)
+  })
+}</code></pre></div>
+<h2 id="why-do-this">Why do this?</h2>
+<ul>
+<li>Fun, informative way to <strong>simulate</strong> your data analysis pipeline and visualization path <strong>before</strong> you run your study</li>
+<li>Strong hypothesis generation, prediction</li>
+<li>Interactive report</li>
+<li>Interactive publication!</li>
+</ul>
+<h2 id="lets-explore">Let's explore</h2>
+<ul>
+<li><a href="http://wordbank.stanford.edu" class="uri">http://wordbank.stanford.edu</a></li>
+<li><a href="https://www.rstudio.com/products/shiny/shiny-user-showcase/" class="uri">https://www.rstudio.com/products/shiny/shiny-user-showcase/</a></li>
+<li><a href="http://shinyapps.org/" class="uri">http://shinyapps.org/</a></li>
+<li><a href="https://radiant-rstats.github.io/docs/" class="uri">https://radiant-rstats.github.io/docs/</a></li>
+<li><a href="https://www.showmeshiny.com/" class="uri">https://www.showmeshiny.com/</a></li>
+</ul>
+<h2 id="learning-more">Learning more</h2>
+<ul>
+<li>Shiny cheatsheet from RStudio. <a href="https://www.rstudio.com/wp-content/uploads/2016/01/shiny-cheatsheet.pdf" class="uri">https://www.rstudio.com/wp-content/uploads/2016/01/shiny-cheatsheet.pdf</a></li>
+</ul>
+
+</body>
+</html>

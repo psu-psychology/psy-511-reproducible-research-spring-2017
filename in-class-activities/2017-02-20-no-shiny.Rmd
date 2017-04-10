@@ -1,0 +1,149 @@
+---
+title: "2017-02-20-shiny"
+author: "Rick O. Gilmore"
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    incremental: no
+    self-contained: yes
+    transition: default
+    widescreen: yes
+  html_document:
+    keep_md: yes
+    self_contained: yes
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 2
+bibliography: ../bib/reproducibility.bib
+---
+
+<!-- In-class activities; No runtime: shiny -->
+
+## Goals
+
+- Edit a simple Shiny app
+- Understand how the UI, server interaction works
+
+---
+
+```{r, echo=FALSE}
+library(shiny)
+shiny.dir <- "shiny-apps/"
+shiny.app <- "hello-world"
+shinyAppDir(appDir = paste(shiny.dir, shiny.app, sep=""),
+  options=list(
+    width="100%", height=700
+  )
+)
+```
+
+## Looking at the code
+
+- The file, `app.R` is located in `shiny-apps/hello-world`
+- This allows me to launch the app in my presentation using this code:
+
+~~~
+shiny.dir <- "shiny-apps/"
+shiny.app <- "hello-world"
+shinyAppDir(appDir = paste0(shiny.dir, shiny.app),
+  options=list(
+    width="100%", height=700
+  )
+)
+~~~
+
+## Code review
+
+- Remember the parts of the basic `app.R` file:
+    + `library(shiny)`: make sure R will run Shiny commands
+    + `ui <- fluidPage()`: define user interface
+    + `server <- function(input, output){}`: take input, return output
+    + `shinyApp(ui = ui, server = server)`: tell Shiny app where the pieces are
+    
+## UI
+
+- Components include
+    + `titlePanel()`: Title for this app
+    + Layout commands, we use `sidebarLayout()` that can contain `sidebarPanel()` and `mainPanel()` components.
+    + Lots of options, see [Shiny cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/01/shiny-cheatsheet.pdf)
+    
+---
+
+- `sidebarPanel()` and `mainPanel()` include input gathering and output producing commands, for example:
+    + `selectInput()`: drop-down menu
+    + `textOutput()`: prints text to screen
+
+~~~ 
+ui <- fluidPage(
+   # Application title
+   titlePanel("Hello, World!"),
+   
+   # Sidebar two drop-down menus
+   sidebarLayout(
+      sidebarPanel(
+        selectInput(inputId = "friendName",
+                    label = "Friend:", 
+                    choices = c("World", "Teresa", "Lou", "Chaz")
+        ),
+~~~
+
+## Server
+
+- Must contain a command that assigns something to the `output` variable (it's a list)
+- In our case, we want to assign something to `output$greetingText` because that is the name of the variable that the `mainPanel(textOutput)` command will output. Here's the segment from the UI function again:
+
+~~~
+      # Show the text
+      mainPanel(
+         textOutput(outputId = "greetingText")
+      )
+~~~
+
+---
+
+- Our output is text (not an image), so `output$greetingText` is created by a `renderText()` function
+- Here' sthe `server(input, output)` code
+
+~~~
+server <- function(input, output) {
+   # 
+   output$greetingText <- renderText({
+     paste("Hello, ", input$friendName, input$punctuation, sep="")
+   })
+}
+~~~
+
+## Quest 1a
+
+- Goals
+    - Edit the list of names
+
+## Quest 1a
+
+- Instructions
+    - "Pull" your personal/private course repo from GitHub
+    - If you haven't already, I suggest creating an RStudio project for this repo.
+        + Get repo URL from GitHub. It will be something like `https://github.com/psu-psych-511-2017-spring/liu_yushuang.git`
+        + Create new project from RStudio, linked to this repo.
+      
+---
+
+- You'll find a `shiny-templates/` directory with a `shiny-work.Rmd` file and a `shiny-apps/` folder for you to work on.
+
+## Quest 1b: Change the greeting
+    
+## Quest 2: Comment on `correlation-app/`
+
+- Review and add your own comments to Rick's simple correlation demo app `shiny-apps/correlation-app/`
+
+## Quest 3: Comment on `correlation-app-2/`
+
+- Review, comment upon, and modify Rick's enhanced correlation demo app `shiny-apps/correlation-app-2/`
+
+## Quest 4 (optional)
+
+- Create your own Shiny app based on 
+    + a demonstration of the various ways to get input from a user **OR**
+    + the simulated data you created **OR**
+    + modifying a Shiny app someone else built.

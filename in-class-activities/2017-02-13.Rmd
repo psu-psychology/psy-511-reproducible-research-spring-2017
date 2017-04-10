@@ -154,7 +154,12 @@ for (i in 1:n.simulations) {
 ```{r plot-n-simulation-results}
 
 # Easier to make simulation data a data frame
-ht.wt.sims <- as.data.frame(sim.num = 1:n.simulations, height.weight.sim.data)
+ht.wt.sims <- as.data.frame(height.weight.sim.data)
+
+# rename variables to be more easily read
+names(ht.wt.sims) <- c("beta0", "beta1", 
+                       "beta0.lo", "beta0.hi",
+                       "beta1.lo", "beta1.hi")
 
 # Add a variable to index the simulation number
 ht.wt.sims$sim.num <- 1:n.simulations
@@ -162,8 +167,8 @@ ht.wt.sims$sim.num <- 1:n.simulations
 # Plot beta0 min and max (now called V3, V4)
 ggplot(data = ht.wt.sims) +
   aes(x = sim.num) +
-  geom_linerange(mapping = aes(ymin=V3,
-                                ymax=V4)) +
+  geom_linerange(mapping = aes(ymin = beta0.lo,
+                                ymax = beta0.hi)) +
   ylab("CIs for Intercept") +
   geom_hline(yintercept = beta0, color = "red")
 ```
@@ -174,8 +179,8 @@ ggplot(data = ht.wt.sims) +
 # Plot beta1 min and max (now called V5, V6)
 ggplot(data = ht.wt.sims) +
   aes(x = sim.num) +
-  geom_linerange(mapping = aes(ymin=V5,
-                                ymax=V6)) +
+  geom_linerange(mapping = aes(ymin = beta1.lo,
+                                ymax = beta1.hi)) +
   ylab("CIs for Slope") +
   geom_hline(yintercept = beta1, color = "red")
 ```

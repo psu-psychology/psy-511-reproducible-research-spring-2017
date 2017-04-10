@@ -37,19 +37,20 @@ ui <- fluidPage(
       
       # Show a plot of the generated distribution
       mainPanel(
-         plotOutput(outputId = "scatterPlot")
-         )
+        plotOutput(outputId = "scatterPlot")
+      )
    )
 )
 
 # Define server logic
-server <- function(input, output) {
 
-  output$scatterPlot <- renderPlot({
+server <- function(input, output) {
+  
+ output$scatterPlot <- renderPlot({
     # Calculate x, y, with slope and error
     x = runif(input$points)
     y = rep(input$slope, input$points) * as.vector(x) + rnorm(input$points, sd = input$error)
-      
+
     # draw the plot and write correlation value as x axis label (xlab)
     scatter.smooth(x = x, y = y, 
                    xlab = paste("Corr= ", as.character(cor(x,y)), sep=""), 

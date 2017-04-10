@@ -1,0 +1,119 @@
+---
+title: "2017-03-20-python"
+author: "Rick O. Gilmore"
+date: "`r Sys.time()`"
+output:
+  ioslides_presentation:
+    css: ../css/gilmore-ioslides.css
+    incremental: no
+    self-contained: yes
+    transition: default
+    widescreen: yes
+  html_document:
+    keep_md: yes
+    self_contained: yes
+    code_folding: hide
+  pdf_document:
+    latex_engine: xelatex
+    toc: yes
+    toc_depth: 2
+bibliography: ../bib/reproducibility.bib
+---
+
+<!-- Lecture notes -->
+
+## Today's topics
+
+- Feedback about last week's assignments
+- Changes in the quests
+    + Focus on advanced R Markdown
+    + Shifting focus to final projects
+- The *other* language for reproducible data science
+    + python
+    + The Jupyter Project
+- "Ten Simple Rules..."
+
+## What is Jupyter?
+
+- <http://jupyter.org>
+- Jupyter an open source web app.
+- Create and share documents with code, equations, visualizations, and text.
+- Generate presentations, too.
+- Support for multiple languages, but deep roots in python.
+
+## Why run Jupyter?
+
+- Runs in browser
+- Can run other languages (e.g., R, Julia)
+- Share interactive documents with other users
+- Core component of work on a Reproducible Science Curriculum
+    + <https://github.com/Reproducible-Science-Curriculum>
+
+## Why learn python?
+
+- python and R are the pillars of data science
+- Strong scientific programming community around python
+- `pandas` package for data science
+    + [Cheat sheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
+
+## [Try Python on Jupyter](https://try.jupyter.org)
+
+- Open `Welcome to Python.ipynb`
+
+## [Try R on Jupyter](https://try.jupyter.org)
+
+- Open `Welcome R - demo.ipynb`
+
+## The `pandas` package for data science
+
+- Similar functionality to `ggplot2` and `dplyr`
+- [10 min to pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html)
+- [Python for data analysis notebook](http://nbviewer.jupyter.org/urls/gist.github.com/wesm/4757075/raw/a72d3450ad4924d0e74fb57c9f62d1d895ea4574/PandasTour.ipynb)
+
+## Jupyter Data Science workflow videos
+
+- Jake Vanderplas, U Washington Data Scientist
+- [YouTube Channel](https://www.youtube.com/playlist?list=PLYCpMb24GpOC704uO9svUrihl-HY1tTJJ)
+
+## Reproducible Data Analysis in Jupyter, Part 1/10: Loading and Visualizing Dat
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_ZEWDGpM-vM?list=PLYCpMb24GpOC704uO9svUrihl-HY1tTJJ" frameborder="0" allowfullscreen></iframe>
+
+## Reproducible Data Analysis in Jupyter, Part 2/10: Further Data Exploration
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yUNBVzQfugg?list=PLYCpMb24GpOC704uO9svUrihl-HY1tTJJ" frameborder="0" allowfullscreen></iframe>
+
+## Reproducible Data Analysis in Jupyter, Part 3/10: Version Control with Git & GitHub
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J45NJ0pJXWQ?list=PLYCpMb24GpOC704uO9svUrihl-HY1tTJJ" frameborder="0" allowfullscreen></iframe>
+
+## Generating and showing a talk in a Jupyter notebook
+
+- Need
+    + `RISE` package from Damian Vila, <https://github.com/damianavila/RISE>
+    + `reveal.js` JavaScript framework
+
+## R vs. Python
+
+<iframe src="https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis#gs.w49HAyQ">
+</iframe>
+
+## [Ten Simple Rules](http://collections.plos.org/ten-simple-rules)
+
+- Schnell, S. (2015). Ten Simple Rules for a Computational Biologist’s Laboratory Notebook. PLOS Computational Biology, 11(9), e1004385. https://doi.org/10.1371/journal.pcbi.1004385
+- Goodman, A., Pepe, A., Blocker, A. W., Borgman, C. L., Cranmer, K., Crosas, M., … Slavkovic, A. (2014). Ten Simple Rules for the Care and Feeding of Scientific Data. PLoS Comput Biol, 10(4), e1003542. https://doi.org/10.1371/journal.pcbi.1003542
+- Hart, E. M., Barmby, P., LeBauer, D., Michonneau, F., Mount, S., Mulrooney, P., … Hollister, J. W. (2016). Ten Simple Rules for Digital Data Storage. PLOS Computational Biology, 12(10), e1005097. <https://doi.org/10.1371/journal.pcbi.1005097>
+
+---
+
+- Perez-Riverol, Y., Gatto, L., Wang, R., Sachsenberg, T., Uszkoreit, J., Leprevost, F. da V., … Vizcaíno, J. A. (2016). Ten Simple Rules for Taking Advantage of Git and GitHub. PLOS Computational Biology, 12(7), e1004947. https://doi.org/10.1371/journal.pcbi.1004947
+- Kass, R. E., Caffo, B. S., Davidian, M., Meng, X.-L., Yu, B., & Reid, N. (2016). Ten Simple Rules for Effective Statistical Practice. PLOS Computational Biology, 12(6), e1004961. https://doi.org/10.1371/journal.pcbi.1004961
+
+## Other resources
+
+- [Reproducible Data Analysis in Jupyter](http://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/)
+- Do published notebooks make science more reproducible?
+    + Mark Woodbridge: [maybe](https://markwoodbridge.com/2017/03/05/jupyter-reproducible-science.html)
+- Katz, D.S. (2017, February 7). Is software reproducibility possible and practical? <https://danielskatzblog.wordpress.com/2017/02/07/is-software-reproducibility-possible-and-practical/>
+
+## References

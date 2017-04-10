@@ -1,0 +1,46 @@
+---
+title: "python-rmarkdown"
+author: "Rick O. Gilmore"
+date: "March 13, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Using python within Rmarkdown {.tabset}
+
+- Reading data and saving it to an R-compatible data frame format.
+- Adapted from <http://rmarkdown.rstudio.com/authoring_knitr_engines.html#python>
+
+### Python code
+
+```{python, engine.path = "/Users/rick/anaconda/bin/python"}
+import pandas
+import feather
+
+# Read flights data and select flights to O'Hare
+flights = pandas.read_csv("flights.csv")
+flights = flights[flights['dest'] == "ORD"]
+
+# Select carrier and delay columns and drop rows with missing values
+flights = flights[['carrier', 'dep_delay', 'arr_delay']]
+flights = flights.dropna()
+print flights.head(10)
+
+# Write to feather file for reading from R
+#feather.write_dataframe(flights, "flights.feather")
+```
+
+
+### R code
+
+```{r}
+library(feather)
+library(ggplot2)
+
+# Read from feather and plot
+flights <- read_feather("flights.feather")
+ggplot(flights, aes(carrier, arr_delay)) + geom_point() + geom_jitter()
+```
