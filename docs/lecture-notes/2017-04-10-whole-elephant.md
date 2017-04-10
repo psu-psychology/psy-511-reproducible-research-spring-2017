@@ -1,7 +1,7 @@
 The Whole Elephant
 ================
 Rick O. Gilmore
-2017-04-10 11:47:32
+2017-04-10 12:05:48
 
 ------------------------------------------------------------------------
 
@@ -102,8 +102,8 @@ Most studies are underpowered
 
 "We have empirically assessed the distribution of published effect sizes and estimated power by extracting more than 100,000 statistical records from about 10,000 cognitive neuroscience and psychology papers published during the past 5 years. The reported median effect size was d=0.93 (inter-quartile range: 0.64-1.46) for nominally statistically significant results and d=0.24 (0.11-0.42) for non-significant results. <span class="red">Median power to detect small, medium and large effects was 0.12, 0.44 and 0.73</span>, reflecting no improvement through the past half-century. Power was lowest for cognitive neuroscience journals. 14% of papers reported some statistically significant results, although the respective F statistic and degrees of freedom proved that these were non-significant; <span class="red">p value errors positively correlated with journal impact factors. False report probability is likely to exceed 50% for the whole literature</span>. In light of our findings the recently reported low replication success in psychology is realistic and worse performance may be expected for cognitive neuroscience."
 
-We don't have good intuitions about sample sizes & power
---------------------------------------------------------
+Error-prone intuitions about sample sizes & power
+-------------------------------------------------
 
 <img src="http://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/pssa/2016/pssa_27_8/0956797616647519/20170109/images/medium/10.1177_0956797616647519-fig1.gif" height=400px>
 
@@ -288,10 +288,6 @@ And so it may often seem like we are the proverbial blind men studying the eleph
 What's at stake?
 ----------------
 
-> -   A great deal
-> -   Validity of our evidence
-> -   Credibility of our arguments
-
 ------------------------------------------------------------------------
 
 <img src="../img/ferguson-everybody-knows.jpg" width=900px>
@@ -305,7 +301,7 @@ What's at stake?
 In our defense...
 -----------------
 
--   Science is hard
+-   Science is hard, especially psychological science
 -   Life is short
 -   Funding is competitive
 -   Incentive structure undermines transparency, openness, sharing
@@ -393,6 +389,16 @@ And, little improvement over time...
 
 Going back to the results from that survey of 1,500 scientists by Nature in 2016.
 
+Data sharing remains
+--------------------
+
+-   Sharing remains
+    -   Time-consuming
+    -   Often optional or mandated vs. highly rewarded
+-   Reuse
+    -   Discouraged in some subfields
+    -   Difficult
+
 Changing journal, funder practices
 ----------------------------------
 
@@ -440,13 +446,16 @@ New techniques
 Replication studies, pre-registration, registered reports
 ---------------------------------------------------------
 
--   What studies to replicate?
+-   But, which studies to replicate?
 -   Who pays?
--   Scholarly value, reputation
+-   Scholarly value, reputation of replicators?
+-   Protect integrity, preserving community
 
 Scholarly society initiatives
 -----------------------------
 
+-   APS
+    -   Badges, etc.
 -   ICIS
     -   Recently adopted registered reports format
 -   SRCD
@@ -788,11 +797,11 @@ sessionInfo()
     ## loaded via a namespace (and not attached):
     ##  [1] Rcpp_0.12.9      knitr_1.15.1     magrittr_1.5     munsell_0.4.3   
     ##  [5] colorspace_1.3-2 R6_2.2.0         stringr_1.2.0    plyr_1.8.4      
-    ##  [9] tools_3.3.2      grid_3.3.2       gtable_0.2.0     DBI_0.6         
-    ## [13] htmltools_0.3.5  yaml_2.1.14      lazyeval_0.2.0   rprojroot_1.2   
-    ## [17] digest_0.6.12    assertthat_0.1   tibble_1.2       rsconnect_0.7   
-    ## [21] evaluate_0.10    rmarkdown_1.3    labeling_0.3     stringi_1.1.2   
-    ## [25] scales_0.4.1     backports_1.0.5
+    ##  [9] caTools_1.17.1   tools_3.3.2      grid_3.3.2       gtable_0.2.0    
+    ## [13] DBI_0.6          htmltools_0.3.5  yaml_2.1.14      lazyeval_0.2.0  
+    ## [17] rprojroot_1.2    digest_0.6.12    assertthat_0.1   tibble_1.2      
+    ## [21] bitops_1.0-6     rsconnect_0.7    evaluate_0.10    rmarkdown_1.3   
+    ## [25] labeling_0.3     stringi_1.1.2    scales_0.4.1     backports_1.0.5
 
 References
 ----------
