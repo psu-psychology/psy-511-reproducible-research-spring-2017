@@ -251,22 +251,21 @@ title: "Schedule"
 
 ### Topics
 
-- The future of open science
-    + Society for Improving Psychological Science
-    + Center for Reproducible Neuroscience
-- Writing manuscripts in R Markdown
-    + <https://github.com/crsh/papaja>
-    + <https://github.com/rstudio/rticles>
-    
-### Readings
+- The future of open science: The whole elephant
+    - **Lecture notes**. [HTML](lecture-notes/2017-04-10-whole-elephant.html). [Markdown](lecture-notes/2017-04-10-whole-elephant.md).
+<!-- - Writing manuscripts in R Markdown -->
+<!--     + <https://github.com/crsh/papaja> -->
+<!--     + <https://github.com/rstudio/rticles> -->
 
-- <http://www.nature.com/news/research-integrity-don-t-let-transparency-damage-science-1.19219>
+<!-- ### Readings -->
+
+<!-- - <http://www.nature.com/news/research-integrity-don-t-let-transparency-damage-science-1.19219> -->
 
 ## Week 14: April 17
 
 ### Topics
 
-- Student project presentations
+- Preparation for student projects
 
 ## Week 15: April 24
 
